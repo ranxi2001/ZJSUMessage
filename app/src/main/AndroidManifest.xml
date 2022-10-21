@@ -13,8 +13,11 @@
         android:theme="@style/Theme.ZJSUMessage"
         tools:targetApi="31">
         <activity
+            android:name=".main_interface"
+            android:exported="false" />
+        <activity
             android:name=".communicate"
-            android:exported="false"/>
+            android:exported="false" />
         <activity
             android:name=".file_transfer"
             android:exported="false" />

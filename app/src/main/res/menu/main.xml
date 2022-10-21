@@ -6,4 +6,7 @@
     <item
         android:id="@+id/remove_item"
         android:title="file_transfer"/>
+    <item
+        android:id="@+id/apk"
+        android:title="interface"/>
 </menu>
