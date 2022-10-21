@@ -1,5 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/yucy/AndroidStudioProjects/ZJSUMessage/app/src/main/res/layout/activity_communicate.xml" value="0.2259963768115942" />
+        <entry key="..\:/Users/yucy/AndroidStudioProjects/ZJSUMessage/app/src/main/res/layout/activity_file_transfer.xml" value="0.2259963768115942" />
+        <entry key="..\:/Users/yucy/AndroidStudioProjects/ZJSUMessage/app/src/main/res/layout/activity_main.xml" value="0.2" />
+        <entry key="..\:/Users/yucy/AndroidStudioProjects/ZJSUMessage/app/src/main/res/layout/activity_second.xml" value="0.2259963768115942" />
+        <entry key="..\:/Users/yucy/AndroidStudioProjects/ZJSUMessage/app/src/main/res/menu/main.xml" value="0.20384615384615384" />
+      </map>
+    </option>
+  </component>
   <component name="ExternalStorageConfigurationManager" enabled="true" />
   <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
