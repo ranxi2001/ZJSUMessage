@@ -31,10 +31,10 @@
 
 冉熙：登录页logo大图设计
 
-<img src="https://img2022.cnblogs.com/blog/2910984/202210/2910984-20221022125358428-1708848173.png" alt="Snipaste_2022-10-22_12-53-38" style="zoom:33%;" />
+<img src="https://cdn.jsdelivr.net/gh/ranxi2001/blog-imgs@main/img/20221022130521.png" style="zoom:33%;" />
 
 #### 聊天页面
 
 冉熙：Ui设计与图表ICO设计
 
-<img src="https://img2022.cnblogs.com/blog/2910984/202210/2910984-20221022125631717-418926244.png" alt="Snipaste_2022-10-22_12-55-57" style="zoom:33%;" />
+<img src="https://cdn.jsdelivr.net/gh/ranxi2001/blog-imgs@main/img/20221022130534.png" style="zoom:33%;" />
