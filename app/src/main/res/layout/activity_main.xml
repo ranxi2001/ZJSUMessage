@@ -79,7 +79,7 @@
         android:layout_height="291dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/eed5c04cf732741e90c2f04cf486c81"
+        app:srcCompat="@drawable/luncher_logo"
         tools:layout_editor_absoluteY="7dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

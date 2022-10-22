@@ -6,17 +6,40 @@
     android:layout_height="match_parent"
     tools:context=".message">
 
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="311dp"
+        android:layout_height="18dp"
+        android:text="信息2001"
+        android:textAlignment="center"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toStartOf="@+id/imageButton5"
+        app:layout_constraintStart_toEndOf="@+id/imageButton4"
+        app:layout_constraintTop_toBottomOf="@+id/textView_chatobj" />
+
+    <ImageButton
+        android:id="@+id/imageButton5"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="#00FF0000"
+        android:src="@drawable/more_option"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView_chatobj"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="SpeakableTextPresentCheck" />
+
     <ImageButton
         android:id="@+id/imageButton_emoji"
 
         android:layout_width="50dp"
         android:layout_height="50dp"
-        android:background="#00FF0000"
         android:layout_marginStart="9dp"
+        android:background="#00FF0000"
         android:scaleType="center"
         android:src="@drawable/emoji"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/editText_chat" />
+        app:layout_constraintStart_toEndOf="@+id/editText_chat"
+        tools:ignore="SpeakableTextPresentCheck" />
 
     <ImageButton
         android:id="@+id/imageButton_moreinput"
@@ -27,7 +50,8 @@
         android:scaleType="center"
         android:src="@drawable/more"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:ignore="SpeakableTextPresentCheck" />
 
     <EditText
         android:id="@+id/editText_chat"
@@ -38,7 +62,8 @@
         android:text=""
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/imageButton_emoji"
-        app:layout_constraintStart_toEndOf="@+id/imageButton_voice" />
+        app:layout_constraintStart_toEndOf="@+id/imageButton_voice"
+        tools:ignore="SpeakableTextPresentCheck" />
 
     <ImageButton
         android:id="@+id/imageButton_voice"
@@ -49,6 +74,27 @@
         android:scaleType="center"
         android:src="@drawable/voice"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <ImageButton
+        android:id="@+id/imageButton4"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="#00FF0000"
+        android:src="@drawable/back"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <TextView
+        android:id="@+id/textView_chatobj"
+        android:layout_width="311dp"
+        android:layout_height="34dp"
+        android:text="冉熙"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        app:layout_constraintStart_toEndOf="@+id/imageButton4"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
