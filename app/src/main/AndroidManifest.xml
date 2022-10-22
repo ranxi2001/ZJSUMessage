@@ -17,7 +17,7 @@
             android:name=".main_interface"
             android:exported="false" />
         <activity
-            android:name=".communicate"
+            android:name=".message"
             android:exported="false" />
         <activity
             android:name=".file_transfer"

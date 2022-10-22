@@ -25,7 +25,7 @@ public class file_transfer extends AppCompatActivity {
         switch (item.getItemId()) {
             case R.id.add_item:
                 Toast.makeText(this, "正在进入通讯系统", Toast.LENGTH_SHORT).show();
-                Intent intent =new Intent(file_transfer.this,communicate.class);
+                Intent intent =new Intent(file_transfer.this, message.class);
                 startActivity(intent);
                 break;
             case R.id.remove_item:

@@ -6,8 +6,6 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.View;
-import android.widget.Button;
 import android.widget.Toast;
 
 public class main_interface extends AppCompatActivity {
@@ -26,7 +24,7 @@ public class main_interface extends AppCompatActivity {
         switch (item.getItemId()) {
             case R.id.add_item:
                 Toast.makeText(this, "正在进入通讯系统", Toast.LENGTH_SHORT).show();
-                Intent intent =new Intent(main_interface.this,communicate.class);
+                Intent intent =new Intent(main_interface.this, message.class);
                 startActivity(intent);
                 break;
             case R.id.remove_item:
