@@ -3,8 +3,9 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/yucy/AndroidStudioProjects/ZJSUMessage/app/src/main/res/drawable/green.xml" value="0.111" />
         <entry key="..\:/Users/yucy/AndroidStudioProjects/ZJSUMessage/app/src/main/res/layout/activity_communicate.xml" value="0.2259963768115942" />
-        <entry key="..\:/Users/yucy/AndroidStudioProjects/ZJSUMessage/app/src/main/res/layout/activity_file_transfer.xml" value="0.2259963768115942" />
+        <entry key="..\:/Users/yucy/AndroidStudioProjects/ZJSUMessage/app/src/main/res/layout/activity_file_transfer.xml" value="0.264" />
         <entry key="..\:/Users/yucy/AndroidStudioProjects/ZJSUMessage/app/src/main/res/layout/activity_main.xml" value="0.264" />
         <entry key="..\:/Users/yucy/AndroidStudioProjects/ZJSUMessage/app/src/main/res/layout/activity_main_interface.xml" value="0.2259963768115942" />
         <entry key="..\:/Users/yucy/AndroidStudioProjects/ZJSUMessage/app/src/main/res/layout/activity_second.xml" value="0.2259963768115942" />
