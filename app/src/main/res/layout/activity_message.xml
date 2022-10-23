@@ -1,100 +1,112 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".message">
 
-    <TextView
-        android:id="@+id/textView6"
-        android:layout_width="311dp"
-        android:layout_height="18dp"
-        android:text="信息2001"
-        android:textAlignment="center"
-        android:textSize="14sp"
-        app:layout_constraintEnd_toStartOf="@+id/imageButton5"
-        app:layout_constraintStart_toEndOf="@+id/imageButton4"
-        app:layout_constraintTop_toBottomOf="@+id/textView_chatobj" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="0dp"
+        android:layout_marginTop="0dp"
+        android:gravity="center_vertical"
+        >
 
-    <ImageButton
-        android:id="@+id/imageButton5"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:background="#00FF0000"
-        android:src="@drawable/more_option"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/textView_chatobj"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="SpeakableTextPresentCheck" />
+        <ImageButton
+            android:id="@+id/imageButton4"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="#00FF0000"
+            android:src="@drawable/back"
+            tools:ignore="SpeakableTextPresentCheck" />
 
-    <ImageButton
-        android:id="@+id/imageButton_emoji"
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
 
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:layout_marginStart="9dp"
-        android:background="#00FF0000"
-        android:scaleType="center"
-        android:src="@drawable/emoji"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/editText_chat"
-        tools:ignore="SpeakableTextPresentCheck" />
+            <TextView
+                android:id="@+id/textView_chatobj"
+                android:layout_width="311dp"
+                android:layout_height="34dp"
+                android:text="冉熙"
+                android:textAlignment="center"
+                android:textSize="24sp" />
 
-    <ImageButton
-        android:id="@+id/imageButton_moreinput"
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="311dp"
+                android:layout_height="18dp"
+                android:text="信息2001"
+                android:textAlignment="center"
+                android:textSize="14sp" />
 
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:background="#00FF0000"
-        android:scaleType="center"
-        android:src="@drawable/more"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        tools:ignore="SpeakableTextPresentCheck" />
+        </LinearLayout>
 
-    <EditText
-        android:id="@+id/editText_chat"
-        android:layout_width="243dp"
-        android:layout_height="0dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text=""
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/imageButton_emoji"
-        app:layout_constraintStart_toEndOf="@+id/imageButton_voice"
-        tools:ignore="SpeakableTextPresentCheck" />
+        <ImageButton
+            android:id="@+id/imageButton5"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="#00FF0000"
+            android:src="@drawable/more_option"
+            tools:ignore="SpeakableTextPresentCheck" />
 
-    <ImageButton
-        android:id="@+id/imageButton_voice"
+    </LinearLayout>
 
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:background="#00FF0000"
-        android:scaleType="center"
-        android:src="@drawable/voice"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:ignore="SpeakableTextPresentCheck" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="620dp"
+        android:gravity="center_vertical"
+        >
 
-    <ImageButton
-        android:id="@+id/imageButton4"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:background="#00FF0000"
-        android:src="@drawable/back"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="SpeakableTextPresentCheck" />
+        <ImageButton
+            android:id="@+id/imageButton_voice"
 
-    <TextView
-        android:id="@+id/textView_chatobj"
-        android:layout_width="311dp"
-        android:layout_height="34dp"
-        android:text="冉熙"
-        android:textAlignment="center"
-        android:textSize="24sp"
-        app:layout_constraintStart_toEndOf="@+id/imageButton4"
-        app:layout_constraintTop_toTopOf="parent" />
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="#00FF0000"
+            android:scaleType="center"
+            android:src="@drawable/voice"
+            tools:ignore="SpeakableTextPresentCheck" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <EditText
+            android:id="@+id/editText_chat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text=""
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <ImageButton
+            android:id="@+id/imageButton_emoji"
+
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="9dp"
+            android:background="#00FF0000"
+            android:scaleType="center"
+            android:src="@drawable/emoji"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <ImageButton
+            android:id="@+id/imageButton_moreinput"
+
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="#00FF0000"
+            android:scaleType="center"
+            android:src="@drawable/more"
+            tools:ignore="SpeakableTextPresentCheck" />
+    </LinearLayout>
+
+</LinearLayout>
