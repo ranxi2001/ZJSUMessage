@@ -1,5 +1,7 @@
 package com.onefly.zjsumessage;
 
+import static com.onefly.zjsumessage.R.layout.activity_message;
+
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
@@ -8,12 +10,12 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.Toast;
 
-public class communicate extends AppCompatActivity {
+public class message extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_communicate);
+        setContentView(activity_message);
     }
 
     public boolean onCreateOptionsMenu(Menu menu){
@@ -25,17 +27,17 @@ public class communicate extends AppCompatActivity {
         switch (item.getItemId()) {
             case R.id.add_item:
                 Toast.makeText(this, "正在进入通讯系统", Toast.LENGTH_SHORT).show();
-                Intent intent =new Intent(communicate.this,communicate.class);
+                Intent intent =new Intent(message.this, message.class);
                 startActivity(intent);
                 break;
             case R.id.remove_item:
                 Toast.makeText(this, "正在进入文件传输系统", Toast.LENGTH_SHORT).show();
-                Intent intent1 =new Intent(communicate.this,file_transfer.class);
+                Intent intent1 =new Intent(message.this,file_transfer.class);
                 startActivity(intent1);
                 break;
             case R.id.apk:
                 Toast.makeText(this,"正在返回主界面",Toast.LENGTH_SHORT).show();
-                Intent intent2=new Intent(communicate.this,file_transfer.class);
+                Intent intent2=new Intent(message.this,file_transfer.class);
             default:
         }
         return true;

@@ -4,6 +4,7 @@
 
     <application
         android:allowBackup="true"
+
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
         android:icon="@mipmap/ic_launcher"
@@ -16,7 +17,7 @@
             android:name=".main_interface"
             android:exported="false" />
         <activity
-            android:name=".communicate"
+            android:name=".message"
             android:exported="false" />
         <activity
             android:name=".file_transfer"
