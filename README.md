@@ -38,3 +38,13 @@
 冉熙：Ui设计与图表ICO设计
 
 <img src="https://cdn.jsdelivr.net/gh/ranxi2001/blog-imgs@main/img/20221022130534.png" style="zoom:33%;" />
+
+#### 主页界面
+
+冉熙：下层UI设计、工作台
+
+祝橙希：我的
+
+余朝阳：通讯录
+
+<img src="https://cdn.jsdelivr.net/gh/ranxi2001/blog-imgs@main/img/61655862bdb85785f93fc919e131cfd.jpg" style="zoom:40%;" />
