@@ -118,7 +118,7 @@
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
         android:textColor="@color/white"
         android:textSize="20sp"
-        tools:layout_editor_absoluteX="1dp"
+        app:layout_constraintStart_toStartOf="parent"
         tools:layout_editor_absoluteY="0dp" />
 
     <ImageButton
@@ -135,7 +135,7 @@
         android:layout_width="40dp"
         android:layout_height="40dp"
         android:background="#18B8E3"
-        app:layout_constraintEnd_toEndOf="@+id/textView5"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/setting" />
 
