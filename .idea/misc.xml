@@ -3,13 +3,31 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/yucy/AndroidStudioProjects/ZJSUMessage/app/src/main/res/drawable/address_book.xml" value="0.111" />
+        <entry key="..\:/Users/yucy/AndroidStudioProjects/ZJSUMessage/app/src/main/res/drawable/address_book_clicked.xml" value="0.111" />
+        <entry key="..\:/Users/yucy/AndroidStudioProjects/ZJSUMessage/app/src/main/res/drawable/back.xml" value="0.111" />
+        <entry key="..\:/Users/yucy/AndroidStudioProjects/ZJSUMessage/app/src/main/res/drawable/emoji.xml" value="0.111" />
+        <entry key="..\:/Users/yucy/AndroidStudioProjects/ZJSUMessage/app/src/main/res/drawable/fellowship.xml" value="0.111" />
+        <entry key="..\:/Users/yucy/AndroidStudioProjects/ZJSUMessage/app/src/main/res/drawable/filemanage.xml" value="0.111" />
+        <entry key="..\:/Users/yucy/AndroidStudioProjects/ZJSUMessage/app/src/main/res/drawable/forms.xml" value="0.111" />
         <entry key="..\:/Users/yucy/AndroidStudioProjects/ZJSUMessage/app/src/main/res/drawable/green.xml" value="0.111" />
+        <entry key="..\:/Users/yucy/AndroidStudioProjects/ZJSUMessage/app/src/main/res/drawable/healthcode.xml" value="0.111" />
+        <entry key="..\:/Users/yucy/AndroidStudioProjects/ZJSUMessage/app/src/main/res/drawable/homework.xml" value="0.111" />
+        <entry key="..\:/Users/yucy/AndroidStudioProjects/ZJSUMessage/app/src/main/res/drawable/ic_launcher_background.xml" value="0.111" />
+        <entry key="..\:/Users/yucy/AndroidStudioProjects/ZJSUMessage/app/src/main/res/drawable/more.xml" value="0.111" />
+        <entry key="..\:/Users/yucy/AndroidStudioProjects/ZJSUMessage/app/src/main/res/drawable/my_profile.xml" value="0.111" />
+        <entry key="..\:/Users/yucy/AndroidStudioProjects/ZJSUMessage/app/src/main/res/drawable/my_profile_clicked.xml" value="0.111" />
+        <entry key="..\:/Users/yucy/AndroidStudioProjects/ZJSUMessage/app/src/main/res/drawable/namepaper.xml" value="0.111" />
+        <entry key="..\:/Users/yucy/AndroidStudioProjects/ZJSUMessage/app/src/main/res/drawable/nat.xml" value="0.111" />
         <entry key="..\:/Users/yucy/AndroidStudioProjects/ZJSUMessage/app/src/main/res/layout/activity_communicate.xml" value="0.2259963768115942" />
         <entry key="..\:/Users/yucy/AndroidStudioProjects/ZJSUMessage/app/src/main/res/layout/activity_file_transfer.xml" value="0.264" />
+        <entry key="..\:/Users/yucy/AndroidStudioProjects/ZJSUMessage/app/src/main/res/layout/activity_login.xml" value="0.22146739130434784" />
         <entry key="..\:/Users/yucy/AndroidStudioProjects/ZJSUMessage/app/src/main/res/layout/activity_main.xml" value="0.25" />
         <entry key="..\:/Users/yucy/AndroidStudioProjects/ZJSUMessage/app/src/main/res/layout/activity_main_interface.xml" value="0.264" />
         <entry key="..\:/Users/yucy/AndroidStudioProjects/ZJSUMessage/app/src/main/res/layout/activity_message.xml" value="0.25" />
+        <entry key="..\:/Users/yucy/AndroidStudioProjects/ZJSUMessage/app/src/main/res/layout/activity_myactivity.xml" value="0.22146739130434784" />
         <entry key="..\:/Users/yucy/AndroidStudioProjects/ZJSUMessage/app/src/main/res/layout/activity_second.xml" value="0.2259963768115942" />
+        <entry key="..\:/Users/yucy/AndroidStudioProjects/ZJSUMessage/app/src/main/res/layout/activity_work_staion.xml" value="0.24947916666666667" />
         <entry key="..\:/Users/yucy/AndroidStudioProjects/ZJSUMessage/app/src/main/res/menu/main.xml" value="0.20384615384615384" />
       </map>
     </option>

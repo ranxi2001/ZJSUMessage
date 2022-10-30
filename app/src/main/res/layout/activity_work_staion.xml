@@ -177,8 +177,8 @@
                 android:layout_alignParentTop="true"
                 android:layout_marginStart="35dp"
                 android:layout_marginTop="18dp"
-                android:background="#00FF0000"
                 android:layout_toEndOf="@+id/imageButton13"
+                android:background="#00FF0000"
                 android:src="@drawable/tourcode" />
 
             <ImageButton
