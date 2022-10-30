@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Main_interface">
+
+    <TextView
+        android:id="@+id/textView_message4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="我的"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/imageButton_profile"
+        app:layout_constraintStart_toStartOf="@+id/imageButton_profile"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton_message"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/textView_message3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="工作台"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/imageButton_workstation"
+        app:layout_constraintStart_toStartOf="@+id/imageButton_workstation"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton_message"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/textView_message2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="消息"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/imageButton_message"
+        app:layout_constraintStart_toStartOf="@+id/imageButton_message"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton_message" />
+
+    <ImageButton
+        android:id="@+id/imageButton_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginBottom="16dp"
+        android:background="#00FF0000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageButton_workstation"
+        app:srcCompat="@drawable/message" />
+
+    <ImageButton
+        android:id="@+id/imageButton_addressBook"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="70dp"
+        android:background="#00FF0000"
+        app:layout_constraintBottom_toTopOf="@+id/textView_message2"
+        app:layout_constraintStart_toEndOf="@+id/imageButton_message"
+        app:layout_constraintTop_toTopOf="@+id/imageButton_message"
+        app:srcCompat="@drawable/address_book" />
+
+    <ImageButton
+        android:id="@+id/imageButton_workstation"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="70dp"
+        android:layout_marginBottom="16dp"
+        android:background="00BDB8B8"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageButton_addressBook"
+        app:srcCompat="@drawable/work_stationi_clicked" />
+
+    <ImageButton
+        android:id="@+id/imageButton_profile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="70dp"
+        android:layout_marginBottom="16dp"
+        android:background="#00FF0000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageButton_workstation"
+        app:srcCompat="@drawable/my_profile" />
+
+    <TextView
+        android:id="@+id/textView_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="通讯录"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/imageButton_addressBook"
+        app:layout_constraintStart_toStartOf="@+id/imageButton_addressBook"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton_message"
+        app:layout_constraintVertical_bias="0.0" />
+</androidx.constraintlayout.widget.ConstraintLayout>
