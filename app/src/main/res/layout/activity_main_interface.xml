@@ -73,15 +73,6 @@
         app:layout_constraintStart_toEndOf="@+id/imageButton_addressBook"
         app:srcCompat="@drawable/work_station" />
 
-    <ImageButton
-        android:id="@+id/imageButton"
-        android:layout_width="40dp"
-        android:layout_height="40dp"
-        android:layout_marginStart="68dp"
-        app:layout_constraintStart_toEndOf="@+id/imageButton_workstation"
-        app:srcCompat="@drawable/my_profile_clicked"
-        tools:layout_editor_absoluteY="675dp" />
-
     <TextView
         android:id="@+id/textView_message"
         android:layout_width="wrap_content"
@@ -140,22 +131,31 @@
 
         <ImageButton
             android:id="@+id/imageButton11"
-            android:layout_width="wrap_content"
+            android:layout_width="440dp"
             android:layout_height="wrap_content"
             app:srcCompat="@drawable/my" />
 
         <ImageButton
             android:id="@+id/imageButton12"
-            android:layout_width="match_parent"
+            android:layout_width="442dp"
             android:layout_height="wrap_content"
             app:srcCompat="@drawable/my" />
 
         <ImageButton
             android:id="@+id/imageButton10"
-            android:layout_width="match_parent"
+            android:layout_width="443dp"
             android:layout_height="wrap_content"
             app:srcCompat="@drawable/my" />
 
     </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="40"
+        android:layout_height="40"
+        android:layout_marginStart="70dp"
+        app:layout_constraintStart_toEndOf="@+id/imageButton_workstation"
+        app:srcCompat="@drawable/my_profile"
+        tools:layout_editor_absoluteY="675dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
