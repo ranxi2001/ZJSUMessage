@@ -6,14 +6,6 @@
     android:layout_height="match_parent"
     tools:context=".Main_interface">
 
-    <ImageButton
-        android:id="@+id/imageButton2"
-        android:layout_width="40dp"
-        android:layout_height="40dp"
-        android:background="#18B8E3"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:srcCompat="@drawable/search"
-        tools:layout_editor_absoluteY="0dp" />
 
     <TextView
         android:id="@+id/textView_message4"
@@ -111,13 +103,13 @@
         android:id="@+id/imageView"
         android:layout_width="wrap_content"
         android:layout_height="100dp"
+        app:layout_constraintTop_toBottomOf="@+id/textView5"
         app:srcCompat="@drawable/luncher_logo"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="61dp" />
+        tools:layout_editor_absoluteX="0dp" />
 
     <TextView
         android:id="@+id/textView5"
-        android:layout_width="335dp"
+        android:layout_width="410dp"
         android:layout_height="40dp"
         android:background="#18B9E4"
         android:gravity="center"
@@ -125,16 +117,236 @@
         android:textAlignment="center"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
         android:textColor="@color/white"
-        android:textSize="16sp"
-        tools:layout_editor_absoluteX="0dp"
+        android:textSize="20sp"
+        tools:layout_editor_absoluteX="1dp"
         tools:layout_editor_absoluteY="0dp" />
 
     <ImageButton
-        android:id="@+id/imageButton"
+        android:id="@+id/imageButton_search3"
         android:layout_width="40dp"
         android:layout_height="40dp"
         android:background="#18B8E3"
-        app:layout_constraintEnd_toStartOf="@+id/imageButton2"
+        app:layout_constraintEnd_toStartOf="@+id/imageButton_setting3"
         app:srcCompat="@drawable/search"
         tools:layout_editor_absoluteY="0dp" />
+
+    <ImageButton
+        android:id="@+id/imageButton_setting3"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="#18B8E3"
+        app:layout_constraintEnd_toEndOf="@+id/textView5"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/setting" />
+
+    <LinearLayout
+        android:layout_width="409dp"
+        android:layout_height="529dp"
+        android:layout_marginTop="1dp"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        tools:layout_editor_absoluteX="1dp" >
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="表单提交" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp">
+
+            <ImageButton
+                android:id="@+id/imageButton15"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="35dp"
+                android:layout_marginTop="18dp"
+                android:layout_marginEnd="33dp"
+                android:layout_toEndOf="@+id/imageButton14" />
+
+            <ImageButton
+                android:id="@+id/imageButton14"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="35dp"
+                android:layout_marginTop="18dp"
+                android:layout_toEndOf="@+id/imageButton13" />
+
+            <ImageButton
+                android:id="@+id/imageButton13"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="35dp"
+                android:layout_marginTop="18dp"
+                android:layout_toEndOf="@+id/imageButton9" />
+
+            <ImageButton
+                android:id="@+id/imageButton9"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="33dp"
+                android:layout_marginTop="18dp" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="文件提交" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="105dp">
+
+            <ImageButton
+                android:id="@+id/imageButton15"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="35dp"
+                android:layout_marginTop="18dp"
+                android:layout_marginEnd="33dp"
+                android:layout_toEndOf="@+id/imageButton14" />
+
+            <ImageButton
+                android:id="@+id/imageButton14"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="35dp"
+                android:layout_marginTop="18dp"
+                android:layout_toEndOf="@+id/imageButton13" />
+
+            <ImageButton
+                android:id="@+id/imageButton13"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="35dp"
+                android:layout_marginTop="18dp"
+                android:layout_toEndOf="@+id/imageButton9" />
+
+            <ImageButton
+                android:id="@+id/imageButton9"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="33dp"
+                android:layout_marginTop="18dp" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="更多应用" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="101dp">
+
+            <ImageButton
+                android:id="@+id/imageButton15"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="35dp"
+                android:layout_marginTop="18dp"
+                android:layout_marginEnd="33dp"
+                android:layout_toEndOf="@+id/imageButton14" />
+
+            <ImageButton
+                android:id="@+id/imageButton14"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="35dp"
+                android:layout_marginTop="18dp"
+                android:layout_toEndOf="@+id/imageButton13" />
+
+            <ImageButton
+                android:id="@+id/imageButton13"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="35dp"
+                android:layout_marginTop="18dp"
+                android:layout_toEndOf="@+id/imageButton9" />
+
+            <ImageButton
+                android:id="@+id/imageButton9"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="33dp"
+                android:layout_marginTop="18dp" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/textView12"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="应用管理" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="98dp">
+
+            <ImageButton
+                android:id="@+id/imageButton15"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="35dp"
+                android:layout_marginTop="18dp"
+                android:layout_marginEnd="33dp"
+                android:layout_toEndOf="@+id/imageButton14" />
+
+            <ImageButton
+                android:id="@+id/imageButton14"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="35dp"
+                android:layout_marginTop="18dp"
+                android:layout_toEndOf="@+id/imageButton13" />
+
+            <ImageButton
+                android:id="@+id/imageButton13"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="35dp"
+                android:layout_marginTop="18dp"
+                android:layout_toEndOf="@+id/imageButton9" />
+
+            <ImageButton
+                android:id="@+id/imageButton9"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="33dp"
+                android:layout_marginTop="18dp" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
