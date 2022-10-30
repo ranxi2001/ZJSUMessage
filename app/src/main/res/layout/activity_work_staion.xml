@@ -6,6 +6,15 @@
     android:layout_height="match_parent"
     tools:context=".Main_interface">
 
+    <ImageButton
+        android:id="@+id/imageButton2"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="#18B8E3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/search"
+        tools:layout_editor_absoluteY="0dp" />
+
     <TextView
         android:id="@+id/textView_message4"
         android:layout_width="wrap_content"
@@ -97,4 +106,35 @@
         app:layout_constraintStart_toStartOf="@+id/imageButton_addressBook"
         app:layout_constraintTop_toBottomOf="@+id/imageButton_message"
         app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        app:srcCompat="@drawable/luncher_logo"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="61dp" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="335dp"
+        android:layout_height="40dp"
+        android:background="#18B9E4"
+        android:gravity="center"
+        android:text="工作台"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp" />
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="#18B8E3"
+        app:layout_constraintEnd_toStartOf="@+id/imageButton2"
+        app:srcCompat="@drawable/search"
+        tools:layout_editor_absoluteY="0dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>
