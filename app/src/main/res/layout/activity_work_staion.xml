@@ -71,7 +71,7 @@
         android:layout_height="40dp"
         android:layout_marginStart="70dp"
         android:layout_marginBottom="16dp"
-        android:background="00BDB8B8"
+        android:background="#00BDB8B8"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toEndOf="@+id/imageButton_addressBook"
         app:srcCompat="@drawable/work_stationi_clicked" />
