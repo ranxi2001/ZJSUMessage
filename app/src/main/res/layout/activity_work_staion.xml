@@ -166,7 +166,9 @@
                 android:layout_marginStart="35dp"
                 android:layout_marginTop="18dp"
                 android:layout_marginEnd="33dp"
-                android:layout_toEndOf="@+id/imageButton14" />
+                android:background="#00FF0000"
+                android:layout_toEndOf="@+id/imageButton14"
+                android:src="@drawable/healthcode" />
 
             <ImageButton
                 android:id="@+id/imageButton14"
@@ -175,7 +177,9 @@
                 android:layout_alignParentTop="true"
                 android:layout_marginStart="35dp"
                 android:layout_marginTop="18dp"
-                android:layout_toEndOf="@+id/imageButton13" />
+                android:background="#00FF0000"
+                android:layout_toEndOf="@+id/imageButton13"
+                android:src="@drawable/tourcode" />
 
             <ImageButton
                 android:id="@+id/imageButton13"
@@ -184,16 +188,20 @@
                 android:layout_alignParentTop="true"
                 android:layout_marginStart="35dp"
                 android:layout_marginTop="18dp"
-                android:layout_toEndOf="@+id/imageButton9" />
+                android:background="#00FF0000"
+                android:layout_toEndOf="@+id/imageButton_nat"
+                android:src="@drawable/bigstudy" />
 
             <ImageButton
-                android:id="@+id/imageButton9"
+                android:id="@+id/imageButton_nat"
                 android:layout_width="60dp"
                 android:layout_height="60dp"
                 android:layout_alignParentStart="true"
                 android:layout_alignParentTop="true"
                 android:layout_marginStart="33dp"
-                android:layout_marginTop="18dp" />
+                android:layout_marginTop="18dp"
+                android:background="#00FF0000"
+                android:src="@drawable/nat" />
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
@@ -270,14 +278,16 @@
 
             <ImageButton
                 android:id="@+id/imageButton15"
-                android:layout_width="60dp"
-                android:layout_height="60dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:layout_alignParentTop="true"
                 android:layout_alignParentEnd="true"
                 android:layout_marginStart="35dp"
                 android:layout_marginTop="18dp"
-                android:layout_marginEnd="33dp"
-                android:layout_toEndOf="@+id/imageButton14" />
+                android:layout_marginEnd="35dp"
+                android:layout_toEndOf="@+id/imageButton14"
+                android:background="#00FF0000"
+                android:src="@drawable/homework" />
 
             <ImageButton
                 android:id="@+id/imageButton14"
@@ -286,7 +296,9 @@
                 android:layout_alignParentTop="true"
                 android:layout_marginStart="35dp"
                 android:layout_marginTop="18dp"
-                android:layout_toEndOf="@+id/imageButton13" />
+                android:background="#00FF0000"
+                android:layout_toEndOf="@+id/imageButton13"
+                android:src="@drawable/works" />
 
             <ImageButton
                 android:id="@+id/imageButton13"
@@ -295,16 +307,20 @@
                 android:layout_alignParentTop="true"
                 android:layout_marginStart="35dp"
                 android:layout_marginTop="18dp"
-                android:layout_toEndOf="@+id/imageButton9" />
+                android:background="#00FF0000"
+                android:layout_toEndOf="@+id/imageButton_nat"
+                android:src="@drawable/fellowship" />
 
             <ImageButton
-                android:id="@+id/imageButton9"
+                android:id="@+id/imageButton_nat"
                 android:layout_width="60dp"
                 android:layout_height="60dp"
                 android:layout_alignParentStart="true"
                 android:layout_alignParentTop="true"
                 android:layout_marginStart="33dp"
-                android:layout_marginTop="18dp" />
+                android:layout_marginTop="18dp"
+                android:background="#00FF0000"
+                android:src="@drawable/scholarship" />
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
@@ -377,7 +393,7 @@
 
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="101dp">
+            android:layout_height="105dp">
 
             <ImageButton
                 android:id="@+id/imageButton15"
@@ -388,7 +404,8 @@
                 android:layout_marginStart="35dp"
                 android:layout_marginTop="18dp"
                 android:layout_marginEnd="33dp"
-                android:layout_toEndOf="@+id/imageButton14" />
+                android:layout_toEndOf="@+id/imageButton14"
+                android:background="#00FF0000" />
 
             <ImageButton
                 android:id="@+id/imageButton14"
@@ -397,7 +414,9 @@
                 android:layout_alignParentTop="true"
                 android:layout_marginStart="35dp"
                 android:layout_marginTop="18dp"
-                android:layout_toEndOf="@+id/imageButton13" />
+                android:layout_toEndOf="@+id/imageButton13"
+                android:background="#00FF0000"
+                android:src="@drawable/mark" />
 
             <ImageButton
                 android:id="@+id/imageButton13"
@@ -406,45 +425,36 @@
                 android:layout_alignParentTop="true"
                 android:layout_marginStart="35dp"
                 android:layout_marginTop="18dp"
-                android:layout_toEndOf="@+id/imageButton9" />
+                android:layout_toEndOf="@+id/imageButton_nat"
+                android:background="#00FF0000"
+                android:src="@drawable/vote" />
 
             <ImageButton
-                android:id="@+id/imageButton9"
+                android:id="@+id/imageButton_nat"
                 android:layout_width="60dp"
                 android:layout_height="60dp"
                 android:layout_alignParentStart="true"
                 android:layout_alignParentTop="true"
                 android:layout_marginStart="33dp"
-                android:layout_marginTop="18dp" />
+                android:layout_marginTop="18dp"
+                android:background="#00FF0000"
+                android:src="@drawable/lostandfound" />
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
-                android:layout_height="24dp"
+                android:layout_height="26dp"
                 android:layout_below="@+id/imageButton13"
                 android:layout_alignParentBottom="true"
-                android:layout_marginTop="-1dp"
-                android:layout_marginBottom="-1dp">
-
-                <TextView
-                    android:id="@+id/textView16"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="40dp"
-                    android:fontFamily="sans-serif-thin"
-                    android:text="健康码提交"
-                    android:textAlignment="center"
-                    android:textAppearance="@style/TextAppearance.AppCompat.Small"
-                    android:textSize="11sp"
-                    app:layout_constraintStart_toEndOf="@+id/textView15"
-                    app:layout_constraintTop_toTopOf="parent" />
+                android:layout_marginTop="1dp"
+                android:layout_marginBottom="0dp">
 
                 <TextView
                     android:id="@+id/textView15"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="28dp"
+                    android:layout_marginStart="25dp"
                     android:fontFamily="sans-serif-thin"
-                    android:text="行程码提交"
+                    android:text="最美笔记投票"
                     android:textAlignment="center"
                     android:textAppearance="@style/TextAppearance.AppCompat.Small"
                     android:textSize="11sp"
@@ -499,7 +509,9 @@
                 android:layout_marginStart="35dp"
                 android:layout_marginTop="18dp"
                 android:layout_marginEnd="33dp"
-                android:layout_toEndOf="@+id/imageButton14" />
+                android:background="#00FF0000"
+                android:layout_toEndOf="@+id/imageButton14"
+                android:src="@drawable/forms" />
 
             <ImageButton
                 android:id="@+id/imageButton14"
@@ -508,7 +520,9 @@
                 android:layout_alignParentTop="true"
                 android:layout_marginStart="35dp"
                 android:layout_marginTop="18dp"
-                android:layout_toEndOf="@+id/imageButton13" />
+                android:background="#00FF0000"
+                android:layout_toEndOf="@+id/imageButton13"
+                android:src="@drawable/filemanage" />
 
             <ImageButton
                 android:id="@+id/imageButton13"
@@ -517,16 +531,20 @@
                 android:layout_alignParentTop="true"
                 android:layout_marginStart="35dp"
                 android:layout_marginTop="18dp"
-                android:layout_toEndOf="@+id/imageButton9" />
+                android:background="#00FF0000"
+                android:layout_toEndOf="@+id/imageButton_nat"
+                android:src="@drawable/webapp_" />
 
             <ImageButton
-                android:id="@+id/imageButton9"
+                android:id="@+id/imageButton_nat"
                 android:layout_width="60dp"
                 android:layout_height="60dp"
                 android:layout_alignParentStart="true"
                 android:layout_alignParentTop="true"
                 android:layout_marginStart="33dp"
-                android:layout_marginTop="18dp" />
+                android:layout_marginTop="18dp"
+                android:background="#00FF0000"
+                android:src="@drawable/schedule" />
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
@@ -540,7 +558,7 @@
                     android:id="@+id/textView16"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="16dp"
+                    android:layout_marginStart="29dp"
                     android:fontFamily="sans-serif-thin"
                     android:text="表单项目管理"
                     android:textAlignment="center"
@@ -553,9 +571,9 @@
                     android:id="@+id/textView15"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="20dp"
+                    android:layout_marginStart="31dp"
                     android:fontFamily="sans-serif-thin"
-                    android:text="文件提交项目管理"
+                    android:text="文件项目管理"
                     android:textAlignment="center"
                     android:textAppearance="@style/TextAppearance.AppCompat.Small"
                     android:textSize="11sp"
@@ -581,7 +599,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="31dp"
                     android:fontFamily="sans-serif-thin"
-                    android:text="表单收集进度"
+                    android:text="收集进度管理"
                     android:textAlignment="center"
                     android:textAppearance="@style/TextAppearance.AppCompat.Small"
                     android:textSize="11sp"
