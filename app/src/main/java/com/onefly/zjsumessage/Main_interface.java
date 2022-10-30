@@ -4,6 +4,8 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.ImageButton;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -14,7 +16,17 @@ public class Main_interface extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main_interface);
+        ImageButton button_workstation = (ImageButton) findViewById(R.id.imageButton_workstation);
+        button_workstation.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(Main_interface.this,"正在进入工作台",Toast.LENGTH_SHORT).show();
+                Intent intent=new Intent(Main_interface.this, WorkStaionActivity.class);
+                startActivity(intent);
+            }
+        });
     }
+
     public boolean onCreateOptionsMenu(Menu menu){
         getMenuInflater().inflate(R.menu.main,menu);
         return true;
