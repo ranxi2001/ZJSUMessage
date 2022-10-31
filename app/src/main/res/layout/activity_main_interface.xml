@@ -13,9 +13,10 @@
         android:text="我的"
         android:textSize="12sp"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/imageButton"
+        app:layout_constraintStart_toStartOf="@+id/imageButton"
         app:layout_constraintTop_toBottomOf="@+id/imageButton_message"
-        app:layout_constraintVertical_bias="0.0"
-        tools:layout_editor_absoluteX="346dp" />
+        app:layout_constraintVertical_bias="1.0" />
 
     <TextView
         android:id="@+id/textView_message3"
@@ -49,7 +50,7 @@
         android:background="#00FF0000"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/message" />
+        app:srcCompat="@drawable/message_clicked" />
 
     <ImageButton
         android:id="@+id/imageButton_addressBook"
@@ -108,25 +109,27 @@
             <TextView
                 android:id="@+id/textView14"
                 android:layout_width="225dp"
-                android:layout_height="69dp"
+                android:layout_height="40dp"
                 android:layout_weight="1"
-                android:background="@color/white"
+                android:background="#18b9e4"
                 android:gravity="center"
                 android:text="消息"
-                android:textSize="30dp" />
+                android:textSize="24sp" />
 
             <ImageButton
                 android:id="@+id/imageButton8"
-                android:layout_width="64dp"
-                android:layout_height="69dp"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="#18b9e4"
                 app:srcCompat="@drawable/search" />
 
             <ImageButton
-                android:id="@+id/imageButton9"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                app:srcCompat="@drawable/more" />
+                android:id="@+id/imageButton2"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="#18b9e4"
+                app:srcCompat="@drawable/more_white" />
+
         </LinearLayout>
 
         <ImageButton
@@ -154,8 +157,10 @@
         android:layout_width="40dp"
         android:layout_height="40dp"
         android:layout_marginStart="70dp"
+        android:layout_marginBottom="16dp"
+        android:background="#00FF0000"
+        app:layout_constraintBottom_toBottomOf="@+id/textView_message4"
         app:layout_constraintStart_toEndOf="@+id/imageButton_workstation"
-        app:srcCompat="@drawable/my_profile"
-        tools:layout_editor_absoluteY="675dp" />
+        app:srcCompat="@drawable/my_profile" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
