@@ -7,82 +7,104 @@
     android:layout_height="match_parent"
     tools:context=".MineActivity">
 
-    <ImageButton
-        android:id="@+id/imageButton6"
+    <TextView
+        android:id="@+id/textView_message4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="40dp"
-        app:layout_constraintStart_toEndOf="@+id/imageButton16"
-        app:srcCompat="@drawable/my_profile_clicked"
-        tools:layout_editor_absoluteY="636dp" />
-
-    <ImageButton
-        android:id="@+id/imageButton16"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="44dp"
-        app:layout_constraintStart_toEndOf="@+id/imageButton18"
-        app:srcCompat="@drawable/address_book"
-        tools:layout_editor_absoluteY="636dp" />
-
-    <ImageButton
-        android:id="@+id/imageButton17"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:srcCompat="@drawable/message"
-        tools:layout_editor_absoluteX="31dp"
-        tools:layout_editor_absoluteY="636dp" />
-
-    <ImageButton
-        android:id="@+id/imageButton18"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="40dp"
-        app:layout_constraintStart_toEndOf="@+id/imageButton17"
-        app:srcCompat="@drawable/work_station"
-        tools:layout_editor_absoluteY="636dp" />
+        android:text="我的"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/imageButton_myprofile"
+        app:layout_constraintStart_toStartOf="@+id/imageButton_myprofile"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton_message"
+        app:layout_constraintVertical_bias="1.0" />
 
     <TextView
-        android:id="@+id/textView10"
+        android:id="@+id/textView_message3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="工作台"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/imageButton_workstation"
+        app:layout_constraintStart_toStartOf="@+id/imageButton_workstation"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton_message"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/textView_message2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="消息"
-        tools:layout_editor_absoluteX="40dp"
-        tools:layout_editor_absoluteY="699dp" />
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/imageButton_message"
+        app:layout_constraintStart_toStartOf="@+id/imageButton_message"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton_message" />
 
-    <TextView
-        android:id="@+id/textView17"
+    <ImageButton
+        android:id="@+id/imageButton_message"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="72dp"
-        android:text="工作台"
-        app:layout_constraintStart_toEndOf="@+id/textView10"
-        tools:layout_editor_absoluteY="699dp" />
+        android:layout_marginStart="30dp"
+        android:layout_marginBottom="18dp"
+        android:background="#00FF0000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/message" />
 
-    <TextView
-        android:id="@+id/textView18"
+    <ImageButton
+        android:id="@+id/imageButton_addressBook"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="60dp"
+        android:layout_marginStart="70dp"
+        android:layout_marginBottom="16dp"
+        android:background="#00FF0000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageButton_message"
+        app:srcCompat="@drawable/address_book" />
+
+    <ImageButton
+        android:id="@+id/imageButton_workstation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="70dp"
+        android:layout_marginBottom="16dp"
+        android:background="#00FF0000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageButton_addressBook"
+        app:srcCompat="@drawable/work_station" />
+
+    <TextView
+        android:id="@+id/textView_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:text="通讯录"
-        app:layout_constraintStart_toEndOf="@+id/textView17"
-        tools:layout_editor_absoluteY="699dp" />
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/imageButton_addressBook"
+        app:layout_constraintStart_toStartOf="@+id/imageButton_addressBook"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton_message"
+        app:layout_constraintVertical_bias="0.0" />
 
-    <TextView
-        android:id="@+id/textView19"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="104dp"
-        android:text="我的"
-        app:layout_constraintStart_toStartOf="@+id/textView18"
-        tools:layout_editor_absoluteY="699dp" />
+    <ImageButton
+        android:id="@+id/imageButton_myprofile"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="70dp"
+        android:layout_marginBottom="16dp"
+        android:background="#00FF0000"
+        app:layout_constraintBottom_toBottomOf="@+id/textView_message4"
+        app:layout_constraintStart_toEndOf="@+id/imageButton_workstation"
+        app:srcCompat="@drawable/my_profile_clicked" />
+
 
     <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_width="407dp"
+        android:layout_height="665dp"
         android:orientation="vertical"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="0dp">
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="0dp">
 
         <ImageView
             android:id="@+id/imageView2"
