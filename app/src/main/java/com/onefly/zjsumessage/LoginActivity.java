@@ -47,7 +47,7 @@ public class LoginActivity extends AppCompatActivity {
                     editor.apply();
                 }
                 Toast.makeText(LoginActivity.this,"欢迎使用商大联系通",Toast.LENGTH_SHORT).show();
-                Intent intent=new Intent(LoginActivity.this, Main_interface.class);
+                Intent intent=new Intent(LoginActivity.this, MessageActivity.class);
                 startActivity(intent);
             }
         });
