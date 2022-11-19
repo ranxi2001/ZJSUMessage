@@ -7,7 +7,6 @@ import android.preference.PreferenceManager;
 import android.view.View;
 import android.widget.Button;
 import android.widget.CheckBox;
-import android.widget.CompoundButton;
 import android.widget.EditText;
 import android.widget.Toast;
 
@@ -47,7 +46,7 @@ public class LoginActivity extends AppCompatActivity {
                     editor.apply();
                 }
                 Toast.makeText(LoginActivity.this,"欢迎使用商大联系通",Toast.LENGTH_SHORT).show();
-                Intent intent=new Intent(LoginActivity.this, Main_interface.class);
+                Intent intent=new Intent(LoginActivity.this, MessageActivity.class);
                 startActivity(intent);
             }
         });
