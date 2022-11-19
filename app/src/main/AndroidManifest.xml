@@ -13,20 +13,26 @@
         android:theme="@style/Theme.ZJSUMessage"
         tools:targetApi="31" >
         <activity
-            android:name=".myactivity"
+            android:name=".AddressbookActivity"
             android:exported="false" />
         <activity
-            android:name=".WorkStaionActivity"
+            android:name=".ChatActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MessageActivity"
+            android:exported="false" />
+        <activity
+            android:name=".WorkStationActivity"
             android:exported="false" >
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
-            android:name=".Main_interface"
+            android:name=".MineActivity"
             android:exported="false" />
         <activity
-            android:name=".message"
+            android:name=".register"
             android:exported="false" />
         <activity
             android:name=".file_transfer"
