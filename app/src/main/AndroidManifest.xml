@@ -13,6 +13,9 @@
         android:theme="@style/Theme.ZJSUMessage"
         tools:targetApi="31" >
         <activity
+            android:name=".register"
+            android:exported="false" />
+        <activity
             android:name=".myactivity"
             android:exported="false" />
         <activity

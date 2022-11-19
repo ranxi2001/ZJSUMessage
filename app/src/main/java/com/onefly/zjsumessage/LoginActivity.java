@@ -36,6 +36,9 @@ public class LoginActivity extends AppCompatActivity {
                 String password=passwordedit.getText().toString();
                 if(account.equals("yuchaoyang")&&password.equals("200206")){
                     editor= pref.edit();
+                    Toast.makeText(LoginActivity.this,"欢迎使用商大联系通",Toast.LENGTH_SHORT).show();
+                    Intent intent=new Intent(LoginActivity.this, Main_interface.class);
+                    startActivity(intent);
                     if(rememberPass.isChecked()){
                         editor.putBoolean("remember_password",true);
                         editor.putString("account",account);
@@ -46,9 +49,10 @@ public class LoginActivity extends AppCompatActivity {
                     }
                     editor.apply();
                 }
-                Toast.makeText(LoginActivity.this,"欢迎使用商大联系通",Toast.LENGTH_SHORT).show();
-                Intent intent=new Intent(LoginActivity.this, Main_interface.class);
-                startActivity(intent);
+                else{
+                    Toast.makeText(LoginActivity.this, "用户名或密码错误！", Toast.LENGTH_SHORT).show();
+                    passwordedit.setText("");
+                }
             }
         });
         Boolean isremember=pref.getBoolean("checkBox3",false);
@@ -59,6 +63,10 @@ public class LoginActivity extends AppCompatActivity {
             passwordedit.setText(password);
         }
 
+    }
+    public void register1(View view){
+        Intent intent =new Intent(LoginActivity.this,register.class);
+        startActivity(intent);
     }
 
 
