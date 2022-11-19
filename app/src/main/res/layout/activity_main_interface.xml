@@ -101,14 +101,15 @@
             android:orientation="horizontal">
 
             <ImageButton
-                android:id="@+id/imageButton7"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                app:srcCompat="@drawable/more_option" />
+                android:id="@+id/imageButton3"
+                android:layout_width="35dp"
+                android:layout_height="40dp"
+                android:background="#18b9e4"
+                app:srcCompat="@drawable/more_white" />
 
             <TextView
                 android:id="@+id/textView14"
-                android:layout_width="225dp"
+                android:layout_width="312dp"
                 android:layout_height="40dp"
                 android:layout_weight="1"
                 android:background="#18b9e4"
@@ -125,10 +126,10 @@
 
             <ImageButton
                 android:id="@+id/imageButton2"
-                android:layout_width="40dp"
+                android:layout_width="35dp"
                 android:layout_height="40dp"
                 android:background="#18b9e4"
-                app:srcCompat="@drawable/more" />
+                app:srcCompat="@drawable/tiny_plus" />
 
         </LinearLayout>
 
