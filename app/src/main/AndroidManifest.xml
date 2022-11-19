@@ -13,7 +13,7 @@
         android:theme="@style/Theme.ZJSUMessage"
         tools:targetApi="31" >
         <activity
-            android:name=".myactivity"
+            android:name=".MineActivity"
             android:exported="false" />
         <activity
             android:name=".WorkStaionActivity"
@@ -23,10 +23,10 @@
                 android:value="" />
         </activity>
         <activity
-            android:name=".Main_interface"
+            android:name=".MessageActivity"
             android:exported="false" />
         <activity
-            android:name=".message"
+            android:name=".ChatActivity"
             android:exported="false" />
         <activity
             android:name=".file_transfer"

@@ -10,7 +10,7 @@ import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-public class Main_interface extends AppCompatActivity {
+public class MessageActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,8 +20,8 @@ public class Main_interface extends AppCompatActivity {
         button_workstation.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(Main_interface.this,"正在进入工作台",Toast.LENGTH_SHORT).show();
-                Intent intent=new Intent(Main_interface.this, WorkStaionActivity.class);
+                Toast.makeText(MessageActivity.this,"正在进入工作台",Toast.LENGTH_SHORT).show();
+                Intent intent=new Intent(MessageActivity.this, WorkStaionActivity.class);
                 startActivity(intent);
             }
         });
@@ -36,17 +36,17 @@ public class Main_interface extends AppCompatActivity {
         switch (item.getItemId()) {
             case R.id.add_item:
                 Toast.makeText(this, "正在进入通讯系统", Toast.LENGTH_SHORT).show();
-                Intent intent =new Intent(Main_interface.this, message.class);
+                Intent intent =new Intent(MessageActivity.this, ChatActivity.class);
                 startActivity(intent);
                 break;
             case R.id.remove_item:
                 Toast.makeText(this, "正在进入文件传输系统", Toast.LENGTH_SHORT).show();
-                Intent intent1 =new Intent(Main_interface.this,file_transfer.class);
+                Intent intent1 =new Intent(MessageActivity.this,file_transfer.class);
                 startActivity(intent1);
                 break;
             case R.id.apk:
                 Toast.makeText(this,"正在返回主界面",Toast.LENGTH_SHORT).show();
-                Intent intent2=new Intent(Main_interface.this,file_transfer.class);
+                Intent intent2=new Intent(MessageActivity.this,file_transfer.class);
             default:
         }
         return true;
