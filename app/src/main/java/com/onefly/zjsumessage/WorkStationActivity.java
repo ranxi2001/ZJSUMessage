@@ -8,20 +8,19 @@ import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-public class MineActivity extends AppCompatActivity {
+public class WorkStationActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_mine);
-
+        setContentView(R.layout.activity_work_staion);
         //此处写底部四个按钮的相互跳转
         ImageButton button_workstation = (ImageButton) findViewById(R.id.imageButton_workstation);
         button_workstation.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(MineActivity.this,"正在进入工作台",Toast.LENGTH_SHORT).show();
-                Intent intent=new Intent(MineActivity.this, WorkStationActivity.class);
+                Toast.makeText(WorkStationActivity.this,"正在进入工作台",Toast.LENGTH_SHORT).show();
+                Intent intent=new Intent(WorkStationActivity.this, WorkStationActivity.class);
                 startActivity(intent);
             }
         });
@@ -29,8 +28,8 @@ public class MineActivity extends AppCompatActivity {
         button_myprofile.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(MineActivity.this,"正在进入我的",Toast.LENGTH_SHORT).show();
-                Intent intent=new Intent(MineActivity.this, MineActivity.class);
+                Toast.makeText(WorkStationActivity.this,"正在进入我的",Toast.LENGTH_SHORT).show();
+                Intent intent=new Intent(WorkStationActivity.this, WorkStationActivity.class);
                 startActivity(intent);
             }
         });
@@ -38,8 +37,8 @@ public class MineActivity extends AppCompatActivity {
         button_addressbook.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(MineActivity.this,"正在进入通讯录",Toast.LENGTH_SHORT).show();
-                Intent intent=new Intent(MineActivity.this, AddressbookActivity.class);
+                Toast.makeText(WorkStationActivity.this,"正在进入通讯录",Toast.LENGTH_SHORT).show();
+                Intent intent=new Intent(WorkStationActivity.this, AddressbookActivity.class);
                 startActivity(intent);
             }
         });
