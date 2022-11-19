@@ -49,5 +49,5 @@
 
 冉熙：通讯录
 
-![](https://cdn.jsdelivr.net/gh/ranxi2001/blog-imgs@main/img/uTools_1668866795650.png)
+<img src="https://cdn.jsdelivr.net/gh/ranxi2001/blog-imgs@main/img/uTools_1668866795650.png" style="zoom:33%;" />
 
