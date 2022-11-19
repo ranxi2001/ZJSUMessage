@@ -1,112 +1,167 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    tools:context=".message">
+    tools:context=".MessageActivity">
+
+    <TextView
+        android:id="@+id/textView_message4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="我的"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/imageButton_myprofile"
+        app:layout_constraintStart_toStartOf="@+id/imageButton_myprofile"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton_message"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/textView_message3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="工作台"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/imageButton_workstation"
+        app:layout_constraintStart_toStartOf="@+id/imageButton_workstation"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton_message"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/textView_message2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="消息"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/imageButton_message"
+        app:layout_constraintStart_toStartOf="@+id/imageButton_message"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton_message" />
+
+    <ImageButton
+        android:id="@+id/imageButton_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="16dp"
+        android:background="#00FF0000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/message_clicked" />
+
+    <ImageButton
+        android:id="@+id/imageButton_addressBook"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="70dp"
+        android:layout_marginBottom="16dp"
+        android:background="#00FF0000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageButton_message"
+        app:srcCompat="@drawable/address_book" />
+
+    <ImageButton
+        android:id="@+id/imageButton_workstation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="70dp"
+        android:layout_marginBottom="16dp"
+        android:background="#00FF0000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageButton_addressBook"
+        app:srcCompat="@drawable/work_station" />
+
+    <TextView
+        android:id="@+id/textView_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="通讯录"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/imageButton_addressBook"
+        app:layout_constraintStart_toStartOf="@+id/imageButton_addressBook"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton_message"
+        app:layout_constraintVertical_bias="0.0" />
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_marginLeft="0dp"
-        android:layout_marginRight="0dp"
-        android:layout_marginTop="0dp"
         android:gravity="center_vertical"
-        >
 
-        <ImageButton
-            android:id="@+id/imageButton4"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:background="#00FF0000"
-            android:src="@drawable/back"
-            tools:ignore="SpeakableTextPresentCheck" />
+        android:orientation="vertical">
 
         <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:orientation="vertical">
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/imageButton3"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="#18b9e4"
+                app:srcCompat="@drawable/more_white" />
 
             <TextView
-                android:id="@+id/textView_chatobj"
-                android:layout_width="311dp"
-                android:layout_height="34dp"
-                android:text="冉熙"
-                android:textAlignment="center"
+                android:id="@+id/textView14"
+                android:layout_width="312dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:background="#18b9e4"
+                android:gravity="center"
+                android:text="消息"
                 android:textSize="24sp" />
 
-            <TextView
-                android:id="@+id/textView6"
-                android:layout_width="311dp"
-                android:layout_height="18dp"
-                android:text="信息2001"
-                android:textAlignment="center"
-                android:textSize="14sp" />
+            <ImageButton
+                android:id="@+id/imageButton8"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="#18b9e4"
+                app:srcCompat="@drawable/search" />
+
+            <ImageButton
+                android:id="@+id/imageButton2"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="#18b9e4"
+                app:srcCompat="@drawable/tiny_plus" />
 
         </LinearLayout>
 
         <ImageButton
-            android:id="@+id/imageButton5"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:background="#00FF0000"
-            android:src="@drawable/more_option"
-            tools:ignore="SpeakableTextPresentCheck" />
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp"
-        android:layout_marginTop="620dp"
-        android:gravity="center_vertical"
-        >
-
-        <ImageButton
-            android:id="@+id/imageButton_voice"
-
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:background="#00FF0000"
-            android:scaleType="center"
-            android:src="@drawable/voice"
-            tools:ignore="SpeakableTextPresentCheck" />
-
-        <EditText
-            android:id="@+id/editText_chat"
-            android:layout_width="wrap_content"
+            android:id="@+id/imageButton11"
+            android:layout_width="440dp"
             android:layout_height="wrap_content"
-            android:ems="10"
-            android:inputType="textPersonName"
-            android:text=""
-            tools:ignore="SpeakableTextPresentCheck" />
+            app:srcCompat="@drawable/my" />
 
         <ImageButton
-            android:id="@+id/imageButton_emoji"
-
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:layout_marginStart="9dp"
-            android:background="#00FF0000"
-            android:scaleType="center"
-            android:src="@drawable/emoji"
-            tools:ignore="SpeakableTextPresentCheck" />
+            android:id="@+id/imageButton12"
+            android:layout_width="442dp"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/my" />
 
         <ImageButton
-            android:id="@+id/imageButton_moreinput"
+            android:id="@+id/imageButton10"
+            android:layout_width="443dp"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/my" />
 
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:background="#00FF0000"
-            android:scaleType="center"
-            android:src="@drawable/more"
-            tools:ignore="SpeakableTextPresentCheck" />
     </LinearLayout>
 
-</LinearLayout>
+    <ImageButton
+        android:id="@+id/imageButton_myprofile"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="70dp"
+        android:layout_marginBottom="16dp"
+        android:background="#00FF0000"
+        app:layout_constraintBottom_toBottomOf="@+id/textView_message4"
+        app:layout_constraintStart_toEndOf="@+id/imageButton_workstation"
+        app:srcCompat="@drawable/my_profile" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
