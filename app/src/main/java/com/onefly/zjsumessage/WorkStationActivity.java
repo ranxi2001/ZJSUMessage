@@ -15,12 +15,12 @@ public class WorkStationActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_work_staion);
         //此处写底部四个按钮的相互跳转
-        ImageButton button_workstation = (ImageButton) findViewById(R.id.imageButton_workstation);
-        button_workstation.setOnClickListener(new View.OnClickListener() {
+        ImageButton button_message = (ImageButton) findViewById(R.id.imageButton_message);
+        button_message.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(WorkStationActivity.this,"正在进入工作台",Toast.LENGTH_SHORT).show();
-                Intent intent=new Intent(WorkStationActivity.this, WorkStationActivity.class);
+                Toast.makeText(WorkStationActivity.this,"正在进入消息",Toast.LENGTH_SHORT).show();
+                Intent intent=new Intent(WorkStationActivity.this, MessageActivity.class);
                 startActivity(intent);
             }
         });
@@ -29,7 +29,7 @@ public class WorkStationActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Toast.makeText(WorkStationActivity.this,"正在进入我的",Toast.LENGTH_SHORT).show();
-                Intent intent=new Intent(WorkStationActivity.this, WorkStationActivity.class);
+                Intent intent=new Intent(WorkStationActivity.this, MineActivity.class);
                 startActivity(intent);
             }
         });

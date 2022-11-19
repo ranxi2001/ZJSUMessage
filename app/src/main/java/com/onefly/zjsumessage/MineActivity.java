@@ -25,12 +25,12 @@ public class MineActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-        ImageButton button_myprofile = (ImageButton) findViewById(R.id.imageButton_myprofile);
-        button_myprofile.setOnClickListener(new View.OnClickListener() {
+        ImageButton button_message = (ImageButton) findViewById(R.id.imageButton_message);
+        button_message.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(MineActivity.this,"正在进入我的",Toast.LENGTH_SHORT).show();
-                Intent intent=new Intent(MineActivity.this, MineActivity.class);
+                Toast.makeText(MineActivity.this,"正在进入消息",Toast.LENGTH_SHORT).show();
+                Intent intent=new Intent(MineActivity.this, MessageActivity.class);
                 startActivity(intent);
             }
         });
