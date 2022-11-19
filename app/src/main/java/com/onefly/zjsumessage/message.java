@@ -1,6 +1,6 @@
 package com.onefly.zjsumessage;
 
-import static com.onefly.zjsumessage.R.layout.activity_message;
+import static com.onefly.zjsumessage.R.layout.activity_chat;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -15,7 +15,7 @@ public class message extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(activity_message);
+        setContentView(activity_chat);
     }
 
     public boolean onCreateOptionsMenu(Menu menu){

@@ -15,7 +15,7 @@ public class Main_interface extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main_interface);
+        setContentView(R.layout.activity_message);
         ImageButton button_workstation = (ImageButton) findViewById(R.id.imageButton_workstation);
         button_workstation.setOnClickListener(new View.OnClickListener() {
             @Override
