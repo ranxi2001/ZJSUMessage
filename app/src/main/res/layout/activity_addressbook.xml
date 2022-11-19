@@ -128,8 +128,9 @@
                 android:layout_weight="1"
                 android:background="#18b9e4"
                 android:gravity="center"
-                android:text="消息"
-                android:textSize="24sp" />
+                android:text="通讯录"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
 
             <ImageButton
                 android:id="@+id/imageButton8"
@@ -147,23 +148,64 @@
 
         </LinearLayout>
 
-        <ImageButton
-            android:id="@+id/imageButton11"
-            android:layout_width="440dp"
-            android:layout_height="wrap_content"
-            app:srcCompat="@drawable/my" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
 
-        <ImageButton
-            android:id="@+id/imageButton12"
-            android:layout_width="442dp"
-            android:layout_height="wrap_content"
-            app:srcCompat="@drawable/my" />
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="我的组织" />
 
-        <ImageButton
-            android:id="@+id/imageButton10"
-            android:layout_width="443dp"
-            android:layout_height="wrap_content"
-            app:srcCompat="@drawable/my" />
+            <Button
+                android:id="@+id/button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/teal_200"
+                android:backgroundTint="@color/white"
+                android:drawableLeft="@drawable/academy"
+                android:paddingLeft="30dp"
+                android:text="浙江工商大学"
+                android:textAlignment="viewStart" />
+            <Button
+                android:id="@+id/button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/teal_200"
+                android:backgroundTint="@color/white"
+                android:drawableLeft="@drawable/academy"
+                android:paddingLeft="30dp"
+                android:text="管工学院"
+                android:textAlignment="viewStart" />
+            <Button
+                android:id="@+id/button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/teal_200"
+                android:backgroundTint="@color/white"
+                android:drawableLeft="@drawable/academy"
+                android:paddingLeft="30dp"
+                android:text="20级"
+                android:textAlignment="viewStart" />
+            <Button
+                android:id="@+id/button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/teal_200"
+                android:backgroundTint="@color/white"
+                android:drawableLeft="@drawable/academy"
+                android:paddingLeft="30dp"
+                android:text="信息2001"
+                android:textAlignment="viewStart" />
+
+            <TextView
+                android:id="@+id/textView17"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="校园互联" />
+        </LinearLayout>
 
     </LinearLayout>
 
