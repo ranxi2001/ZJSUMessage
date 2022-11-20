@@ -160,28 +160,28 @@
                 android:text="我的组织" />
 
             <Button
-                android:id="@+id/button"
+                android:id="@+id/button_zjsu"
                 android:layout_width="match_parent"
-                android:layout_height="47dp"
+                android:layout_height="40dp"
                 android:background="@color/teal_200"
                 android:backgroundTint="@color/white"
-                android:drawableLeft="@drawable/academy"
-                android:paddingLeft="30dp"
-                android:text="浙江工商大学"
+                android:drawableLeft="@mipmap/zjsu"
+                android:paddingLeft="33dp"
+                android:text="  浙江工商大学"
                 android:textAlignment="viewStart" />
 
             <Button
-                android:id="@+id/button"
+                android:id="@+id/button_ggxy"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@color/teal_200"
                 android:backgroundTint="@color/white"
-                android:drawableLeft="@drawable/academy"
-                android:paddingLeft="30dp"
-                android:text="管工学院"
+                android:drawableLeft="@mipmap/ggxy"
+                android:paddingLeft="33dp"
+                android:text="  管工学院"
                 android:textAlignment="viewStart" />
             <Button
-                android:id="@+id/button"
+                android:id="@+id/button_20grade"
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
                 android:background="@color/teal_200"
@@ -191,7 +191,7 @@
                 android:text="20级"
                 android:textAlignment="viewStart" />
             <Button
-                android:id="@+id/button"
+                android:id="@+id/button_info2001"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@color/teal_200"

@@ -1,8 +1,10 @@
 package com.onefly.zjsumessage;
 
 import android.content.Intent;
+import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.Toast;
 
@@ -43,5 +45,14 @@ public class AddressbookActivity extends AppCompatActivity {
             }
         });
         //底部按钮功能完全体
+        //控制button左边图标大小
+        Button button1 = (Button) findViewById(R.id.button_zjsu);
+        Drawable drawable1 = getResources().getDrawable(R.mipmap.zjsu);
+        drawable1.setBounds(0, 0, 85, 85);//第一0是距左边距离，第二0是距上边距离，40分别是长宽
+        button1.setCompoundDrawables(drawable1, null, null, null);//只放左边
+        Button button2 = (Button) findViewById(R.id.button_ggxy);
+        Drawable drawable2 = getResources().getDrawable(R.mipmap.ggxy);
+        drawable2.setBounds(0, 0, 85, 85);//第一0是距左边距离，第二0是距上边距离，40分别是长宽
+        button2.setCompoundDrawables(drawable2, null, null, null);//只放左边
     }
 }
