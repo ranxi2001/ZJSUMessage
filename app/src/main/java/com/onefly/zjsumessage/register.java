@@ -1,12 +1,13 @@
 package com.onefly.zjsumessage;
 
-import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 public class register extends AppCompatActivity {
     private Button btn;
@@ -28,9 +29,9 @@ public class register extends AppCompatActivity {
             public void onClick(View view) {
                 if(ed2.getText().toString().equals(ed3.getText().toString())){
                     //Toast.makeText(register.this, "账号注册成功！", Toast.LENGTH_SHORT).show();
-                    account_ori p = new account_ori();
-                    p.setAccount(ed1.getText().toString());
-                    p.setPassword(ed2.getText().toString());
+//                    account_ori p = new account_ori();
+//                    p.setAccount(ed1.getText().toString());
+//                    p.setPassword(ed2.getText().toString());
 
                     //long rowed=mydatabaseHelper.insertData(p);
                     //if(rowed!=-1) {
