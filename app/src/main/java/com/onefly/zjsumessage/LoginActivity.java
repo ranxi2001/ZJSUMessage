@@ -24,7 +24,7 @@ public class LoginActivity extends AppCompatActivity {
     private SharedPreferences.Editor editor;
     private EditText accountedit;
     private EditText passwordedit;
-    private MyDatabaseHelper dbhelper;
+    //private MydatabaseHelper mydatabaseHelper;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,16 +35,17 @@ public class LoginActivity extends AppCompatActivity {
         rememberPass =findViewById(R.id.checkBox3);
         accountedit=findViewById(R.id.account);
         passwordedit=findViewById(R.id.password);
-        SQLiteDatabase db=dbhelper.getWritableDatabase();
+
         button1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 String account=accountedit.getText().toString();
                 String password=passwordedit.getText().toString();
-                Cursor cursor =db.rawQuery("select password from account where account1=?",new String[]{account});
-                String password_true=cursor.getString(cursor.getColumnCount());
+                //account_ori p=new account_ori();
+                //p.setPassword(password);
+                //p.setAccount(account);
 
-                if(passwordedit.getText().toString().equals(password_true)){
+                if(password.equals("123456")){
                     Toast.makeText(LoginActivity.this,"欢迎使用商大联系通",Toast.LENGTH_SHORT).show();
                     Intent intent=new Intent(LoginActivity.this, MessageActivity.class);
                     startActivity(intent);
@@ -77,21 +78,7 @@ public class LoginActivity extends AppCompatActivity {
         Intent intent=new Intent(LoginActivity.this,register.class);
         startActivity(intent);
     }
-    public static class MyDatabaseHelper extends SQLiteOpenHelper{
-        public static final String create_account="create table account("+"account1 String primary key autoincrement,"+"password String)";
-        private Context mcontext;
-        public MyDatabaseHelper (Context context , String name, SQLiteDatabase.CursorFactory factory,int version){
-            super(context,name,factory,version);
-            mcontext=context;
-        }
-        @Override
-        public void onCreate(SQLiteDatabase db){
-            db.execSQL(create_account);
-        }
-        @Override
-        public void onUpgrade(SQLiteDatabase db,int oldVersion,int newVersion){
-        }
-    }
+
 
 
 
