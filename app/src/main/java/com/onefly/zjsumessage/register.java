@@ -28,7 +28,7 @@ public class register extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 if(ed2.getText().toString().equals(ed3.getText().toString())){
-                    //Toast.makeText(register.this, "账号注册成功！", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(register.this, "账号注册成功！", Toast.LENGTH_SHORT).show();
 //                    account_ori p = new account_ori();
 //                    p.setAccount(ed1.getText().toString());
 //                    p.setPassword(ed2.getText().toString());
