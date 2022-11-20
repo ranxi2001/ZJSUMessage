@@ -162,13 +162,14 @@
             <Button
                 android:id="@+id/button"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="47dp"
                 android:background="@color/teal_200"
                 android:backgroundTint="@color/white"
                 android:drawableLeft="@drawable/academy"
                 android:paddingLeft="30dp"
                 android:text="浙江工商大学"
                 android:textAlignment="viewStart" />
+
             <Button
                 android:id="@+id/button"
                 android:layout_width="match_parent"
@@ -182,7 +183,7 @@
             <Button
                 android:id="@+id/button"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="40dp"
                 android:background="@color/teal_200"
                 android:backgroundTint="@color/white"
                 android:drawableLeft="@drawable/academy"
@@ -201,11 +202,64 @@
                 android:textAlignment="viewStart" />
 
             <TextView
-                android:id="@+id/textView17"
+                android:id="@+id/textView_ConnectedCampus"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="校园互联" />
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="match_parent"
+                android:layout_height="47dp"
+                android:background="@color/teal_200"
+                android:backgroundTint="@color/white"
+                android:drawableLeft="@drawable/students"
+                android:paddingLeft="30dp"
+                android:text="商大同学"
+                android:textAlignment="viewStart" />
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="match_parent"
+                android:layout_height="47dp"
+                android:background="@color/teal_200"
+                android:backgroundTint="@color/white"
+                android:drawableLeft="@drawable/teacher"
+                android:paddingLeft="30dp"
+                android:text="商大老师"
+                android:textAlignment="viewStart" />
+            <TextView
+                android:id="@+id/textView_ConnectedCampus"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="常用联系人" />
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="match_parent"
+                android:layout_height="47dp"
+                android:background="@color/teal_200"
+                android:backgroundTint="@color/white"
+                android:drawableLeft="@drawable/contacts"
+                android:paddingLeft="30dp"
+                android:text="余朝阳"
+                android:textAlignment="viewStart" />
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="match_parent"
+                android:layout_height="47dp"
+                android:background="@color/teal_200"
+                android:backgroundTint="@color/white"
+                android:drawableLeft="@drawable/contacts"
+                android:paddingLeft="30dp"
+                android:text="祝橙希"
+                android:textAlignment="viewStart" />
+
+
+
         </LinearLayout>
+
 
     </LinearLayout>
 
