@@ -3,6 +3,7 @@ package com.onefly.zjsumessage;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.Toast;
 
@@ -44,5 +45,15 @@ public class MineActivity extends AppCompatActivity {
             }
         });
         //底部按钮功能完全体
+        //跳转到设置按钮
+        Button button_setting = (Button) findViewById(R.id.button_set);
+        button_setting.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(MineActivity.this,"正在进入设置",Toast.LENGTH_SHORT).show();
+                Intent intent=new Intent(MineActivity.this,SettingActivity.class);
+                startActivity(intent);
+            }
+        });
     }
 }

@@ -173,7 +173,7 @@
             <Button
                 android:id="@+id/button_ggxy"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="40dp"
                 android:background="@color/teal_200"
                 android:backgroundTint="@color/white"
                 android:drawableLeft="@mipmap/ggxy"
@@ -254,6 +254,16 @@
                 android:drawableLeft="@drawable/contacts"
                 android:paddingLeft="30dp"
                 android:text="祝橙希"
+                android:textAlignment="viewStart" />
+            <Button
+                android:id="@+id/button"
+                android:layout_width="match_parent"
+                android:layout_height="47dp"
+                android:background="@color/teal_200"
+                android:backgroundTint="@color/white"
+                android:drawableLeft="@drawable/contacts"
+                android:paddingLeft="30dp"
+                android:text="王靖宏"
                 android:textAlignment="viewStart" />
 
 

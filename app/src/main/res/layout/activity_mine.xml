@@ -235,6 +235,23 @@
             tools:layout_editor_absoluteX="0dp"
             tools:layout_editor_absoluteY="412dp" />
 
+        <Button
+            android:id="@+id/button_set"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:drawableLeft="@drawable/setting_yellow"
+            android:fontFamily="sans-serif-condensed"
+            android:lineSpacingExtra="8sp"
+            android:text="    设置"
+            android:textAlignment="textStart"
+            android:textSize="20sp"
+            android:typeface="normal"
+            tools:layout_conversion_absoluteHeight="48dp"
+            tools:layout_conversion_absoluteWidth="404dp"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="412dp" />
+
 
 
     </LinearLayout>
