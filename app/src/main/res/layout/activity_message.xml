@@ -145,23 +145,30 @@
 
         </LinearLayout>
 
-        <ImageButton
-            android:id="@+id/imageButton11"
-            android:layout_width="440dp"
-            android:layout_height="wrap_content"
-            app:srcCompat="@drawable/my" />
-
-        <ImageButton
-            android:id="@+id/imageButton12"
-            android:layout_width="442dp"
-            android:layout_height="wrap_content"
-            app:srcCompat="@drawable/my" />
-
-        <ImageButton
-            android:id="@+id/imageButton10"
-            android:layout_width="443dp"
-            android:layout_height="wrap_content"
-            app:srcCompat="@drawable/my" />
+        <Button
+            android:id="@+id/button_chatperson1"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:background="@color/teal_200"
+            android:backgroundTint="@color/white"
+            android:text="      余朝阳"
+            android:textAlignment="viewStart" />
+        <Button
+            android:id="@+id/button_chatperson2"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:background="@color/teal_200"
+            android:backgroundTint="@color/white"
+            android:text="      王靖宏"
+            android:textAlignment="viewStart" />
+        <Button
+            android:id="@+id/button_chatperson3"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:background="@color/teal_200"
+            android:backgroundTint="@color/white"
+            android:text="      祝橙希"
+            android:textAlignment="viewStart" />
 
     </LinearLayout>
 

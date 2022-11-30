@@ -19,7 +19,7 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <ImageButton
-            android:id="@+id/imageButton3"
+            android:id="@+id/imageButton_returnmine"
             android:layout_width="40dp"
             android:layout_height="40dp"
             android:background="#18b9e4"

@@ -1,8 +1,10 @@
 package com.onefly.zjsumessage;
 
 import android.content.Intent;
+import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.Toast;
 
@@ -43,6 +45,21 @@ public class MessageActivity extends AppCompatActivity {
             }
         });
         //底部按钮功能完全体
+        //按钮左图大小
+        Button button1 = (Button) findViewById(R.id.button_chatperson1);
+        Drawable drawable1 = getResources().getDrawable(R.drawable.yuchaoyang);
+        drawable1.setBounds(30, 0, 150, 120);//第一0是距左边距离，第二0是距上边距离，
+        button1.setCompoundDrawables(drawable1, null, null, null);//只放左边
+        //按钮左图大小
+        Button button2 = (Button) findViewById(R.id.button_chatperson2);
+        Drawable drawable2 = getResources().getDrawable(R.drawable.wagnjinhong);
+        drawable2.setBounds(30, 0, 150, 120);//第一0是距左边距离，第二0是距上边距离，
+        button2.setCompoundDrawables(drawable2, null, null, null);//只放左边
+        //按钮左图大小
+        Button button3 = (Button) findViewById(R.id.button_chatperson3);
+        Drawable drawable3 = getResources().getDrawable(R.drawable.zuchengxi);
+        drawable3.setBounds(30, 0, 150, 120);//第一0是距左边距离，第二0是距上边距离，
+        button3.setCompoundDrawables(drawable3, null, null, null);//只放左边
 
     }
 
