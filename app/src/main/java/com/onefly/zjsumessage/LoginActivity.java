@@ -18,12 +18,18 @@ import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import java.util.List;
+
 public class LoginActivity extends AppCompatActivity {
     private CheckBox rememberPass;
     private SharedPreferences pref;
     private SharedPreferences.Editor editor;
     private EditText accountedit;
     private EditText passwordedit;
+    private UserDao userDao;
+    private static final String TAG = "LoginActivity";
+    private static final String USERNAME_KEY = "username";
+    private static final String PASSWORD_KEY = "password";
     //private MydatabaseHelper mydatabaseHelper;
 
     @Override
@@ -32,46 +38,26 @@ public class LoginActivity extends AppCompatActivity {
         setContentView(R.layout.activity_login);
         pref = PreferenceManager.getDefaultSharedPreferences(this);
         Button button1 = (Button) findViewById(R.id.button1);
+        userDao = AppDatabase.getInstance(this).userDao();
         rememberPass =findViewById(R.id.checkBox3);
         accountedit=findViewById(R.id.account);
         passwordedit=findViewById(R.id.password);
 
+
         button1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String account=accountedit.getText().toString();
+                String username=accountedit.getText().toString();
                 String password=passwordedit.getText().toString();
-                //account_ori p=new account_ori();
-                //p.setPassword(password);
-                //p.setAccount(account);
-
-                if(password.equals("123456")){
-                    Toast.makeText(LoginActivity.this,"欢迎使用商大联系通",Toast.LENGTH_SHORT).show();
-                    Intent intent=new Intent(LoginActivity.this, MessageActivity.class);
+                if (checkLogin(username, password)) {
+                    Intent intent = new Intent(LoginActivity.this,MessageActivity.class);
                     startActivity(intent);
-                    editor= pref.edit();
-                    if(rememberPass.isChecked()){
-                        editor.putBoolean("remember_password",true);
-                        editor.putString("account",account);
-                        editor.putString("password",password);
-                    }
-                    else{
-                        editor.clear();
-                    }
-                    editor.apply();
+                } else {
+                    Toast.makeText(LoginActivity.this,"登录失败！",Toast.LENGTH_SHORT).show();
                 }
-                else{
-                    Toast.makeText(LoginActivity.this,"账号或者密码错误！",Toast.LENGTH_SHORT).show();
-                }
+
             }
         });
-        Boolean isremember=pref.getBoolean("checkBox3",false);
-        if(isremember){
-            String account=pref.getString("account","");
-            String password=pref.getString("password","");
-            accountedit.setText(account);
-            passwordedit.setText(password);
-        }
 
     }
     public void register1(View view){
@@ -79,7 +65,42 @@ public class LoginActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
+    boolean checkLogin(String username, String password) {
+        List<User> users = userDao.getAll();
+        for (User user: users) {
+            Log.d(TAG, "checkLogin: " + user.username + ": " + user.password);
+        }
 
+        User user = userDao.findByName(username);
+        return user != null && user.username.equals(username) && user.password.equals(password);
+    }
+    @Override
+    protected void onResume() {
+        super.onResume();
 
+        SharedPreferences prefs = getPreferences(MODE_PRIVATE);
+
+        String username = prefs.getString(USERNAME_KEY, "");
+        accountedit.setText(username);
+
+        String password = prefs.getString(PASSWORD_KEY, "");
+        passwordedit.setText(password);
+    }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+
+        SharedPreferences prefs = getPreferences(MODE_PRIVATE);
+        SharedPreferences.Editor editor = prefs.edit();
+
+        String username = accountedit.getText().toString();
+        String password = passwordedit.getText().toString();
+
+        editor.putString(USERNAME_KEY, username);
+        editor.putString(PASSWORD_KEY, password);
+
+        editor.apply();
+    }
 
 }
