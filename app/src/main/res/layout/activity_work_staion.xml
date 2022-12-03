@@ -103,9 +103,10 @@
         android:id="@+id/imageView"
         android:layout_width="wrap_content"
         android:layout_height="100dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView5"
-        app:srcCompat="@drawable/luncher_logo"
-        tools:layout_editor_absoluteX="0dp" />
+        app:srcCompat="@drawable/luncher_logo" />
 
     <TextView
         android:id="@+id/textView5"
@@ -118,8 +119,9 @@
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
         android:textColor="@color/white"
         android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="0dp" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ImageButton
         android:id="@+id/imageButton_search3"
@@ -142,10 +144,13 @@
     <LinearLayout
         android:layout_width="409dp"
         android:layout_height="529dp"
+        android:layout_marginStart="1dp"
         android:layout_marginTop="1dp"
+        android:layout_marginEnd="1dp"
         android:orientation="vertical"
-        app:layout_constraintTop_toBottomOf="@+id/imageView"
-        tools:layout_editor_absoluteX="1dp" >
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView">
 
         <TextView
             android:id="@+id/textView8"
@@ -166,8 +171,8 @@
                 android:layout_marginStart="35dp"
                 android:layout_marginTop="18dp"
                 android:layout_marginEnd="33dp"
-                android:background="#00FF0000"
                 android:layout_toEndOf="@+id/imageButton_xingchengma"
+                android:background="#00FF0000"
                 android:src="@drawable/healthcode" />
 
             <ImageButton
@@ -188,8 +193,8 @@
                 android:layout_alignParentTop="true"
                 android:layout_marginStart="35dp"
                 android:layout_marginTop="18dp"
-                android:background="#00FF0000"
                 android:layout_toEndOf="@+id/imageButton_hesuan"
+                android:background="#00FF0000"
                 android:src="@drawable/bigstudy" />
 
             <ImageButton
@@ -209,7 +214,7 @@
                 android:layout_below="@+id/imageButton_bigstudy"
                 android:layout_alignParentBottom="true"
                 android:layout_marginTop="-1dp"
-                android:layout_marginBottom="-1dp" >
+                android:layout_marginBottom="-1dp">
 
                 <TextView
                     android:id="@+id/textView16"
@@ -277,7 +282,7 @@
             android:layout_height="105dp">
 
             <ImageButton
-                android:id="@+id/imageButton15"
+                android:id="@+id/imageButton_homework"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentTop="true"
@@ -285,34 +290,34 @@
                 android:layout_marginStart="35dp"
                 android:layout_marginTop="18dp"
                 android:layout_marginEnd="35dp"
-                android:layout_toEndOf="@+id/imageButton14"
+                android:layout_toEndOf="@+id/imageButton_contest"
                 android:background="#00FF0000"
                 android:src="@drawable/homework" />
 
             <ImageButton
-                android:id="@+id/imageButton14"
+                android:id="@+id/imageButton_contest"
                 android:layout_width="60dp"
                 android:layout_height="60dp"
                 android:layout_alignParentTop="true"
                 android:layout_marginStart="35dp"
                 android:layout_marginTop="18dp"
+                android:layout_toEndOf="@+id/imageButton_subsidies"
                 android:background="#00FF0000"
-                android:layout_toEndOf="@+id/imageButton13"
                 android:src="@drawable/works" />
 
             <ImageButton
-                android:id="@+id/imageButton13"
+                android:id="@+id/imageButton_subsidies"
                 android:layout_width="60dp"
                 android:layout_height="60dp"
                 android:layout_alignParentTop="true"
                 android:layout_marginStart="35dp"
                 android:layout_marginTop="18dp"
+                android:layout_toEndOf="@+id/imageButton_scholarship"
                 android:background="#00FF0000"
-                android:layout_toEndOf="@+id/imageButton_hesuan"
                 android:src="@drawable/fellowship" />
 
             <ImageButton
-                android:id="@+id/imageButton_hesuan"
+                android:id="@+id/imageButton_scholarship"
                 android:layout_width="60dp"
                 android:layout_height="60dp"
                 android:layout_alignParentStart="true"
@@ -414,12 +419,12 @@
                 android:layout_alignParentTop="true"
                 android:layout_marginStart="35dp"
                 android:layout_marginTop="18dp"
-                android:layout_toEndOf="@+id/imageButton13"
+                android:layout_toEndOf="@+id/imageButton_studystyle"
                 android:background="#00FF0000"
                 android:src="@drawable/mark" />
 
             <ImageButton
-                android:id="@+id/imageButton13"
+                android:id="@+id/imageButton_studystyle"
                 android:layout_width="60dp"
                 android:layout_height="60dp"
                 android:layout_alignParentTop="true"
@@ -509,8 +514,8 @@
                 android:layout_marginStart="35dp"
                 android:layout_marginTop="18dp"
                 android:layout_marginEnd="33dp"
-                android:background="#00FF0000"
                 android:layout_toEndOf="@+id/imageButton14"
+                android:background="#00FF0000"
                 android:src="@drawable/forms" />
 
             <ImageButton
@@ -520,8 +525,8 @@
                 android:layout_alignParentTop="true"
                 android:layout_marginStart="35dp"
                 android:layout_marginTop="18dp"
-                android:background="#00FF0000"
                 android:layout_toEndOf="@+id/imageButton13"
+                android:background="#00FF0000"
                 android:src="@drawable/filemanage" />
 
             <ImageButton
@@ -531,12 +536,12 @@
                 android:layout_alignParentTop="true"
                 android:layout_marginStart="35dp"
                 android:layout_marginTop="18dp"
+                android:layout_toEndOf="@+id/imageButton_collectionschedule"
                 android:background="#00FF0000"
-                android:layout_toEndOf="@+id/imageButton_hesuan"
                 android:src="@drawable/webapp_" />
 
             <ImageButton
-                android:id="@+id/imageButton_hesuan"
+                android:id="@+id/imageButton_collectionschedule"
                 android:layout_width="60dp"
                 android:layout_height="60dp"
                 android:layout_alignParentStart="true"

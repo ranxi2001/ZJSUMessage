@@ -2,4 +2,7 @@
     <string name="app_name">ZJSUMessage</string>
     <string name="profile"> \t信息2001 信息员 \n\n\t省政府奖学金\n\t综合一等奖学金\n\t浙江省数学建模二等奖
     </string>
+    <string name="chatperson1_name">余朝阳</string>
+    <string name="chatperson1_class">信息2002</string>
+    <string name="chatperson1_chatrecord">你能收到消息吗？</string>
 </resources>

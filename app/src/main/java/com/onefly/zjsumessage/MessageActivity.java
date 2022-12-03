@@ -44,6 +44,16 @@ public class MessageActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+        //聊天窗口的跳转
+        //跳转到余朝阳聊天
+        Button button_chatperson1 = (Button) findViewById(R.id.button_chatperson1);
+        button_chatperson1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(MessageActivity.this, ChatActivity.class);
+                startActivity(intent);
+            }
+        });
         //底部按钮功能完全体
         //按钮左图大小
         Button button1 = (Button) findViewById(R.id.button_chatperson1);

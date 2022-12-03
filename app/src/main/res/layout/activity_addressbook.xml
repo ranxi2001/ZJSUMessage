@@ -105,7 +105,10 @@
         android:layout_height="wrap_content"
         android:gravity="center_vertical"
 
-        android:orientation="vertical">
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -180,6 +183,7 @@
                 android:paddingLeft="33dp"
                 android:text="  管工学院"
                 android:textAlignment="viewStart" />
+
             <Button
                 android:id="@+id/button_20grade"
                 android:layout_width="match_parent"
@@ -190,6 +194,7 @@
                 android:paddingLeft="30dp"
                 android:text="20级"
                 android:textAlignment="viewStart" />
+
             <Button
                 android:id="@+id/button_info2001"
                 android:layout_width="match_parent"
@@ -228,6 +233,7 @@
                 android:paddingLeft="30dp"
                 android:text="商大老师"
                 android:textAlignment="viewStart" />
+
             <TextView
                 android:id="@+id/textView_ConnectedCampus"
                 android:layout_width="match_parent"
@@ -255,6 +261,7 @@
                 android:paddingLeft="30dp"
                 android:text="祝橙希"
                 android:textAlignment="viewStart" />
+
             <Button
                 android:id="@+id/button"
                 android:layout_width="match_parent"
@@ -265,7 +272,6 @@
                 android:paddingLeft="30dp"
                 android:text="王靖宏"
                 android:textAlignment="viewStart" />
-
 
 
         </LinearLayout>
