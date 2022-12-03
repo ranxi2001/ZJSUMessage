@@ -1,6 +1,7 @@
 package com.onefly.zjsumessage;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageButton;
@@ -43,5 +44,29 @@ public class WorkStationActivity extends AppCompatActivity {
             }
         });
         //底部按钮功能完全体
+
+        //跳转到核酸按钮
+        ImageButton button_hesuan = (ImageButton) findViewById(R.id.imageButton_hesuan);
+        button_hesuan.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(WorkStationActivity.this,"正在进入核酸打卡",Toast.LENGTH_SHORT).show();
+                Intent intent=new Intent(WorkStationActivity.this,FormActivity.class);
+                startActivity(intent);
+            }
+        });
+        //跳转外部浏览器
+
+
+        ImageButton button_bigstudy = (ImageButton) findViewById(R.id.imageButton_bigstudy);
+        final Uri uri=Uri.parse("https://f.kdocs.cn/w/s5dp6UlE/");
+        button_bigstudy.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(WorkStationActivity.this,"正在进入核酸打卡",Toast.LENGTH_SHORT).show();
+                Intent intent=new Intent(Intent.ACTION_VIEW,uri);
+                startActivity(intent);
+            }
+        });
     }
 }
