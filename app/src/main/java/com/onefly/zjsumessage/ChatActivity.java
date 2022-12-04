@@ -34,17 +34,17 @@ public class ChatActivity extends AppCompatActivity {
         btnSend.setOnClickListener(v->{
 
             String message_send=messageText.getText().toString();
-            String username2="sjj";
 
-            if(addmessage(message_send,username2,username_del)){
+
+            if(addmessage(message_send,username,username_del)){
                 Toast.makeText(this, "发送成功", Toast.LENGTH_SHORT).show();
             }
             else{
                 Toast.makeText(this,"发送失败",Toast.LENGTH_SHORT).show();
             }
 
-            String message_current1=getMessage(username2,username_del);
-            tv2.setText(message_current1);
+          //  String message_current1=getMessage(username,username_del);
+          //  tv2.setText(message_current1);
         });
 
         //从聊天页面返回消息页面
