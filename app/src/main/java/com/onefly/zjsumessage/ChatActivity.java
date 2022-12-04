@@ -17,11 +17,19 @@ public class ChatActivity extends AppCompatActivity {
     ImageButton btnSend;
     EditText messageText;
     messageDao messageDao;
-    TextView tv1,tv2;
+    TextView tv1,tv2,tv3,tv4,tv5,name_text,tv6;;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(activity_chat);
+
+        tv6=findViewById(R.id.textView6);
+        name_text=findViewById(R.id.textView_chatobj);
+        Intent intent =getIntent();
+        String institute=intent.getStringExtra("institute");
+        String name_user=intent.getStringExtra("name");
+        name_text.setText(name_user);
+        tv6.setText(institute);
         btnSend = findViewById(R.id.imageButton_send);
         messageText = findViewById(R.id.editText_chat);
         tv1=findViewById(R.id.textView18);
@@ -31,19 +39,20 @@ public class ChatActivity extends AppCompatActivity {
         messageDao = messageDatabase.getInstance(this).messageDao();
         String message_current=getMessage(username,username_del);
         tv1.setText(message_current);
+
         btnSend.setOnClickListener(v->{
 
             String message_send=messageText.getText().toString();
-            String username2="sjj";
 
-            if(addmessage(message_send,username2,username_del)){
+
+            if(addmessage(message_send,username,username_del)){
                 Toast.makeText(this, "发送成功", Toast.LENGTH_SHORT).show();
             }
             else{
                 Toast.makeText(this,"发送失败",Toast.LENGTH_SHORT).show();
             }
 
-            String message_current1=getMessage(username2,username_del);
+            String message_current1=getMessage(username,username_del);
             tv2.setText(message_current1);
         });
 
