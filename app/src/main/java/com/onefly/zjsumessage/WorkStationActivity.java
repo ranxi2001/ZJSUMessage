@@ -111,6 +111,17 @@ public class WorkStationActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+        //助学金
+        ImageButton button_subsidies = (ImageButton) findViewById(R.id.imageButton_subsidies);
+        final Uri uri_subsidies=Uri.parse("https://f.kdocs.cn/w/TWizHNMk/");
+        button_subsidies.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(WorkStationActivity.this,"正在进入助学金申请书提交",Toast.LENGTH_SHORT).show();
+                Intent intent=new Intent(Intent.ACTION_VIEW,uri_subsidies);
+                startActivity(intent);
+            }
+        });
         //收集进度
         ImageButton button_schedule = (ImageButton) findViewById(R.id.imageButton_collectionschedule);
         final Uri uri_schedule=Uri.parse("https://kdocs.cn/l/cuLFhTNc0abo");

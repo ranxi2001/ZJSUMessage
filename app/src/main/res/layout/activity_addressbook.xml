@@ -213,7 +213,7 @@
                 android:text="校园互联" />
 
             <Button
-                android:id="@+id/button"
+                android:id="@+id/button_ZJSUstudents"
                 android:layout_width="match_parent"
                 android:layout_height="47dp"
                 android:background="@color/teal_200"
@@ -224,7 +224,7 @@
                 android:textAlignment="viewStart" />
 
             <Button
-                android:id="@+id/button"
+                android:id="@+id/button_ZJSUteachers"
                 android:layout_width="match_parent"
                 android:layout_height="47dp"
                 android:background="@color/teal_200"
@@ -235,13 +235,13 @@
                 android:textAlignment="viewStart" />
 
             <TextView
-                android:id="@+id/textView_ConnectedCampus"
+                android:id="@+id/textView_frequentContacts"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="常用联系人" />
 
             <Button
-                android:id="@+id/button"
+                android:id="@+id/button_chatperson1_address"
                 android:layout_width="match_parent"
                 android:layout_height="47dp"
                 android:background="@color/teal_200"
@@ -252,7 +252,7 @@
                 android:textAlignment="viewStart" />
 
             <Button
-                android:id="@+id/button"
+                android:id="@+id/button_chatperson2_address"
                 android:layout_width="match_parent"
                 android:layout_height="47dp"
                 android:background="@color/teal_200"
@@ -263,7 +263,7 @@
                 android:textAlignment="viewStart" />
 
             <Button
-                android:id="@+id/button"
+                android:id="@+id/button_chatperson3_address"
                 android:layout_width="match_parent"
                 android:layout_height="47dp"
                 android:background="@color/teal_200"

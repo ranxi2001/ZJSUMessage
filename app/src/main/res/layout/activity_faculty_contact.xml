@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Faculty_Contact">
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout7"
+        android:layout_width="402dp"
+        android:layout_height="499dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Button
+            android:id="@+id/mange_edu"
+            android:layout_width="match_parent"
+            android:layout_height="83dp"
+            android:background="@color/teal_200"
+            android:backgroundTint="@color/bronze"
+            android:drawableLeft="@drawable/academy"
+            android:paddingLeft="30dp"
+            android:text="管工学院" />
+
+        <Button
+            android:id="@+id/mercy_edu"
+            android:layout_width="match_parent"
+            android:layout_height="83dp"
+            android:background="@color/teal_200"
+            android:backgroundTint="@color/blue"
+            android:drawableLeft="@drawable/academy"
+            android:paddingLeft="30dp"
+            android:text="慈善学院"
+            android:textAlignment="center" />
+
+
+        <Button
+            android:id="@+id/math_edu"
+            android:layout_width="match_parent"
+            android:layout_height="83dp"
+            android:background="@color/teal_200"
+            android:backgroundTint="@color/str_red"
+            android:drawableLeft="@drawable/academy"
+            android:paddingLeft="30dp"
+            android:text="数学学院" />
+
+        <Button
+            android:id="@+id/infomation_edu"
+            android:layout_width="match_parent"
+            android:layout_height="83dp"
+            android:background="@color/teal_200"
+            android:backgroundTint="@color/blue_purple"
+            android:drawableLeft="@drawable/academy"
+            android:paddingLeft="30dp"
+            android:text="信息学院" />
+
+        <Button
+            android:id="@+id/eco_edu"
+            android:layout_width="match_parent"
+            android:layout_height="83dp"
+            android:background="@color/teal_200"
+            android:backgroundTint="@color/chocolate"
+            android:drawableLeft="@drawable/academy"
+            android:paddingLeft="30dp"
+            android:text="经济学院" />
+
+        <Button
+            android:id="@+id/computer_edu"
+            android:layout_width="match_parent"
+            android:layout_height="83dp"
+            android:background="@color/teal_200"
+            android:backgroundTint="@color/golden"
+            android:drawableLeft="@drawable/academy"
+            android:paddingLeft="30dp"
+            android:text="计算机科学与技术学院" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/school_name_textview"
+        android:layout_width="253dp"
+        android:layout_height="61dp"
+        android:text="浙江工商大学"
+        android:textSize="30sp"
+        android:gravity="center"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.023" />
+
+    <ImageButton
+        android:id="@+id/fac_con_back"
+        android:layout_width="66dp"
+        android:layout_height="60dp"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/school_name_textview"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/school_name_textview"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/back" />
+
+    <Button
+        android:id="@+id/pri_page"
+        android:layout_width="64dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="652dp"
+        android:layout_marginStart="8dp"
+        android:text="主页"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/school_name_textview"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
