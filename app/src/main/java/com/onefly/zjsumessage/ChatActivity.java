@@ -18,6 +18,7 @@ public class ChatActivity extends AppCompatActivity {
     EditText messageText;
     messageDao messageDao;
     TextView tv1,tv2;
+    //int mid=1;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -32,7 +33,7 @@ public class ChatActivity extends AppCompatActivity {
         String message_current=getMessage(username,username_del);
         tv1.setText(message_current);
         btnSend.setOnClickListener(v->{
-
+            //mid+=1;
             String message_send=messageText.getText().toString();
             String username2="sjj";
 
@@ -70,6 +71,7 @@ public class ChatActivity extends AppCompatActivity {
     boolean addmessage(String message_send,String username, String username_del) {
         if (messageDao.findByName(username) == null) {
             message message1=new message();
+
             message1.username = username;
             message1.username_del = username_del;
             message1.message_send = message_send;
