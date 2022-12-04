@@ -7,4 +7,14 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="golden">#D9D919</color>
+    <color name="blue">#0000FF</color>
+    <color name="chocolate">#5C3317</color>
+    <color name="brown">#A67D3D</color>
+    <color name="bronze">#A67D2D</color>
+    <color name="less_blue">#5F9F9F</color>
+    <color name="blue_purple">#42426F</color>
+    <color name="str_red">#FF7F00</color>
+    <color name="flower">#FF00FF</color>
+
 </resources>

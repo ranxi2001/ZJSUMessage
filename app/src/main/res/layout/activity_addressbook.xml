@@ -188,7 +188,7 @@
                 android:id="@+id/button_20grade"
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
-                android:background="@color/teal_200"
+                android:background="@color/white"
                 android:backgroundTint="@color/white"
                 android:drawableLeft="@drawable/academy"
                 android:paddingLeft="30dp"
@@ -213,7 +213,7 @@
                 android:text="校园互联" />
 
             <Button
-                android:id="@+id/button"
+                android:id="@+id/button_student"
                 android:layout_width="match_parent"
                 android:layout_height="47dp"
                 android:background="@color/teal_200"
@@ -224,7 +224,7 @@
                 android:textAlignment="viewStart" />
 
             <Button
-                android:id="@+id/button"
+                android:id="@+id/button_faculty"
                 android:layout_width="match_parent"
                 android:layout_height="47dp"
                 android:background="@color/teal_200"
@@ -235,13 +235,13 @@
                 android:textAlignment="viewStart" />
 
             <TextView
-                android:id="@+id/textView_ConnectedCampus"
+                android:id="@+id/regular_contact"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="常用联系人" />
 
             <Button
-                android:id="@+id/button"
+                android:id="@+id/bt_contact_yzy"
                 android:layout_width="match_parent"
                 android:layout_height="47dp"
                 android:background="@color/teal_200"
@@ -252,7 +252,7 @@
                 android:textAlignment="viewStart" />
 
             <Button
-                android:id="@+id/button"
+                android:id="@+id/bt_contact_zcx"
                 android:layout_width="match_parent"
                 android:layout_height="47dp"
                 android:background="@color/teal_200"
@@ -263,7 +263,7 @@
                 android:textAlignment="viewStart" />
 
             <Button
-                android:id="@+id/button"
+                android:id="@+id/bt_contact_wjh"
                 android:layout_width="match_parent"
                 android:layout_height="47dp"
                 android:background="@color/teal_200"

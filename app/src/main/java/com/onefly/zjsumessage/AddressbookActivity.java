@@ -16,6 +16,20 @@ public class AddressbookActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_addressbook);
+        //普通按钮组件
+        Button button_faculty=findViewById(R.id.button_faculty);//  商大老师
+        Button button_student =findViewById(R.id.button_student); //  商大同学
+        Button bt_contact_yzy = findViewById(R.id.bt_contact_yzy);  //  联系人余朝阳
+        Button bt_contact_zcx = findViewById(R.id.bt_contact_zcx);  //  联系人祝橙希
+        Button bt_contact_wjh = findViewById(R.id.bt_contact_wjh); //  联系人王靖宏
+        button_faculty.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(AddressbookActivity.this, Faculty_Contact.class);
+                startActivity(intent);
+            }
+        });
+
         //此处写底部四个按钮的相互跳转
         ImageButton button_message = (ImageButton) findViewById(R.id.imageButton_message);
         button_message.setOnClickListener(new View.OnClickListener() {
