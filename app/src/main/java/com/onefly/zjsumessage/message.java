@@ -7,7 +7,7 @@ import androidx.room.PrimaryKey;
 
 @Entity
 public class message {
-    //@PrimaryKey(autoGenerate = true)
+    @PrimaryKey(autoGenerate = true)
     public int mid;
 
     @ColumnInfo(name = "username")

@@ -6,7 +6,7 @@ import androidx.room.Database;
 import androidx.room.Room;
 import androidx.room.RoomDatabase;
 
-@Database(entities = {message.class}, version = 1)
+@Database(entities = {message.class}, version = 1,exportSchema=false)
 public abstract class messageDatabase extends RoomDatabase {
     private static volatile messageDatabase INSTANCE = null;
 
