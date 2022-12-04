@@ -17,11 +17,11 @@ public class AddressbookActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_addressbook);
         //普通按钮组件
-        Button button_faculty=findViewById(R.id.button_faculty);//  商大老师
-        Button button_student =findViewById(R.id.button_student); //  商大同学
-        Button bt_contact_yzy = findViewById(R.id.bt_contact_yzy);  //  联系人余朝阳
-        Button bt_contact_zcx = findViewById(R.id.bt_contact_zcx);  //  联系人祝橙希
-        Button bt_contact_wjh = findViewById(R.id.bt_contact_wjh); //  联系人王靖宏
+        Button button_faculty=findViewById(R.id.button_ZJSUteachers);//  商大老师
+        Button button_student =findViewById(R.id.button_ZJSUstudents); //  商大同学
+        Button bt_contact_yzy = findViewById(R.id.button_chatperson1_address);  //  联系人余朝阳
+        Button bt_contact_zcx = findViewById(R.id.button_chatperson2_address);  //  联系人祝橙希
+        Button bt_contact_wjh = findViewById(R.id.button_chatperson3_address); //  联系人王靖宏
         button_faculty.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
