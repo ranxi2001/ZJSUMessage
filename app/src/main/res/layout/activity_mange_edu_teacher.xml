@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".mange_edu_teacher">
+
+    <LinearLayout
+        android:id="@+id/linearLayout8"
+        android:layout_width="411dp"
+        android:layout_height="63dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <ImageButton
+            android:id="@+id/edu_teacher_back"
+            android:layout_width="wrap_content"
+            android:layout_height="63dp"
+            android:contentDescription="@string/edu_ggxy_back"
+            app:srcCompat="@drawable/back" />
+
+        <TextView
+            android:id="@+id/manage_school"
+            android:layout_width="301dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="管工学院"
+            android:textSize="30sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="409dp"
+        android:layout_height="659dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/linearLayout8"
+        app:layout_constraintVertical_bias="0.896">
+
+        <TextView
+            android:id="@+id/textView25"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="信息管理系统" />
+
+        <Button
+            android:id="@+id/tutor1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/teal_200"
+            android:backgroundTint="@color/golden"
+            android:drawableLeft="@drawable/contacts"
+            android:paddingLeft="30dp"
+            android:text="封毅"
+            android:textAlignment="viewStart" />
+
+        <Button
+            android:id="@+id/tutor2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/teal_200"
+            android:backgroundTint="@color/purple_200"
+            android:drawableLeft="@drawable/contacts"
+            android:paddingLeft="30dp"
+            android:text="李必威"
+            android:textAlignment="viewStart"/>
+
+        <Button
+            android:id="@+id/tutor3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/teal_200"
+            android:backgroundTint="@color/blue_purple"
+            android:drawableLeft="@drawable/contacts"
+            android:paddingLeft="30dp"
+            android:text="鲍福光"
+            android:textAlignment="viewStart" />
+
+        <Button
+            android:id="@+id/tutor4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/teal_200"
+            android:backgroundTint="@color/yellow"
+            android:drawableLeft="@drawable/teacher"
+            android:paddingLeft="30dp"
+            android:text="导师4"
+            android:textAlignment="viewStart"/>
+
+        <TextView
+            android:id="@+id/textView26"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="物流管理" />
+
+        <Button
+            android:id="@+id/tutor5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/teal_200"
+            android:backgroundTint="@color/flower"
+            android:drawableLeft="@drawable/teacher"
+            android:paddingLeft="30dp"
+            android:text="陈婉莹"
+            android:textAlignment="viewStart"/>
+
+        <Button
+            android:id="@+id/tutor6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/teal_200"
+            android:backgroundTint="@color/chocolate"
+            android:drawableLeft="@drawable/contacts"
+            android:paddingLeft="30dp"
+            android:text="导师6"
+            android:textAlignment="viewStart" />
+
+        <Button
+            android:id="@+id/tutor7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/teal_200"
+            android:backgroundTint="@color/yellow"
+            android:drawableLeft="@drawable/teacher"
+            android:paddingLeft="30dp"
+            android:text="导师7"
+            android:textAlignment="viewStart" />
+
+        <Button
+            android:id="@+id/tutor8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/teal_200"
+            android:backgroundTint="@color/white"
+            android:drawableLeft="@drawable/teacher"
+            android:paddingLeft="30dp"
+            android:text="导师8"
+            android:textAlignment="viewStart"
+/>
+
+        <TextView
+            android:id="@+id/textView27"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="电子商务" />
+
+        <Button
+            android:id="@+id/tutor10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/teal_200"
+            android:backgroundTint="@color/white"
+            android:drawableLeft="@drawable/teacher"
+            android:paddingLeft="30dp"
+            android:text="导师10"
+            android:textAlignment="viewStart" />
+
+        <Button
+            android:id="@+id/tutor11"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/teal_200"
+            android:backgroundTint="@color/white"
+            android:drawableLeft="@drawable/teacher"
+            android:paddingLeft="30dp"
+            android:text="导师11"
+            android:textAlignment="viewStart" />
+
+
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

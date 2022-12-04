@@ -100,7 +100,6 @@
         android:id="@+id/fac_con_back"
         android:layout_width="66dp"
         android:layout_height="60dp"
-
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/school_name_textview"
         app:layout_constraintHorizontal_bias="0.0"
