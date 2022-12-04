@@ -30,7 +30,7 @@ public class LoginActivity extends AppCompatActivity {
     private static final String TAG = "LoginActivity";
     private static final String USERNAME_KEY = "username";
     private static final String PASSWORD_KEY = "password";
-    //private MydatabaseHelper mydatabaseHelper;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -51,6 +51,7 @@ public class LoginActivity extends AppCompatActivity {
                 String password=passwordedit.getText().toString();
                 if (checkLogin(username, password)) {
                     Intent intent = new Intent(LoginActivity.this,MessageActivity.class);
+                    intent.putExtra("userId",username);
                     startActivity(intent);
                 } else {
                     Toast.makeText(LoginActivity.this,"登录失败！",Toast.LENGTH_SHORT).show();

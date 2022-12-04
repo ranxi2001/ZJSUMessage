@@ -100,12 +100,12 @@
         android:scaleType="center"
         android:src="@drawable/emoji"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/imageButton_moreinput"
+        app:layout_constraintEnd_toStartOf="@+id/imageButton_send"
         app:layout_constraintStart_toEndOf="@+id/editText_chat"
         tools:ignore="SpeakableTextPresentCheck" />
 
     <ImageButton
-        android:id="@+id/imageButton_moreinput"
+        android:id="@+id/imageButton_send"
 
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -156,18 +156,79 @@
                 app:layout_constraintTop_toTopOf="parent"
                 app:srcCompat="@drawable/ranxi" />
         </androidx.constraintlayout.widget.ConstraintLayout>
+
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="81dp"/>
+            android:layout_height="81dp">
+
+            <TextView
+                android:id="@+id/textView22"
+                android:layout_width="284dp"
+                android:layout_height="49dp"
+                android:background="@drawable/textview_border"
+                android:gravity="center"
+                android:text="@string/chatperson1_chatrecord"
+                android:textAlignment="textEnd"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="81dp"/>
+            android:layout_height="81dp" >
+
+            <TextView
+                android:id="@+id/textView20"
+                android:layout_width="284dp"
+                android:layout_height="49dp"
+                android:background="@drawable/textview_border"
+                android:gravity="center"
+                android:text="@string/chatperson1_chatrecord"
+                android:textAlignment="textEnd"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="81dp"/>
+            android:layout_height="81dp">
+
+            <TextView
+                android:id="@+id/textView23"
+                android:layout_width="284dp"
+                android:layout_height="49dp"
+                android:background="@drawable/textview_border"
+                android:gravity="center"
+                android:text="@string/chatperson1_chatrecord"
+                android:textAlignment="textEnd"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="81dp"/>
+            android:layout_height="81dp">
+
+            <TextView
+                android:id="@+id/textView24"
+                android:layout_width="284dp"
+                android:layout_height="49dp"
+                android:background="@drawable/textview_border"
+                android:gravity="center"
+                android:text="@string/chatperson1_chatrecord"
+                android:textAlignment="textEnd"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
 
     </LinearLayout>
 

@@ -11,11 +11,15 @@ import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class MessageActivity extends AppCompatActivity {
+    Button button_ycy,button_wjh,button_zcx;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_message);
+        button_ycy=findViewById(R.id.button_chatperson1);
+        button_wjh=findViewById(R.id.button_chatperson2);
+        button_zcx=findViewById(R.id.button_chatperson3);
         //此处写底部四个按钮的相互跳转
         ImageButton button_workstation = (ImageButton) findViewById(R.id.imageButton_workstation);
         button_workstation.setOnClickListener(new View.OnClickListener() {
