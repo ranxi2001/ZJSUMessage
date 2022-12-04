@@ -4,7 +4,11 @@
     </string>
     <string name="yuchaoyang_profile"> \t信息2002 副班长 \n\n\t浙江省数学建模二等奖
     </string>
+
+    <string name="fy_profile">  \t信息管理系统 教授 \n\n\t最受欢迎教师</string>
     <string name="chatperson1_name">余朝阳</string>
+    <string name="fy_name">封毅</string>
     <string name="chatperson1_class">信息2002</string>
     <string name="chatperson1_chatrecord">你能收到消息吗？</string>
+    <string name="edu_ggxy_back">back</string>
 </resources>
