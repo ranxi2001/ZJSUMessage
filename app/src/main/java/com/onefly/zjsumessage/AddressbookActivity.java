@@ -68,5 +68,15 @@ public class AddressbookActivity extends AppCompatActivity {
         Drawable drawable2 = getResources().getDrawable(R.mipmap.ggxy);
         drawable2.setBounds(0, 0, 85, 85);//第一0是距左边距离，第二0是距上边距离，40分别是长宽
         button2.setCompoundDrawables(drawable2, null, null, null);//只放左边
+
+        //从通讯录页面进入名片界面
+        Button button_contact1 = (Button) findViewById(R.id.button_chatperson1_address);
+        button_contact1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(AddressbookActivity.this, UserInformationActivity.class);
+                startActivity(intent);
+            }
+        });
     }
 }
