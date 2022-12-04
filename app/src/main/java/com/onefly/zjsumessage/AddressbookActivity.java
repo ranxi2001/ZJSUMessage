@@ -30,6 +30,7 @@ public class AddressbookActivity extends AppCompatActivity {
             }
         });
 
+
         //此处写底部四个按钮的相互跳转
         ImageButton button_message = (ImageButton) findViewById(R.id.imageButton_message);
         button_message.setOnClickListener(new View.OnClickListener() {

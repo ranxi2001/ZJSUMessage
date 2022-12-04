@@ -64,6 +64,9 @@
             android:name=".file_transfer"
             android:exported="false" />
         <activity
+            android:name=".Faculty_Contact"
+            android:exported="false" />
+        <activity
             android:name=".LoginActivity"
             android:exported="true">
             <intent-filter>

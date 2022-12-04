@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <item name="button_chatperson3_address" type="id">button_chatperson3_address</item>
-    <item name="button_chatperson2_address" type="id">button_chatperson2_address</item>
-    <item name="button_chatperson1_address" type="id">button_chatperson1_address</item>
-    <item name="textView_frequentContacts" type="id">textView_frequentContacts</item>
-    <item name="button_ZJSUteachers" type="id">button_ZJSUteachers</item>
-    <item name="button_ZJSUstudents" type="id">button_ZJSUstudents</item>
-</resources>
