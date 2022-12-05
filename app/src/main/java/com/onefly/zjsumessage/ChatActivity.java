@@ -66,27 +66,15 @@ public class ChatActivity extends AppCompatActivity {
             }
         });
 
-
-
-
-
-
-
-
-
     }
 
     boolean addmessage(String message_send,String username, String username_del) {
-        if (messageDao.findByName(username) == null) {
-            message message1=new message();
-            message1.username = username;
-            message1.username_del = username_del;
-            message1.message_send = message_send;
-            messageDao.insertAll(message1);
-            return true;
-        }
-
-        return false;
+        message message1=new message();
+        message1.username = username;
+        message1.username_del = username_del;
+        message1.message_send = message_send;
+        messageDao.insertAll(message1);
+        return true;
     }
 
     String getMessage(String username,String username_del){

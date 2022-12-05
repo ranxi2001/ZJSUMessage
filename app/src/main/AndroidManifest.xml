@@ -21,7 +21,7 @@
                 android:value="" />
         </activity>
         <activity
-            android:name=".mange_edu_teacher"
+            android:name=".CollegeTeacherActivity"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
