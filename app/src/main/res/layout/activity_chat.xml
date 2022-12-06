@@ -65,29 +65,28 @@
 
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="11dp"
+        android:layout_marginStart="7dp"
+        android:layout_marginBottom="12dp"
         android:background="#00FF0000"
         android:scaleType="center"
         android:src="@drawable/voice"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/editText_chat"
         app:layout_constraintHorizontal_chainStyle="packed"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/editText_chat"
         tools:ignore="SpeakableTextPresentCheck" />
 
     <EditText
         android:id="@+id/editText_chat"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="2dp"
-        android:layout_marginEnd="9dp"
-        android:layout_marginRight="9dp"
+        android:layout_width="260dp"
+        android:layout_height="42dp"
         android:ems="10"
         android:inputType="textPersonName"
         android:text=""
+        app:layout_constraintBottom_toBottomOf="@+id/imageButton_emoji"
         app:layout_constraintEnd_toStartOf="@+id/imageButton_emoji"
         app:layout_constraintStart_toEndOf="@+id/imageButton_voice"
-        app:layout_constraintTop_toTopOf="@+id/imageButton_voice"
+        app:layout_constraintTop_toTopOf="@+id/imageButton_emoji"
         tools:ignore="SpeakableTextPresentCheck" />
 
     <ImageButton
@@ -95,13 +94,12 @@
 
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="11dp"
+        android:layout_marginBottom="12dp"
         android:background="#00FF0000"
         android:scaleType="center"
         android:src="@drawable/emoji"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/imageButton_send"
-        app:layout_constraintStart_toEndOf="@+id/editText_chat"
         tools:ignore="SpeakableTextPresentCheck" />
 
     <ImageButton
@@ -109,17 +107,17 @@
 
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="2dp"
-        android:layout_marginRight="2dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="12dp"
         android:background="#00FF0000"
         android:scaleType="center"
-        android:src="@drawable/more"
+        android:src="@drawable/send"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/imageButton_emoji"
-        app:layout_constraintTop_toTopOf="@+id/imageButton_emoji"
         tools:ignore="SpeakableTextPresentCheck" />
 
     <LinearLayout
+        android:id="@+id/linearLayout8"
         android:layout_width="409dp"
         android:layout_height="613dp"
         android:layout_marginTop="50dp"
@@ -137,14 +135,15 @@
                 android:layout_width="284dp"
                 android:layout_height="49dp"
                 android:layout_marginEnd="15dp"
+                android:background="@drawable/textview_border"
                 android:gravity="center"
                 android:text="@string/chatperson1_chatrecord"
                 android:textAlignment="textEnd"
                 android:textSize="16sp"
-                android:background="@drawable/textview_border"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toStartOf="@+id/imageView2"
-                app:layout_constraintTop_toTopOf="parent" />
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="RtlCompat" />
 
             <ImageView
                 android:id="@+id/imageView2"
@@ -177,7 +176,7 @@
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="81dp" >
+            android:layout_height="81dp">
 
             <TextView
                 android:id="@+id/textView20"
@@ -212,6 +211,7 @@
                 app:layout_constraintTop_toTopOf="parent" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
+
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="81dp">
