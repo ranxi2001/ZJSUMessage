@@ -15,7 +15,7 @@ public class UserInformationActivity extends AppCompatActivity {
         setContentView(R.layout.activity_user_information);
 
         //从名片页面进入聊天界面
-        Button button_return = (Button) findViewById(R.id.button_startchat);
+        Button button_return = (Button) findViewById(R.id.button_startchat_fy);
         button_return.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

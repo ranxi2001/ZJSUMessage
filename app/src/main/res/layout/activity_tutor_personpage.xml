@@ -65,7 +65,7 @@
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <Button
-        android:id="@+id/button_startchat"
+        android:id="@+id/button_startchat_fy"
         android:layout_width="122dp"
         android:layout_height="50dp"
         android:layout_marginStart="162dp"
