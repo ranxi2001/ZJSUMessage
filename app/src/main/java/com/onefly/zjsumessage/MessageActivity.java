@@ -50,11 +50,39 @@ public class MessageActivity extends AppCompatActivity {
         });
         //聊天窗口的跳转
         //跳转到余朝阳聊天
-        Button button_chatperson1 = (Button) findViewById(R.id.button_chatperson1);
-        button_chatperson1.setOnClickListener(new View.OnClickListener() {
+
+        button_ycy.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent=new Intent(MessageActivity.this, ChatActivity.class);
+                String name_fy="余朝阳";
+                String institute="管工学院";
+                intent.putExtra("institute",institute);
+                intent.putExtra("name",name_fy);
+                startActivity(intent);
+            }
+        });
+
+        button_wjh.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(MessageActivity.this, ChatActivity.class);
+                String name_fy="王靖宏";
+                String institute="管工学院";
+                intent.putExtra("institute",institute);
+                intent.putExtra("name",name_fy);
+                startActivity(intent);
+            }
+        });
+
+        button_zcx.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(MessageActivity.this, ChatActivity.class);
+                String name_fy="祝橙希";
+                String institute="管工学院";
+                intent.putExtra("institute",institute);
+                intent.putExtra("name",name_fy);
                 startActivity(intent);
             }
         });
