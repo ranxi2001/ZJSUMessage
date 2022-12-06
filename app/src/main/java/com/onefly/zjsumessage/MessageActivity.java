@@ -20,6 +20,9 @@ public class MessageActivity extends AppCompatActivity {
         button_ycy=findViewById(R.id.button_chatperson1);
         button_wjh=findViewById(R.id.button_chatperson2);
         button_zcx=findViewById(R.id.button_chatperson3);
+        Intent intent =getIntent();
+
+        String name_user=intent.getStringExtra("userId");
         //此处写底部四个按钮的相互跳转
         ImageButton button_workstation = (ImageButton) findViewById(R.id.imageButton_workstation);
         button_workstation.setOnClickListener(new View.OnClickListener() {
@@ -56,7 +59,8 @@ public class MessageActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent=new Intent(MessageActivity.this, ChatActivity.class);
                 String name_fy="余朝阳";
-                String institute="管工学院";
+                String institute="信息2002";
+                intent.putExtra("userId",name_user);
                 intent.putExtra("institute",institute);
                 intent.putExtra("name",name_fy);
                 startActivity(intent);
@@ -68,7 +72,8 @@ public class MessageActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent=new Intent(MessageActivity.this, ChatActivity.class);
                 String name_fy="王靖宏";
-                String institute="管工学院";
+                String institute="信息2002";
+                intent.putExtra("userId",name_user);
                 intent.putExtra("institute",institute);
                 intent.putExtra("name",name_fy);
                 startActivity(intent);
@@ -80,7 +85,8 @@ public class MessageActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent=new Intent(MessageActivity.this, ChatActivity.class);
                 String name_fy="祝橙希";
-                String institute="管工学院";
+                String institute="信息2002";
+                intent.putExtra("userId",name_user);
                 intent.putExtra("institute",institute);
                 intent.putExtra("name",name_fy);
                 startActivity(intent);

@@ -30,6 +30,7 @@ public class ChatActivity extends AppCompatActivity {
         Intent intent =getIntent();
         String institute=intent.getStringExtra("institute");
         String name_user=intent.getStringExtra("name");
+        String name_del_user=intent.getStringExtra("userId");
         name_text.setText(name_user);
         tv6.setText(institute);
 
@@ -48,7 +49,7 @@ public class ChatActivity extends AppCompatActivity {
         //String message_current=getMessage(username,username_del);
         //tv1.setText(message_current);
 
-        updatediary();
+        updatediary(name_del_user,name_user);
 
         btnSend.setOnClickListener(v->{
 
@@ -61,7 +62,7 @@ public class ChatActivity extends AppCompatActivity {
             else{
                 Toast.makeText(this,"发送失败",Toast.LENGTH_SHORT).show();
             }
-            updatediary();
+            updatediary(name_del_user,name_user);
             //String message_current1=getMessage(username,username_del);
             //tv2.setText(message_current1);
         });
@@ -72,6 +73,7 @@ public class ChatActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent=new Intent(ChatActivity.this, MessageActivity.class);
+                intent.putExtra("userId",name_del_user);
                 startActivity(intent);
             }
         });
@@ -86,26 +88,26 @@ public class ChatActivity extends AppCompatActivity {
 
     }
 
-    private void updatediary() {
+    private void updatediary(String name_del_user,String name_user) {
         List<message> messageList=messageDao.getAll();//列表数据拉取
         int len=messageList.size();
         int k=len-5;
         message message1,message2,message3,message4,message5;
         message1=messageList.get(k);
         k++;
-        tv1.setText(message1.username+"->"+message1.username_del+":  "+message1.message_send);
+        tv1.setText(name_del_user+"->"+name_user+":  "+message1.message_send);
         message2=messageList.get(k);
         k++;
-        tv2.setText(message2.username+"->"+message2.username_del+":  "+message2.message_send);
+        tv2.setText(name_del_user+"->"+name_user+":  "+message2.message_send);
         message3=messageList.get(k);
         k++;
-        tv3.setText(message3.username+"->"+message3.username_del+":  "+message3.message_send);
+        tv3.setText(name_del_user+"->"+name_user+":  "+message3.message_send);
         message4=messageList.get(k);
         k++;
-        tv4.setText(message4.username+"->"+message4.username_del+":  "+message4.message_send);
+        tv4.setText(name_del_user+"->"+name_user+":  "+message4.message_send);
         message5=messageList.get(k);
         k++;
-        tv5.setText(message5.username+"->"+message5.username_del+":  "+message5.message_send);
+        tv5.setText(name_del_user+"->"+name_user+":  "+message5.message_send);
     }
 
     boolean addmessage(String message_send,String username, String username_del) {
