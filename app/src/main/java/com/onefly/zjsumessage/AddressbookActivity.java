@@ -22,10 +22,18 @@ public class AddressbookActivity extends AppCompatActivity {
         Button bt_contact_yzy = findViewById(R.id.button_chatperson1_address);  //  联系人余朝阳
         Button bt_contact_zcx = findViewById(R.id.button_chatperson2_address);  //  联系人祝橙希
         Button bt_contact_wjh = findViewById(R.id.button_chatperson3_address); //  联系人王靖宏
-        button_faculty.setOnClickListener(new View.OnClickListener() {
+        button_faculty.setOnClickListener(new View.OnClickListener() {//点击商大老师进行跳转
             @Override
             public void onClick(View v) {
                 Intent intent=new Intent(AddressbookActivity.this, Faculty_Contact.class);
+                startActivity(intent);
+            }
+        });
+
+        button_student.setOnClickListener(new View.OnClickListener() {//点击商大老师进行跳转
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(AddressbookActivity.this, CollegeStudentActivity.class);
                 startActivity(intent);
             }
         });

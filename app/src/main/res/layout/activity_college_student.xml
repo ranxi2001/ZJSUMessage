@@ -4,7 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Shangda_Student">
+    tools:context=".CollegeStudentActivity">
+
+
     <LinearLayout
         android:id="@+id/linearLayout7"
         android:layout_width="407dp"
@@ -17,66 +19,66 @@
         app:layout_constraintTop_toBottomOf="@+id/school_name_textview">
 
         <Button
-            android:id="@+id/grade2016"
+            android:id="@+id/mange_edu"
             android:layout_width="match_parent"
             android:layout_height="83dp"
             android:background="@color/teal_200"
             android:backgroundTint="@color/white"
             android:drawableLeft="@drawable/academy"
             android:paddingLeft="30dp"
-            android:text="2016级" />
+            android:text="管理工程与电子商务学院" />
 
         <Button
-            android:id="@+id/grade2017"
+            android:id="@+id/mercy_edu"
             android:layout_width="match_parent"
             android:layout_height="83dp"
             android:background="@color/teal_200"
             android:backgroundTint="@color/white"
             android:drawableLeft="@drawable/academy"
             android:paddingLeft="30dp"
-            android:text="2017级"
+            android:text="英贤慈善学院"
             android:textAlignment="center" />
 
 
         <Button
-            android:id="@+id/grade2018"
+            android:id="@+id/math_edu"
             android:layout_width="match_parent"
             android:layout_height="83dp"
             android:background="@color/teal_200"
             android:backgroundTint="@color/white"
             android:drawableLeft="@drawable/academy"
             android:paddingLeft="30dp"
-            android:text="2018级" />
+            android:text="统计与数学学院" />
 
         <Button
-            android:id="@+id/grade2019"
+            android:id="@+id/infomation_edu"
             android:layout_width="match_parent"
             android:layout_height="83dp"
             android:background="@color/teal_200"
             android:backgroundTint="@color/white"
             android:drawableLeft="@drawable/academy"
             android:paddingLeft="30dp"
-            android:text="2019级" />
+            android:text="计算机科学与技术学院" />
 
         <Button
-            android:id="@+id/grade2020"
+            android:id="@+id/eco_edu"
             android:layout_width="match_parent"
             android:layout_height="83dp"
             android:background="@color/teal_200"
             android:backgroundTint="@color/white"
             android:drawableLeft="@drawable/academy"
             android:paddingLeft="30dp"
-            android:text="2020级" />
+            android:text="经济学院" />
 
         <Button
-            android:id="@+id/grade2021"
+            android:id="@+id/computer_edu"
             android:layout_width="match_parent"
             android:layout_height="83dp"
             android:background="@color/teal_200"
             android:backgroundTint="@color/white"
             android:drawableLeft="@drawable/academy"
             android:paddingLeft="30dp"
-            android:text="2021级" />
+            android:text="信息与电子工程学院" />
 
     </LinearLayout>
 
@@ -93,7 +95,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageButton
-        android:id="@+id/fac_con_back"
+        android:id="@+id/college_con_back"
         android:layout_width="51dp"
         android:layout_height="48dp"
         android:backgroundTint="@color/teal_200"
@@ -104,5 +106,6 @@
         app:layout_constraintTop_toTopOf="@+id/school_name_textview"
         app:srcCompat="@drawable/return_white"
         tools:ignore="SpeakableTextPresentCheck" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

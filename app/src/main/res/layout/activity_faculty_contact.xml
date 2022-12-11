@@ -97,14 +97,15 @@
     <ImageButton
         android:id="@+id/fac_con_back"
         android:layout_width="51dp"
-        android:layout_height="42dp"
+        android:layout_height="48dp"
         android:backgroundTint="@color/teal_200"
         app:layout_constraintBottom_toBottomOf="@+id/school_name_textview"
         app:layout_constraintEnd_toStartOf="@+id/school_name_textview"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/school_name_textview"
-        app:srcCompat="@drawable/return_white" />
+        app:srcCompat="@drawable/return_white"
+        tools:ignore="SpeakableTextPresentCheck" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
