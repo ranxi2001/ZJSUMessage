@@ -16,7 +16,7 @@ public class Faculty_Contact extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_faculty_contact);
         Button button_edu= findViewById(R.id.mange_edu);        //管工学院
-        ImageButton button_facultycon_back = findViewById(R.id.fac_con_back);
+        ImageButton button_facultycon_back = findViewById(R.id.grade_con_back);
         button_edu.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {//管工学院按钮进入管工学院

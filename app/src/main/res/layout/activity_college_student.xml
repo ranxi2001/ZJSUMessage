@@ -19,7 +19,7 @@
         app:layout_constraintTop_toBottomOf="@+id/school_name_textview">
 
         <Button
-            android:id="@+id/mange_edu"
+            android:id="@+id/mange_edu1"
             android:layout_width="match_parent"
             android:layout_height="83dp"
             android:background="@color/teal_200"
@@ -29,7 +29,7 @@
             android:text="管理工程与电子商务学院" />
 
         <Button
-            android:id="@+id/mercy_edu"
+            android:id="@+id/mercy_edu1"
             android:layout_width="match_parent"
             android:layout_height="83dp"
             android:background="@color/teal_200"
@@ -41,7 +41,7 @@
 
 
         <Button
-            android:id="@+id/math_edu"
+            android:id="@+id/math_edu1"
             android:layout_width="match_parent"
             android:layout_height="83dp"
             android:background="@color/teal_200"
@@ -51,7 +51,7 @@
             android:text="统计与数学学院" />
 
         <Button
-            android:id="@+id/infomation_edu"
+            android:id="@+id/infomation_edu1"
             android:layout_width="match_parent"
             android:layout_height="83dp"
             android:background="@color/teal_200"
@@ -61,7 +61,7 @@
             android:text="计算机科学与技术学院" />
 
         <Button
-            android:id="@+id/eco_edu"
+            android:id="@+id/eco_edu1"
             android:layout_width="match_parent"
             android:layout_height="83dp"
             android:background="@color/teal_200"
@@ -71,7 +71,7 @@
             android:text="经济学院" />
 
         <Button
-            android:id="@+id/computer_edu"
+            android:id="@+id/computer_edu1"
             android:layout_width="match_parent"
             android:layout_height="83dp"
             android:background="@color/teal_200"
