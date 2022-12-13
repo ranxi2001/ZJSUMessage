@@ -7,15 +7,13 @@
     tools:context=".UserInformationActivity">
 
 
-    <ImageButton
-        android:id="@+id/imageButton_return_addressbook"
-        android:layout_width="51dp"
-        android:layout_height="42dp"
-        android:backgroundTint="@color/teal_200"
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="32dp"
+        android:layout_height="30dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/return_white"
-        tools:ignore="SpeakableTextPresentCheck" />
+        app:srcCompat="@drawable/return_white" />
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/linearLayout2"
@@ -24,7 +22,7 @@
         android:background="#ffffff"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageButton_return_addressbook">
+        app:layout_constraintTop_toBottomOf="@+id/imageView5">
 
 
         <TextView
@@ -45,12 +43,11 @@
             android:layout_width="75dp"
             android:layout_height="72dp"
 
-            android:layout_marginStart="35dp"
             android:layout_marginTop="28dp"
             android:layout_weight="0.1"
-            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@drawable/yuchaoyang" />
+            app:srcCompat="@drawable/yuchaoyang"
+            tools:layout_editor_absoluteX="35dp" />
 
         <TextView
             android:id="@+id/textView19"
