@@ -1,6 +1,7 @@
 package com.onefly.zjsumessage;
 
 import android.app.Application;
+import android.content.Intent;
 
 import cn.leancloud.LCObject;
 import cn.leancloud.LeanCloud;
@@ -17,5 +18,7 @@ public class LeanCloud_My extends Application {
         LCObject testObject = new LCObject("TestObject");
         testObject.put("words", "Hello world!");
         testObject.saveInBackground().blockingSubscribe();
+        Intent intent =new Intent(LeanCloud_My.this,LoginActivity.class);
+        startActivity(intent);
     }
 }
