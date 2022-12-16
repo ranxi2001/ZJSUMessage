@@ -20,6 +20,8 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import java.util.List;
 
+import cn.leancloud.LCObject;
+
 public class LoginActivity extends AppCompatActivity {
     private CheckBox rememberPass;
     private SharedPreferences pref;
@@ -42,6 +44,7 @@ public class LoginActivity extends AppCompatActivity {
         rememberPass =findViewById(R.id.checkBox3);
         accountedit=findViewById(R.id.account);
         passwordedit=findViewById(R.id.password);
+
 
 
         button1.setOnClickListener(new View.OnClickListener() {
