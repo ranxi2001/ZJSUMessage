@@ -15,6 +15,11 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import java.util.List;
 
+import cn.leancloud.LCObject;
+import cn.leancloud.LCQuery;
+import io.reactivex.Observer;
+import io.reactivex.disposables.Disposable;
+
 public class ChatActivity extends AppCompatActivity {
     ImageButton btnSend;
     EditText messageText;
@@ -42,30 +47,155 @@ public class ChatActivity extends AppCompatActivity {
         tv4=findViewById(R.id.textView23);
         tv5=findViewById(R.id.textView24);
 
-        String username="ranxi";
-        String username_del="yuchaoyang";
-        messageDao = messageDatabase.getInstance(this).messageDao();
+        String username_del=name_del_user;
+        String username=name_user;
 
-        //String message_current=getMessage(username,username_del);
-        //tv1.setText(message_current);
+        //final String[] password_true = new String[1000];
 
-        updatediary(name_del_user,name_user);
+        LCQuery<LCObject> query =new LCQuery<>("message");
+        query.whereEqualTo("username_del",username_del);
+        query.whereEqualTo("username",username);
+        query.orderByDescending("createdAt");
+        query.findInBackground().subscribe(new Observer<List<LCObject>>() {
+            @Override
+            public void onSubscribe(Disposable d) {
+
+            }
+
+            @Override
+            public void onNext(List<LCObject> lcObjects) {
+                tv5.setText(lcObjects.get(0).getString("message_send"));
+                tv4.setText(lcObjects.get(1).getString("message_send"));
+                tv3.setText(lcObjects.get(2).getString("message_send"));
+                tv2.setText(lcObjects.get(3).getString("message_send"));
+                tv1.setText(lcObjects.get(4).getString("message_send"));
+
+            }
+
+            @Override
+            public void onError(Throwable e) {
+
+            }
+
+            @Override
+            public void onComplete() {
+
+            }
+        });
+
 
         btnSend.setOnClickListener(v->{
 
             String message_send=messageText.getText().toString();
+            LCObject message=new LCObject("message");
+            message.put("username_del",username_del);
+            message.put("username",username);
+            message.put("message_send",message_send);
+            message.saveInBackground().subscribe(new Observer<LCObject>() {
+                @Override
+                public void onSubscribe(Disposable d) {
 
+                }
 
-            if(addmessage(message_send,username,username_del)){
-                Toast.makeText(this, "发送成功", Toast.LENGTH_SHORT).show();
-            }
-            else{
-                Toast.makeText(this,"发送失败",Toast.LENGTH_SHORT).show();
-            }
-            updatediary(name_del_user,name_user);
-            //String message_current1=getMessage(username,username_del);
-            //tv2.setText(message_current1);
+                @Override
+                public void onNext(LCObject lcObject) {
+                    System.out.println("保存成功");
+                }
+
+                @Override
+                public void onError(Throwable e) {
+                    System.out.println("保存失败");
+                }
+
+                @Override
+                public void onComplete() {
+
+                }
+            });
+
+            LCQuery<LCObject> query1 =new LCQuery<>("message");
+            query1.whereEqualTo("username_del",username_del);
+            query1.whereEqualTo("username",username);
+            query1.orderByDescending("createdAt");
+            query1.findInBackground().subscribe(new Observer<List<LCObject>>() {
+                @Override
+                public void onSubscribe(Disposable d) {
+
+                }
+
+                @Override
+                public void onNext(List<LCObject> lcObjects) {
+                    tv5.setText(lcObjects.get(0).getString("message_send"));
+                    tv4.setText(lcObjects.get(1).getString("message_send"));
+                    tv3.setText(lcObjects.get(2).getString("message_send"));
+                    tv2.setText(lcObjects.get(3).getString("message_send"));
+                    tv1.setText(lcObjects.get(4).getString("message_send"));
+
+                }
+
+                @Override
+                public void onError(Throwable e) {
+
+                }
+
+                @Override
+                public void onComplete() {
+
+                }
+            });
+
         });
+
+//        final String[] message = new String[1];
+//
+//        LCQuery<LCObject> query =new LCQuery<>("Account");
+//        query.whereEqualTo("username",username);
+//        query.findInBackground().subscribe(new Observer<List<LCObject>>() {
+//            @Override
+//            public void onSubscribe(Disposable d) {
+//
+//            }
+//
+//            @Override
+//            public void onNext(List<LCObject> lcObjects) {
+//
+//            }
+//
+//            @Override
+//            public void onError(Throwable e) {
+//
+//            }
+//
+//            @Override
+//            public void onComplete() {
+//
+//            }
+//        });
+
+//        String username="ranxi";
+//        String username_del="yuchaoyang";
+//        messageDao = messageDatabase.getInstance(this).messageDao();
+//
+//        //String message_current=getMessage(username,username_del);
+//        //tv1.setText(message_current);
+//
+//        updatediary(name_del_user,name_user);
+//
+//        btnSend.setOnClickListener(v->{
+//
+//            String message_send=messageText.getText().toString();
+//
+//
+//            if(addmessage(message_send,username,username_del)){
+//                Toast.makeText(this, "发送成功", Toast.LENGTH_SHORT).show();
+//            }
+//            else{
+//                Toast.makeText(this,"发送失败",Toast.LENGTH_SHORT).show();
+//            }
+//            updatediary(name_del_user,name_user);
+//            //String message_current1=getMessage(username,username_del);
+//            //tv2.setText(message_current1);
+//        });
 
         //从聊天页面返回消息页面
         ImageButton button_return = (ImageButton) findViewById(R.id.imageButton_backmessage);
