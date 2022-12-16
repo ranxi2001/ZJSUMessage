@@ -13,6 +13,7 @@ import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import java.util.Arrays;
 import java.util.List;
 
 import cn.leancloud.LCObject;
@@ -24,7 +25,8 @@ public class ChatActivity extends AppCompatActivity {
     ImageButton btnSend;
     EditText messageText;
     messageDao messageDao;
-    TextView tv1,tv2,tv3,tv4,tv5,name_text,tv6;
+    TextView name_text,tv6;
+    TextView[] textViews=new TextView[1000];
     //int mid=1;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -41,11 +43,21 @@ public class ChatActivity extends AppCompatActivity {
 
         btnSend = findViewById(R.id.imageButton_send);
         messageText = findViewById(R.id.editText_chat);
-        tv1=findViewById(R.id.textView18);
-        tv2=findViewById(R.id.textView22);
-        tv3=findViewById(R.id.textView20);
-        tv4=findViewById(R.id.textView23);
-        tv5=findViewById(R.id.textView24);
+        textViews[1]=findViewById(R.id.textView23);
+        textViews[2]=findViewById(R.id.textView24);
+        textViews[3]=findViewById(R.id.textView28);
+        textViews[4]=findViewById(R.id.textView29);
+        textViews[5]=findViewById(R.id.textView30);
+        textViews[6]=findViewById(R.id.textView31);
+        textViews[7]=findViewById(R.id.textView32);
+        textViews[8]=findViewById(R.id.textView33);
+        textViews[9]=findViewById(R.id.textView34);
+        textViews[10]=findViewById(R.id.textView35);
+        textViews[11]=findViewById(R.id.textView36);
+        textViews[12]=findViewById(R.id.textView37);
+        textViews[13]=findViewById(R.id.textView38);
+        textViews[14]=findViewById(R.id.textView39);
+        textViews[15]=findViewById(R.id.textView40);
 
         String username_del=name_del_user;
         String username=name_user;
@@ -53,8 +65,8 @@ public class ChatActivity extends AppCompatActivity {
         //final String[] password_true = new String[1000];
 
         LCQuery<LCObject> query =new LCQuery<>("message");
-        query.whereEqualTo("username_del",username_del);
-        query.whereEqualTo("username",username);
+        query.whereContainedIn("username_del", Arrays.asList(username,username_del));
+        query.whereContainedIn("username",Arrays.asList(username,username_del));
         query.orderByDescending("createdAt");
         query.findInBackground().subscribe(new Observer<List<LCObject>>() {
             @Override
@@ -64,11 +76,16 @@ public class ChatActivity extends AppCompatActivity {
 
             @Override
             public void onNext(List<LCObject> lcObjects) {
-                tv5.setText(lcObjects.get(0).getString("message_send"));
-                tv4.setText(lcObjects.get(1).getString("message_send"));
-                tv3.setText(lcObjects.get(2).getString("message_send"));
-                tv2.setText(lcObjects.get(3).getString("message_send"));
-                tv1.setText(lcObjects.get(4).getString("message_send"));
+                int number_text=15;//布局中的text最大数量
+                int k=lcObjects.size();
+                int number_message=k;
+                int ipoint=0;
+                while(k>0&&number_text>0&&ipoint<number_message){
+                    textViews[k].setText(lcObjects.get(ipoint).getString("message_send"));
+                    ipoint++;
+                    k--;
+                    number_text--;
+                }
 
             }
 
@@ -114,8 +131,8 @@ public class ChatActivity extends AppCompatActivity {
             });
 
             LCQuery<LCObject> query1 =new LCQuery<>("message");
-            query1.whereEqualTo("username_del",username_del);
-            query1.whereEqualTo("username",username);
+            query1.whereContainedIn("username_del", Arrays.asList(username,username_del));
+            query1.whereContainedIn("username",Arrays.asList(username,username_del));
             query1.orderByDescending("createdAt");
             query1.findInBackground().subscribe(new Observer<List<LCObject>>() {
                 @Override
@@ -125,11 +142,13 @@ public class ChatActivity extends AppCompatActivity {
 
                 @Override
                 public void onNext(List<LCObject> lcObjects) {
-                    tv5.setText(lcObjects.get(0).getString("message_send"));
-                    tv4.setText(lcObjects.get(1).getString("message_send"));
-                    tv3.setText(lcObjects.get(2).getString("message_send"));
-                    tv2.setText(lcObjects.get(3).getString("message_send"));
-                    tv1.setText(lcObjects.get(4).getString("message_send"));
+                    int number_text=15;//布局中的text最大数量
+                    int k=lcObjects.size();
+                    while(k>0&&number_text>0){
+                        textViews[k].setText(lcObjects.get(0).getString("message_send"));
+                        k--;
+                        number_text--;
+                    }
 
                 }
 
@@ -218,27 +237,27 @@ public class ChatActivity extends AppCompatActivity {
 
     }
 
-    private void updatediary(String name_del_user,String name_user) {
-        List<message> messageList=messageDao.getAll();//列表数据拉取
-        int len=messageList.size();
-        int k=len-5;
-        message message1,message2,message3,message4,message5;
-        message1=messageList.get(k);
-        k++;
-        tv1.setText(name_del_user+"->"+name_user+":  "+message1.message_send);
-        message2=messageList.get(k);
-        k++;
-        tv2.setText(name_del_user+"->"+name_user+":  "+message2.message_send);
-        message3=messageList.get(k);
-        k++;
-        tv3.setText(name_del_user+"->"+name_user+":  "+message3.message_send);
-        message4=messageList.get(k);
-        k++;
-        tv4.setText(name_del_user+"->"+name_user+":  "+message4.message_send);
-        message5=messageList.get(k);
-        k++;
-        tv5.setText(name_del_user+"->"+name_user+":  "+message5.message_send);
-    }
+//    private void updatediary(String name_del_user,String name_user) {
+//        List<message> messageList=messageDao.getAll();//列表数据拉取
+//        int len=messageList.size();
+//        int k=len-5;
+//        message message1,message2,message3,message4,message5;
+//        message1=messageList.get(k);
+//        k++;
+//        tv1.setText(name_del_user+"->"+name_user+":  "+message1.message_send);
+//        message2=messageList.get(k);
+//        k++;
+//        tv2.setText(name_del_user+"->"+name_user+":  "+message2.message_send);
+//        message3=messageList.get(k);
+//        k++;
+//        tv3.setText(name_del_user+"->"+name_user+":  "+message3.message_send);
+//        message4=messageList.get(k);
+//        k++;
+//        tv4.setText(name_del_user+"->"+name_user+":  "+message4.message_send);
+//        message5=messageList.get(k);
+//        k++;
+//        tv5.setText(name_del_user+"->"+name_user+":  "+message5.message_send);
+//    }
 
     boolean addmessage(String message_send,String username, String username_del) {
 

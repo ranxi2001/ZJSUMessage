@@ -44,9 +44,13 @@ public class register extends AppCompatActivity {
                     public void onNext(LCObject user) {
                         // 成功保存之后，执行其他逻辑
                         System.out.println("保存成功。objectId：" + user.getObjectId());
+                        Toast.makeText(register.this, "注册成功", Toast.LENGTH_SHORT).show();
+                        Intent intent =new Intent(register.this,LoginActivity.class);
+                        startActivity(intent);
                     }
                     public void onError(Throwable throwable) {
                         System.out.println("保存失败");
+                        Toast.makeText(register.this, "注册失败", Toast.LENGTH_SHORT).show();
                         // 异常处理
                     }
                     public void onComplete() {}
