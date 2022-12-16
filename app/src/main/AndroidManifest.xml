@@ -1,11 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
-    <uses-permission android:name="android.permission.INTERNET"/>
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
-    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
-    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
 
     <application
         android:name=".LeanCloud_My"
@@ -19,6 +14,13 @@
         android:theme="@style/Theme.ZJSUMessage"
         android:usesCleartextTraffic="true"
         tools:targetApi="31">
+        <activity
+            android:name=".Buffer_contact"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
         <activity
             android:name=".CollegeStudentActivity"
             android:exported="false">
@@ -109,16 +111,25 @@
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
-        <service android:name="cn.leancloud.push.PushService"/>
-        <receiver android:name="cn.leancloud.push.LCBroadcastReceiver"
-            android:exported="true">
-<!--            <intent-filter>-->
-<!--                <action android:name="android.intent.action.BOOT_COMPLETED"/>-->
-<!--                <action android:name="android.intent.action.USER_PRESENT"/>-->
-<!--                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />-->
-<!--            </intent-filter>-->
-        </receiver>
-    </application>
 
+        <receiver
+            android:name="cn.leancloud.push.LCBroadcastReceiver"
+            android:exported="true">
+
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.BOOT_COMPLETED"/> -->
+            <!-- <action android:name="android.intent.action.USER_PRESENT"/> -->
+            <!-- <action android:name="android.net.conn.CONNECTIVITY_CHANGE" /> -->
+            <!-- </intent-filter> -->
+        </receiver>
+
+        <service android:name="cn.leancloud.push.PushService" />
+    </application>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
 
 </manifest>

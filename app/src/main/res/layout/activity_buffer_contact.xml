@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Buffer_contact">
+
+    <LinearLayout
+        android:id="@+id/linearLayout_buffer"
+        android:layout_width="410dp"
+        android:layout_height="51dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <ImageButton
+            android:id="@+id/button_buffer_back"
+            android:layout_width="51dp"
+            android:layout_height="42dp"
+            android:backgroundTint="@color/teal_200"
+            android:contentDescription="@string/edu_ggxy_back"
+            app:srcCompat="@drawable/return_white" />
+
+        <TextView
+            android:id="@+id/which_school"
+            android:layout_width="301dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text=""
+            android:textSize="24sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="411dp"
+        android:layout_height="690dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout_buffer">
+
+        <TextView
+            android:id="@+id/class1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="" />
+
+        <Button
+            android:id="@+id/class1_stu1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/teal_200"
+            android:backgroundTint="#ffcb34"
+            android:drawableLeft="@drawable/students"
+            android:paddingLeft="30dp"
+            android:text=""
+            android:textAlignment="viewStart" />
+
+        <Button
+            android:id="@+id/class1_stu2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/teal_200"
+            android:backgroundTint="@color/white"
+            android:drawableLeft="@drawable/students"
+            android:paddingLeft="30dp"
+            android:text=""
+            android:textAlignment="viewStart" />
+
+        <Button
+            android:id="@+id/class1_stu3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/teal_200"
+            android:backgroundTint="@color/white"
+            android:drawableLeft="@drawable/students"
+            android:paddingLeft="30dp"
+            android:text=""
+            android:textAlignment="viewStart" />
+
+        <Button
+            android:id="@+id/class1_stu4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/teal_200"
+            android:backgroundTint="@color/white"
+            android:drawableLeft="@drawable/students"
+            android:paddingLeft="30dp"
+            android:text=""
+            android:textAlignment="viewStart" />
+
+        <TextView
+            android:id="@+id/class2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="" />
+
+        <Button
+            android:id="@+id/class2_stu1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/teal_200"
+            android:backgroundTint="@color/white"
+            android:drawableLeft="@drawable/students"
+            android:paddingLeft="30dp"
+            android:text=""
+            android:textAlignment="viewStart" />
+
+        <Button
+            android:id="@+id/class2_stu2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/teal_200"
+            android:backgroundTint="@color/white"
+            android:drawableLeft="@drawable/students"
+            android:paddingLeft="30dp"
+            android:text=""
+            android:textAlignment="viewStart" />
+
+        <Button
+            android:id="@+id/class2_stu3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/teal_200"
+            android:backgroundTint="@color/white"
+            android:drawableLeft="@drawable/students"
+            android:paddingLeft="30dp"
+            android:text=""
+            android:textAlignment="viewStart" />
+
+        <TextView
+            android:id="@+id/class3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="" />
+
+        <Button
+            android:id="@+id/class3_stu1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/teal_200"
+            android:backgroundTint="@color/white"
+            android:drawableLeft="@drawable/students"
+            android:paddingLeft="30dp"
+            android:text=""
+            android:textAlignment="viewStart" />
+
+        <Button
+            android:id="@+id/class3_stu2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/teal_200"
+            android:backgroundTint="@color/white"
+            android:drawableLeft="@drawable/students"
+            android:paddingLeft="30dp"
+            android:text=""
+            android:textAlignment="viewStart" />
+
+        <Button
+            android:id="@+id/class3_stu3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/teal_200"
+            android:backgroundTint="@color/white"
+            android:drawableLeft="@drawable/students"
+            android:paddingLeft="30dp"
+            android:text=""
+            android:textAlignment="viewStart" />
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
