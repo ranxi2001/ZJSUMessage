@@ -28,42 +28,39 @@ public class register extends AppCompatActivity {
         ed2=findViewById(R.id.password);
         ed3=findViewById(R.id.password1);
 
-        //userDao = AppDatabase.getInstance(this).userDao();
+        LCObject user = new LCObject("Account");
 
-        LCObject user = new LCObject("User");
-        btn.setOnClickListener(V->{
+// 为属性赋值
+
+        btn.setOnClickListener(v->{
             String username=ed1.getText().toString();
             String password=ed2.getText().toString();
             String password_confirm=ed3.getText().toString();
-            user.put("account",username);
-            user.put("password",password);
+            user.put("username",   username);
+            user.put("password", password);
             if(password.equals(password_confirm)){
                 user.saveInBackground().subscribe(new Observer<LCObject>() {
-                    @Override
-                    public void onSubscribe(Disposable d) {
-
+                    public void onSubscribe(Disposable disposable) {}
+                    public void onNext(LCObject user) {
+                        // 成功保存之后，执行其他逻辑
+                        System.out.println("保存成功。objectId：" + user.getObjectId());
                     }
-
-                    @Override
-                    public void onNext(LCObject lcObject) {
-                        System.out.println("注册成功");
+                    public void onError(Throwable throwable) {
+                        System.out.println("保存失败");
+                        // 异常处理
                     }
-
-                    @Override
-                    public void onError(Throwable e) {
-                        System.out.println("注册失败");
-                    }
-
-                    @Override
-                    public void onComplete() {
-
-                    }
+                    public void onComplete() {}
                 });
             }
-            else{
-                Toast.makeText(this, "两次密码不一致！", Toast.LENGTH_SHORT).show();
-            }
+
+// 将对象保存到云端
+
         });
+
+
+        //userDao = AppDatabase.getInstance(this).userDao();
+
+
 
 
 

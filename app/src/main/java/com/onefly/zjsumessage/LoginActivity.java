@@ -21,6 +21,9 @@ import androidx.appcompat.app.AppCompatActivity;
 import java.util.List;
 
 import cn.leancloud.LCObject;
+import cn.leancloud.LCQuery;
+import io.reactivex.Observer;
+import io.reactivex.disposables.Disposable;
 
 public class LoginActivity extends AppCompatActivity {
     private CheckBox rememberPass;
@@ -38,30 +41,70 @@ public class LoginActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
-        pref = PreferenceManager.getDefaultSharedPreferences(this);
+        //pref = PreferenceManager.getDefaultSharedPreferences(this);
         Button button1 = (Button) findViewById(R.id.button1);
-        userDao = AppDatabase.getInstance(this).userDao();
+        //userDao = AppDatabase.getInstance(this).userDao();
         rememberPass =findViewById(R.id.checkBox3);
         accountedit=findViewById(R.id.account);
         passwordedit=findViewById(R.id.password);
 
+        button1.setOnClickListener(v->{
+            String username=accountedit.getText().toString();
+            String password=passwordedit.getText().toString();
+            final String[] password_true = new String[1];
 
+            LCQuery<LCObject> query =new LCQuery<>("Account");
+            query.whereEqualTo("username",username);
+            query.getFirstInBackground().subscribe(new Observer<LCObject>() {
+                @Override
+                public void onSubscribe(Disposable d) {
 
-        button1.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                String username=accountedit.getText().toString();
-                String password=passwordedit.getText().toString();
-                if (checkLogin(username, password)) {
-                    Intent intent = new Intent(LoginActivity.this,MessageActivity.class);
-                    intent.putExtra("userId",username);
-                    startActivity(intent);
-                } else {
-                    Toast.makeText(LoginActivity.this,"登录失败！",Toast.LENGTH_SHORT).show();
                 }
 
-            }
+                @Override
+                public void onNext(LCObject lcObject) {
+                    password_true[0] =lcObject.getString("password");
+                    if(password_true[0].equals(password)){
+                        Intent intent = new Intent(LoginActivity.this,MessageActivity.class);
+                        intent.putExtra("userId",username);
+                        startActivity(intent);
+                    }
+                    else{
+                        Toast.makeText(LoginActivity.this,"登录失败！",Toast.LENGTH_SHORT).show();
+                    }
+                }
+
+                @Override
+                public void onError(Throwable e) {
+
+                }
+
+                @Override
+                public void onComplete() {
+
+                }
+            });
+
+
         });
+
+
+
+//        button1.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                String username=accountedit.getText().toString();
+//                String password=passwordedit.getText().toString();
+//                if (checkLogin(username, password)) {
+//                    Intent intent = new Intent(LoginActivity.this,MessageActivity.class);
+//                    intent.putExtra("userId",username);
+//                    startActivity(intent);
+//                } else {
+//                    Toast.makeText(LoginActivity.this,"登录失败！",Toast.LENGTH_SHORT).show();
+//                }
+//
+//            }
+//        });
 
     }
     public void register1(View view){
