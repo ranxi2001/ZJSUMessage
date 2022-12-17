@@ -8,8 +8,8 @@
 
     <LinearLayout
         android:id="@+id/linearLayout_buffer"
-        android:layout_width="410dp"
-        android:layout_height="51dp"
+        android:layout_width="406dp"
+        android:layout_height="43dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -27,10 +27,9 @@
 
         <TextView
             android:id="@+id/which_school"
-            android:layout_width="301dp"
+            android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:gravity="center"
-            android:text=""
             android:textSize="24sp" />
 
     </LinearLayout>
@@ -48,6 +47,12 @@
         <TextView
             android:id="@+id/class1"
             android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="" />
+
+        <TextView
+            android:id="@+id/real_class1"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="" />
 
@@ -60,7 +65,8 @@
             android:drawableLeft="@drawable/students"
             android:paddingLeft="30dp"
             android:text=""
-            android:textAlignment="viewStart" />
+            android:textAlignment="viewStart"
+            tools:ignore="SpeakableTextPresentCheck" />
 
         <Button
             android:id="@+id/class1_stu2"
@@ -71,7 +77,8 @@
             android:drawableLeft="@drawable/students"
             android:paddingLeft="30dp"
             android:text=""
-            android:textAlignment="viewStart" />
+            android:textAlignment="viewStart"
+            tools:ignore="SpeakableTextPresentCheck" />
 
         <Button
             android:id="@+id/class1_stu3"
@@ -82,7 +89,8 @@
             android:drawableLeft="@drawable/students"
             android:paddingLeft="30dp"
             android:text=""
-            android:textAlignment="viewStart" />
+            android:textAlignment="viewStart"
+            tools:ignore="SpeakableTextPresentCheck" />
 
         <Button
             android:id="@+id/class1_stu4"
@@ -93,7 +101,8 @@
             android:drawableLeft="@drawable/students"
             android:paddingLeft="30dp"
             android:text=""
-            android:textAlignment="viewStart" />
+            android:textAlignment="viewStart"
+            tools:ignore="SpeakableTextPresentCheck" />
 
         <TextView
             android:id="@+id/class2"
@@ -110,7 +119,8 @@
             android:drawableLeft="@drawable/students"
             android:paddingLeft="30dp"
             android:text=""
-            android:textAlignment="viewStart" />
+            android:textAlignment="viewStart"
+            tools:ignore="SpeakableTextPresentCheck" />
 
         <Button
             android:id="@+id/class2_stu2"
@@ -121,7 +131,8 @@
             android:drawableLeft="@drawable/students"
             android:paddingLeft="30dp"
             android:text=""
-            android:textAlignment="viewStart" />
+            android:textAlignment="viewStart"
+            tools:ignore="SpeakableTextPresentCheck" />
 
         <Button
             android:id="@+id/class2_stu3"
@@ -132,7 +143,8 @@
             android:drawableLeft="@drawable/students"
             android:paddingLeft="30dp"
             android:text=""
-            android:textAlignment="viewStart" />
+            android:textAlignment="viewStart"
+            tools:ignore="SpeakableTextPresentCheck" />
 
         <TextView
             android:id="@+id/class3"
@@ -149,7 +161,8 @@
             android:drawableLeft="@drawable/students"
             android:paddingLeft="30dp"
             android:text=""
-            android:textAlignment="viewStart" />
+            android:textAlignment="viewStart"
+            tools:ignore="SpeakableTextPresentCheck" />
 
         <Button
             android:id="@+id/class3_stu2"
@@ -160,7 +173,8 @@
             android:drawableLeft="@drawable/students"
             android:paddingLeft="30dp"
             android:text=""
-            android:textAlignment="viewStart" />
+            android:textAlignment="viewStart"
+            tools:ignore="SpeakableTextPresentCheck" />
 
         <Button
             android:id="@+id/class3_stu3"
@@ -171,7 +185,8 @@
             android:drawableLeft="@drawable/students"
             android:paddingLeft="30dp"
             android:text=""
-            android:textAlignment="viewStart" />
+            android:textAlignment="viewStart"
+            tools:ignore="SpeakableTextPresentCheck" />
 
 
     </LinearLayout>
