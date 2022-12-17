@@ -4,7 +4,6 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
@@ -21,8 +20,7 @@ public class CollegeStudentActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {//管工学院按钮进入管工学院
                 Toast.makeText(CollegeStudentActivity.this,"正在进入管工学院",Toast.LENGTH_SHORT).show();
-                String School_information = (String) button_manage.getText().toString();
-               //Log.d("CollegeStudentActivity",School_information);
+                String School_information = (String) button_manage.getText();
                 Intent intent_school=new Intent(CollegeStudentActivity.this, Shangda_Student.class);
                 intent_school.putExtra("School_information",School_information);
                 startActivity(intent_school);
