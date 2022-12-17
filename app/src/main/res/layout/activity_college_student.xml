@@ -8,7 +8,7 @@
 
 
     <LinearLayout
-        android:id="@+id/linearLayout7"
+        android:id="@+id/linearLayout_collstu"
         android:layout_width="407dp"
         android:layout_height="675dp"
         android:layout_marginTop="8dp"
