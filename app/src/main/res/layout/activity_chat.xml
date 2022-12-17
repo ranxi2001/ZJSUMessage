@@ -129,77 +129,86 @@
 
             <TextView
                 android:id="@+id/textView23"
-                android:layout_width="match_parent"
-                android:layout_height="50dp" />
+                android:layout_width="349dp"
+                android:layout_height="50dp"
+                android:textAlignment="textEnd" />
 
             <TextView
                 android:id="@+id/textView24"
-                android:layout_width="match_parent"
-                android:layout_height="50dp" />
+                android:layout_width="349dp"
+                android:layout_height="50dp"
+                android:textAlignment="textEnd" />
 
             <TextView
                 android:id="@+id/textView28"
-                android:layout_width="match_parent"
-                android:layout_height="50dp" />
+                android:layout_width="349dp"
+                android:layout_height="50dp"
+                android:textAlignment="textEnd" />
 
             <TextView
                 android:id="@+id/textView29"
-                android:layout_width="match_parent"
-                android:layout_height="50dp" />
+                android:layout_width="349dp"
+                android:layout_height="50dp"
+                android:textAlignment="textEnd" />
 
             <TextView
                 android:id="@+id/textView30"
-                android:layout_width="match_parent"
-                android:layout_height="50dp" />
+                android:layout_width="349dp"
+                android:layout_height="50dp"
+                android:textAlignment="textEnd" />
 
             <TextView
                 android:id="@+id/textView31"
-                android:layout_width="match_parent"
-                android:layout_height="50dp" />
+                android:layout_width="349dp"
+                android:layout_height="50dp"
+                android:textAlignment="textEnd" />
 
             <TextView
                 android:id="@+id/textView32"
-                android:layout_width="match_parent"
-                android:layout_height="50dp" />
+                android:layout_width="349dp"
+                android:layout_height="50dp"
+                android:textAlignment="textEnd" />
 
             <TextView
                 android:id="@+id/textView33"
-                android:layout_width="match_parent"
-                android:layout_height="50dp" />
+                android:layout_width="349dp"
+                android:layout_height="50dp"
+                android:textAlignment="textEnd" />
 
             <TextView
                 android:id="@+id/textView34"
-                android:layout_width="match_parent"
-                android:layout_height="50dp" />
+                android:layout_width="349dp"
+                android:layout_height="50dp"
+                android:textAlignment="textEnd" />
 
             <TextView
                 android:id="@+id/textView35"
-                android:layout_width="match_parent"
+                android:layout_width="349dp"
                 android:layout_height="50dp" />
 
             <TextView
                 android:id="@+id/textView36"
-                android:layout_width="match_parent"
+                android:layout_width="349dp"
                 android:layout_height="50dp" />
 
             <TextView
                 android:id="@+id/textView37"
-                android:layout_width="match_parent"
+                android:layout_width="349dp"
                 android:layout_height="50dp" />
 
             <TextView
                 android:id="@+id/textView38"
-                android:layout_width="match_parent"
+                android:layout_width="349dp"
                 android:layout_height="50dp" />
 
             <TextView
                 android:id="@+id/textView39"
-                android:layout_width="match_parent"
+                android:layout_width="349dp"
                 android:layout_height="50dp" />
 
             <TextView
                 android:id="@+id/textView40"
-                android:layout_width="match_parent"
+                android:layout_width="349dp"
                 android:layout_height="50dp" />
         </LinearLayout>
     </ScrollView>
