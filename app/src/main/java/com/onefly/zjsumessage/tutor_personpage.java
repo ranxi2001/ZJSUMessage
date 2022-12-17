@@ -5,7 +5,9 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
 
 public class tutor_personpage extends AppCompatActivity {
     Button btn;
@@ -21,6 +23,16 @@ public class tutor_personpage extends AppCompatActivity {
             intent.putExtra("institute",institute);
             intent.putExtra("name",name_fy);
             startActivity(intent);
+        });
+
+        //返回上一级
+        ImageButton mange_edu_back=findViewById(R.id.imageButton_return_collegeteacher);//返回键
+        mange_edu_back.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(tutor_personpage.this,CollegeTeacherActivity.class);
+                startActivity(intent);
+            }
         });
 
     }

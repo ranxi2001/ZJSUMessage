@@ -27,7 +27,7 @@
 
         <TextView
             android:id="@+id/which_school"
-            android:layout_width="wrap_content"
+            android:layout_width="309dp"
             android:layout_height="match_parent"
             android:gravity="center"
             android:textSize="24sp" />
@@ -48,13 +48,14 @@
             android:id="@+id/class1"
             android:layout_width="match_parent"
             android:layout_height="40dp"
-            android:text="" />
+            android:text="XX学院XX级"
+            android:textAlignment="center" />
 
         <TextView
             android:id="@+id/real_class1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="" />
+            android:text="信息管理与信息系统" />
 
         <Button
             android:id="@+id/class1_stu1"
@@ -108,7 +109,7 @@
             android:id="@+id/class2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="" />
+            android:text="物流管理" />
 
         <Button
             android:id="@+id/class2_stu1"
@@ -150,7 +151,7 @@
             android:id="@+id/class3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="" />
+            android:text="电子商务" />
 
         <Button
             android:id="@+id/class3_stu1"
