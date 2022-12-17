@@ -48,7 +48,6 @@
             android:id="@+id/class1"
             android:layout_width="match_parent"
             android:layout_height="40dp"
-            android:text="XX学院XX级"
             android:textAlignment="center" />
 
         <TextView
@@ -81,29 +80,6 @@
             android:textAlignment="viewStart"
             tools:ignore="SpeakableTextPresentCheck" />
 
-        <Button
-            android:id="@+id/class1_stu3"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@color/teal_200"
-            android:backgroundTint="@color/white"
-            android:drawableLeft="@drawable/students"
-            android:paddingLeft="30dp"
-            android:text=""
-            android:textAlignment="viewStart"
-            tools:ignore="SpeakableTextPresentCheck" />
-
-        <Button
-            android:id="@+id/class1_stu4"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@color/teal_200"
-            android:backgroundTint="@color/white"
-            android:drawableLeft="@drawable/students"
-            android:paddingLeft="30dp"
-            android:text=""
-            android:textAlignment="viewStart"
-            tools:ignore="SpeakableTextPresentCheck" />
 
         <TextView
             android:id="@+id/class2"
@@ -135,17 +111,7 @@
             android:textAlignment="viewStart"
             tools:ignore="SpeakableTextPresentCheck" />
 
-        <Button
-            android:id="@+id/class2_stu3"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@color/teal_200"
-            android:backgroundTint="@color/white"
-            android:drawableLeft="@drawable/students"
-            android:paddingLeft="30dp"
-            android:text=""
-            android:textAlignment="viewStart"
-            tools:ignore="SpeakableTextPresentCheck" />
+
 
         <TextView
             android:id="@+id/class3"
@@ -177,17 +143,6 @@
             android:textAlignment="viewStart"
             tools:ignore="SpeakableTextPresentCheck" />
 
-        <Button
-            android:id="@+id/class3_stu3"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@color/teal_200"
-            android:backgroundTint="@color/white"
-            android:drawableLeft="@drawable/students"
-            android:paddingLeft="30dp"
-            android:text=""
-            android:textAlignment="viewStart"
-            tools:ignore="SpeakableTextPresentCheck" />
 
 
     </LinearLayout>

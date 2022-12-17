@@ -9,10 +9,7 @@ import androidx.room.RoomDatabase;
 @Database(entities = {message.class}, version = 1,exportSchema=false)
 public abstract class messageDatabase extends RoomDatabase {
     private static volatile messageDatabase INSTANCE = null;
-
     public abstract messageDao messageDao();
-
-
     public static messageDatabase getInstance(Context context) {
         if (INSTANCE == null) {
             synchronized (messageDatabase.class) {
@@ -22,7 +19,6 @@ public abstract class messageDatabase extends RoomDatabase {
                 }
             }
         }
-
         return INSTANCE;
     }
 }
