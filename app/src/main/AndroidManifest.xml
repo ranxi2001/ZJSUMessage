@@ -22,13 +22,6 @@
                 android:value="" />
         </activity>
         <activity
-            android:name=".Scroll_Test"
-            android:exported="false">
-            <meta-data
-                android:name="android.app.lib_name"
-                android:value="" />
-        </activity>
-        <activity
             android:name=".Buffer_contact"
             android:exported="false">
             <meta-data
@@ -105,9 +98,6 @@
             android:exported="false" />
         <activity
             android:name=".register"
-            android:exported="false" />
-        <activity
-            android:name=".file_transfer"
             android:exported="false" />
         <activity
             android:name=".Faculty_Contact"
