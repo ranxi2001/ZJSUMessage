@@ -46,6 +46,9 @@ public class Buffer_contact extends AppCompatActivity {
         Button pclass5 =findViewById(R.id.class3_stu1);         //第二个系第一个班级
         Button pclass6 =findViewById(R.id.class3_stu2);         //第二个系第二个班级
 
+        Intent intent =getIntent();
+        String userId=intent.getStringExtra("userId");
+        //System.out.println(userId);
 
 
 
@@ -224,6 +227,8 @@ public class Buffer_contact extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent toSDTX_buff = new Intent(Buffer_contact.this,SDTX_person_buff.class);
+                toSDTX_buff.putExtra("userId",userId);
+
                 toSDTX_buff.putExtra("School_information",School_information);//学院名
                 toSDTX_buff.putExtra("grade_information",grade_information);//年级
                 String class_information=pclass1.getText().toString();
@@ -236,6 +241,7 @@ public class Buffer_contact extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent toSDTX_buff = new Intent(Buffer_contact.this,SDTX_person_buff.class);
+                toSDTX_buff.putExtra("userId",userId);
                 toSDTX_buff.putExtra("School_information",School_information);//学院名
                 toSDTX_buff.putExtra("grade_information",grade_information);//年级
                 String class_information=pclass2.getText().toString();
@@ -248,6 +254,7 @@ public class Buffer_contact extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent toSDTX_buff = new Intent(Buffer_contact.this,SDTX_person_buff.class);
+                toSDTX_buff.putExtra("userId",userId);
                 toSDTX_buff.putExtra("School_information",School_information);//学院名
                 toSDTX_buff.putExtra("grade_information",grade_information);//年级
                 String class_information=pclass3.getText().toString();
@@ -260,6 +267,7 @@ public class Buffer_contact extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent toSDTX_buff = new Intent(Buffer_contact.this,SDTX_person_buff.class);
+                toSDTX_buff.putExtra("userId",userId);
                 toSDTX_buff.putExtra("School_information",School_information);//学院名
                 toSDTX_buff.putExtra("grade_information",grade_information);//年级
                 String class_information=pclass4.getText().toString();
@@ -272,6 +280,7 @@ public class Buffer_contact extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent toSDTX_buff = new Intent(Buffer_contact.this,SDTX_person_buff.class);
+                toSDTX_buff.putExtra("userId",userId);
                 toSDTX_buff.putExtra("School_information",School_information);//学院名
                 toSDTX_buff.putExtra("grade_information",grade_information);//年级
                 String class_information=pclass5.getText().toString();
@@ -284,6 +293,7 @@ public class Buffer_contact extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent toSDTX_buff = new Intent(Buffer_contact.this,SDTX_person_buff.class);
+                toSDTX_buff.putExtra("userId",userId);
                 toSDTX_buff.putExtra("School_information",School_information);//学院名
                 toSDTX_buff.putExtra("grade_information",grade_information);//年级
                 String class_information=pclass6.getText().toString();

@@ -49,6 +49,9 @@ public class SDTX_person_buff extends AppCompatActivity {
         buttons[13]=findViewById(R.id.mate13);
         buttons[14]=findViewById(R.id.mate14);
 
+        Intent intent =getIntent();
+        String userId=intent.getStringExtra("userId");
+
 
         //----------------获取上个界面的信息--------------------------------------
 
@@ -99,6 +102,7 @@ public class SDTX_person_buff extends AppCompatActivity {
 
         //---------------------返回键------------------------------------------------
         LCQuery<LCObject> query =new LCQuery<>("Student");
+        query.whereEqualTo("grade",grade_information);
         query.whereEqualTo("class",class_information);
         query.findInBackground().subscribe(new Observer<List<LCObject>>() {
             @Override
@@ -143,6 +147,7 @@ public class SDTX_person_buff extends AppCompatActivity {
                 String institute = School_information;
                 Intent intent =new Intent(SDTX_person_buff.this,ChatActivity.class);
                 intent.putExtra("name",name);
+                intent.putExtra("userId",userId);
                 intent.putExtra("institute",institute);
                 startActivity(intent);
             }
@@ -154,6 +159,7 @@ public class SDTX_person_buff extends AppCompatActivity {
                 String name = buttons[2].getText().toString();
                 String institute = School_information;
                 Intent intent =new Intent(SDTX_person_buff.this,ChatActivity.class);
+                intent.putExtra("userId",userId);
                 intent.putExtra("name",name);
                 intent.putExtra("institute",institute);
                 startActivity(intent);
@@ -166,6 +172,7 @@ public class SDTX_person_buff extends AppCompatActivity {
                 String name = buttons[3].getText().toString();
                 String institute = School_information;
                 Intent intent =new Intent(SDTX_person_buff.this,ChatActivity.class);
+                intent.putExtra("userId",userId);
                 intent.putExtra("name",name);
                 intent.putExtra("institute",institute);
                 startActivity(intent);
@@ -178,6 +185,7 @@ public class SDTX_person_buff extends AppCompatActivity {
                 String name = buttons[4].getText().toString();
                 String institute = School_information;
                 Intent intent =new Intent(SDTX_person_buff.this,ChatActivity.class);
+                intent.putExtra("userId",userId);
                 intent.putExtra("name",name);
                 intent.putExtra("institute",institute);
                 startActivity(intent);
@@ -190,6 +198,7 @@ public class SDTX_person_buff extends AppCompatActivity {
                 String name = buttons[5].getText().toString();
                 String institute = School_information;
                 Intent intent =new Intent(SDTX_person_buff.this,ChatActivity.class);
+                intent.putExtra("userId",userId);
                 intent.putExtra("name",name);
                 intent.putExtra("institute",institute);
                 startActivity(intent);
@@ -202,6 +211,7 @@ public class SDTX_person_buff extends AppCompatActivity {
                 String name = buttons[6].getText().toString();
                 String institute = School_information;
                 Intent intent =new Intent(SDTX_person_buff.this,ChatActivity.class);
+                intent.putExtra("userId",userId);
                 intent.putExtra("name",name);
                 intent.putExtra("institute",institute);
                 startActivity(intent);
@@ -214,6 +224,7 @@ public class SDTX_person_buff extends AppCompatActivity {
                 String name = buttons[7].getText().toString();
                 String institute = School_information;
                 Intent intent =new Intent(SDTX_person_buff.this,ChatActivity.class);
+                intent.putExtra("userId",userId);
                 intent.putExtra("name",name);
                 intent.putExtra("institute",institute);
                 startActivity(intent);
@@ -226,6 +237,7 @@ public class SDTX_person_buff extends AppCompatActivity {
                 String name = buttons[8].getText().toString();
                 String institute = School_information;
                 Intent intent =new Intent(SDTX_person_buff.this,ChatActivity.class);
+                intent.putExtra("userId",userId);
                 intent.putExtra("name",name);
                 intent.putExtra("institute",institute);
                 startActivity(intent);
@@ -238,6 +250,7 @@ public class SDTX_person_buff extends AppCompatActivity {
                 String name = buttons[9].getText().toString();
                 String institute = School_information;
                 Intent intent =new Intent(SDTX_person_buff.this,ChatActivity.class);
+                intent.putExtra("userId",userId);
                 intent.putExtra("name",name);
                 intent.putExtra("institute",institute);
                 startActivity(intent);
@@ -250,6 +263,7 @@ public class SDTX_person_buff extends AppCompatActivity {
                 String name = buttons[10].getText().toString();
                 String institute = School_information;
                 Intent intent =new Intent(SDTX_person_buff.this,ChatActivity.class);
+                intent.putExtra("userId",userId);
                 intent.putExtra("name",name);
                 intent.putExtra("institute",institute);
                 startActivity(intent);
@@ -262,6 +276,7 @@ public class SDTX_person_buff extends AppCompatActivity {
                 String name = buttons[11].getText().toString();
                 String institute = School_information;
                 Intent intent =new Intent(SDTX_person_buff.this,ChatActivity.class);
+                intent.putExtra("userId",userId);
                 intent.putExtra("name",name);
                 intent.putExtra("institute",institute);
                 startActivity(intent);
@@ -274,6 +289,7 @@ public class SDTX_person_buff extends AppCompatActivity {
                 String name = buttons[12].getText().toString();
                 String institute = School_information;
                 Intent intent =new Intent(SDTX_person_buff.this,ChatActivity.class);
+                intent.putExtra("userId",userId);
                 intent.putExtra("name",name);
                 intent.putExtra("institute",institute);
                 startActivity(intent);
@@ -286,6 +302,7 @@ public class SDTX_person_buff extends AppCompatActivity {
                 String name = buttons[13].getText().toString();
                 String institute = School_information;
                 Intent intent =new Intent(SDTX_person_buff.this,ChatActivity.class);
+                intent.putExtra("userId",userId);
                 intent.putExtra("name",name);
                 intent.putExtra("institute",institute);
                 startActivity(intent);
@@ -298,6 +315,7 @@ public class SDTX_person_buff extends AppCompatActivity {
                 String name = buttons[14].getText().toString();
                 String institute = School_information;
                 Intent intent =new Intent(SDTX_person_buff.this,ChatActivity.class);
+                intent.putExtra("userId",userId);
                 intent.putExtra("name",name);
                 intent.putExtra("institute",institute);
                 startActivity(intent);

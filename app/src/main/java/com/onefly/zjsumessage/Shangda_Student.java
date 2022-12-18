@@ -22,6 +22,8 @@ public class Shangda_Student extends AppCompatActivity {
         //线程缓冲区组件
         //TextView button_buff_schoolname=findViewById(R.id.which_school);
         //线程缓冲区组件
+        Intent intent =getIntent();
+        String userId=intent.getStringExtra("userId");
 
         Button button_2016=findViewById(R.id.grade2016);  //2016年级按钮
         Button button_2017=findViewById(R.id.grade2017);  //2017年级按钮
@@ -41,6 +43,7 @@ public class Shangda_Student extends AppCompatActivity {
             public void onClick(View v) {
                 String grade_information = (String) button_2016.getText().toString();
                 Intent intent_grade2016 =new Intent(Shangda_Student.this,Buffer_contact.class);
+                intent_grade2016.putExtra("userId",userId);
                 intent_grade2016.putExtra("grade_information",grade_information);
                 intent_grade2016.putExtra("School_information",School_name);
                 startActivity(intent_grade2016);
@@ -55,6 +58,7 @@ public class Shangda_Student extends AppCompatActivity {
             public void onClick(View v) {
                 String grade_information = (String) button_2017.getText().toString();
                 Intent intent_grade2016 =new Intent(Shangda_Student.this,Buffer_contact.class);
+                intent_grade2016.putExtra("userId",userId);
                 intent_grade2016.putExtra("grade_information",grade_information);
                 intent_grade2016.putExtra("School_information",School_name);
                 startActivity(intent_grade2016);
@@ -69,6 +73,7 @@ public class Shangda_Student extends AppCompatActivity {
             public void onClick(View v) {
                 String grade_information = (String) button_2018.getText().toString();
                 Intent intent_grade2016 =new Intent(Shangda_Student.this,Buffer_contact.class);
+                intent_grade2016.putExtra("userId",userId);
                 intent_grade2016.putExtra("grade_information",grade_information);
                 intent_grade2016.putExtra("School_information",School_name);
                 startActivity(intent_grade2016);
@@ -83,6 +88,7 @@ public class Shangda_Student extends AppCompatActivity {
             public void onClick(View v) {
                 String grade_information = (String) button_2019.getText().toString();
                 Intent intent_grade2016 =new Intent(Shangda_Student.this,Buffer_contact.class);
+                intent_grade2016.putExtra("userId",userId);
                 intent_grade2016.putExtra("grade_information",grade_information);
                 intent_grade2016.putExtra("School_information",School_name);
                 startActivity(intent_grade2016);
@@ -97,6 +103,7 @@ public class Shangda_Student extends AppCompatActivity {
             public void onClick(View v) {
                 String grade_information = (String) button_2020.getText().toString();
                 Intent intent_grade2016 =new Intent(Shangda_Student.this,Buffer_contact.class);
+                intent_grade2016.putExtra("userId",userId);
                 intent_grade2016.putExtra("grade_information",grade_information);
                 intent_grade2016.putExtra("School_information",School_name);
                 startActivity(intent_grade2016);
@@ -111,6 +118,7 @@ public class Shangda_Student extends AppCompatActivity {
             public void onClick(View v) {
                 String grade_information = (String) button_2021.getText().toString();
                 Intent intent_grade2016 =new Intent(Shangda_Student.this,Buffer_contact.class);
+                intent_grade2016.putExtra("userId",userId);
                 intent_grade2016.putExtra("grade_information",grade_information);
                 intent_grade2016.putExtra("School_information",School_name);
                 startActivity(intent_grade2016);
@@ -120,8 +128,6 @@ public class Shangda_Student extends AppCompatActivity {
         //2021年级--------------------部分的编写--------------------------------------------------
 
         //
-
-
 
 
 

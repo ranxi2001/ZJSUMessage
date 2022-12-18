@@ -50,7 +50,8 @@ public class CollegeStudentActivity extends AppCompatActivity {
         drawable6.setBounds(45, 0, 190, 145);//第一0是距左边距离，第二0是距上边距离，
         button6.setCompoundDrawables(drawable6, null, null, null);//只放左边
 
-
+        Intent intent=getIntent();
+        String userId=intent.getStringExtra("userId");
 
 
         //----------------进入管工学院之后-----------------------------------------------------------
@@ -60,6 +61,8 @@ public class CollegeStudentActivity extends AppCompatActivity {
                 Toast.makeText(CollegeStudentActivity.this,"正在进入管工学院",Toast.LENGTH_SHORT).show();
                 String School_information = (String) button_manage.getText();
                 Intent intent_school=new Intent(CollegeStudentActivity.this, Shangda_Student.class);
+                intent_school.putExtra("userId",userId);
+                //System.out.println(userId);
                 intent_school.putExtra("School_information",School_information);//读取学院按钮text，传到下个页面
                 startActivity(intent_school);
             }
@@ -74,6 +77,7 @@ public class CollegeStudentActivity extends AppCompatActivity {
                 //Toast.makeText(CollegeStudentActivity.this,"正在进入管工学院",Toast.LENGTH_SHORT).show();
                 String School_information = (String) button_mercy.getText();
                 Intent intent_school=new Intent(CollegeStudentActivity.this, Shangda_Student.class);
+                intent_school.putExtra("userId",userId);
                 intent_school.putExtra("School_information",School_information);//读取学院按钮text，传到下个页面
                 startActivity(intent_school);
             }
@@ -88,6 +92,7 @@ public class CollegeStudentActivity extends AppCompatActivity {
                 //Toast.makeText(CollegeStudentActivity.this,"正在进入管工学院",Toast.LENGTH_SHORT).show();
                 String School_information = (String) button_math.getText();
                 Intent intent_school=new Intent(CollegeStudentActivity.this, Shangda_Student.class);
+                intent_school.putExtra("userId",userId);
                 intent_school.putExtra("School_information",School_information);//读取学院按钮text，传到下个页面
                 startActivity(intent_school);
             }
@@ -100,6 +105,7 @@ public class CollegeStudentActivity extends AppCompatActivity {
                 //Toast.makeText(CollegeStudentActivity.this,"正在进入管工学院",Toast.LENGTH_SHORT).show();
                 String School_information = (String) button_info.getText();
                 Intent intent_school=new Intent(CollegeStudentActivity.this, Shangda_Student.class);
+                intent_school.putExtra("userId",userId);
                 intent_school.putExtra("School_information",School_information);//读取学院按钮text，传到下个页面
                 startActivity(intent_school);
             }
@@ -113,6 +119,7 @@ public class CollegeStudentActivity extends AppCompatActivity {
                 //Toast.makeText(CollegeStudentActivity.this,"正在进入管工学院",Toast.LENGTH_SHORT).show();
                 String School_information = (String) button_eco.getText();
                 Intent intent_school=new Intent(CollegeStudentActivity.this, Shangda_Student.class);
+                intent_school.putExtra("userId",userId);
                 intent_school.putExtra("School_information",School_information);//读取学院按钮text，传到下个页面
                 startActivity(intent_school);
             }
@@ -127,6 +134,7 @@ public class CollegeStudentActivity extends AppCompatActivity {
                 //Toast.makeText(CollegeStudentActivity.this,"正在进入管工学院",Toast.LENGTH_SHORT).show();
                 String School_information = (String) button_cp.getText();
                 Intent intent_school=new Intent(CollegeStudentActivity.this, Shangda_Student.class);
+                intent_school.putExtra("userId",userId);
                 intent_school.putExtra("School_information",School_information);//读取学院按钮text，传到下个页面
                 startActivity(intent_school);
             }
