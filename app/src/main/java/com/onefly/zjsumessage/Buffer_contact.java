@@ -8,6 +8,7 @@ import android.os.Handler;
 import android.os.Message;
 import android.util.Log;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.TextView;
 
@@ -24,12 +25,32 @@ public class Buffer_contact extends AppCompatActivity {
         TextView class1=findViewById(R.id.real_class1);   //第一个班级textview的赋值
         ImageButton buff_back=findViewById(R.id.button_buffer_back);   //返回键
 
+        //-------------------------------按钮部分加载--------------------------------------
+        Button pclass1 =findViewById(R.id.class1_stu1);         //第一个系第一个班级
+        Button pclass2 =findViewById(R.id.class1_stu2);         //第一个系第二个班级
+
+        Button pclass3 =findViewById(R.id.class2_stu1);         //第二个系第一个班级
+        Button pclass4 =findViewById(R.id.class2_stu2);         //第二个系第二个班级
+
+        Button pclass5 =findViewById(R.id.class3_stu1);         //第二个系第一个班级
+        Button pclass6 =findViewById(R.id.class3_stu2);         //第二个系第二个班级
+
+
+
+
+
+        //-------------------------------按钮部分加载--------------------------------------
+
 
         //---------------------------取出上个界面的信息-------------------------------------------
         Intent buffer_intent = getIntent();
         String grade_infomation=buffer_intent.getStringExtra("grade_information");
         String School_information = buffer_intent.getStringExtra("School_information");
-        String school_grade = grade_infomation+School_information ;  //class1的xx学院xx年级
+        String school_grade = School_information+grade_infomation ;  //xx学院xx年级
+            //通过数据库的查询获得pclass1~pclass6的名字字符串：eg.信息2002
+                String class_information ="信息2002";
+
+            //通过数据库的查询获得pclass1~pclass6的名字字符串：eg.信息2002
 
         //--------------------------上一块主要是存放需要用到的字符串信息------------------------------
 
@@ -67,7 +88,28 @@ public class Buffer_contact extends AppCompatActivity {
         //---------------------更改UI界面的线程编写完毕-------------------------------------
 
         //---------------------接下来编写按钮的跳转-----------------------------------------
+        //---第一个班级-------------------------------------------------------------------
+        pclass1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent toSDTX_buff = new Intent(Buffer_contact.this,SDTX_person_buff.class);
+                toSDTX_buff.putExtra("School_infomation",School_information);//学院名
+                toSDTX_buff.putExtra("grade_information",grade_infomation);//年级
+                toSDTX_buff.putExtra("class_information",class_information);//班级信息
+                startActivity(toSDTX_buff);
 
+            }
+        });
+
+
+
+
+
+
+
+
+
+        //---第一个班级-------------------------------------------------------------------
 
 
 
