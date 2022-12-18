@@ -53,8 +53,7 @@
         <TextView
             android:id="@+id/real_class1"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="信息管理与信息系统" />
+            android:layout_height="wrap_content" />
 
         <Button
             android:id="@+id/class1_stu1"
@@ -84,8 +83,7 @@
         <TextView
             android:id="@+id/class2"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="物流管理" />
+            android:layout_height="wrap_content" />
 
         <Button
             android:id="@+id/class2_stu1"
@@ -112,12 +110,10 @@
             tools:ignore="SpeakableTextPresentCheck" />
 
 
-
         <TextView
             android:id="@+id/class3"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="电子商务" />
+            android:layout_height="wrap_content" />
 
         <Button
             android:id="@+id/class3_stu1"

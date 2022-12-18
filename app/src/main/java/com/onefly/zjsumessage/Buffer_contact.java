@@ -1,8 +1,13 @@
 package com.onefly.zjsumessage;
 
 import androidx.appcompat.app.AppCompatActivity;
+import cn.leancloud.LCObject;
+import cn.leancloud.LCQuery;
+import io.reactivex.Observer;
+import io.reactivex.disposables.Disposable;
 
 import android.content.Intent;
+import android.icu.text.SymbolTable;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
@@ -12,10 +17,12 @@ import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.TextView;
 
+import java.util.List;
+
 public class Buffer_contact extends AppCompatActivity {
    public static final int buff=1;
    //此class主要解决 系名和班级名
-
+    String profess1,profess2,profess3;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -23,6 +30,10 @@ public class Buffer_contact extends AppCompatActivity {
         TextView buff_school_name=findViewById(R.id.which_school);     //学院名称title
         TextView buff_composed = findViewById(R.id.class1);       //存放xx学院xx年级
         TextView class1=findViewById(R.id.real_class1);   //第一个班级textview的赋值
+        TextView class2=findViewById(R.id.class2);
+        TextView class3=findViewById(R.id.class3);
+        //String profess1,profess2,profess3;
+
         ImageButton buff_back=findViewById(R.id.button_buffer_back);   //返回键
 
         //-------------------------------按钮部分加载--------------------------------------
@@ -48,9 +59,129 @@ public class Buffer_contact extends AppCompatActivity {
         String School_information = buffer_intent.getStringExtra("School_information");
         String school_grade = School_information+grade_infomation ;  //xx学院xx年级
             //通过数据库的查询获得pclass1~pclass6的名字字符串：eg.信息2002
-                String class_information ="信息2002";
+                //String class_information ="信息2002";
+
+        LCQuery<LCObject> query=new LCQuery<>("school_profess");
+        query.whereEqualTo("school",School_information);
+        query.findInBackground().subscribe(new Observer<List<LCObject>>() {
+            @Override
+            public void onSubscribe(Disposable d) {
+
+            }
+
+            @Override
+            public void onNext(List<LCObject> lcObjects) {
+                class1.setText(lcObjects.get(0).getString("profess"));
+                class2.setText(lcObjects.get(1).getString("profess"));
+                class3.setText(lcObjects.get(2).getString("profess"));
+                profess1=lcObjects.get(0).getString("profess");
+                profess2=lcObjects.get(1).getString("profess");
+                profess3=lcObjects.get(2).getString("profess");
+                System.out.println(profess2);
+
+            }
+
+            @Override
+            public void onError(Throwable e) {
+
+            }
+
+            @Override
+            public void onComplete() {
+
+            }
+        });
+
+        profess1="信息管理与信息系统";
+        LCQuery<LCObject> lcQuery = new LCQuery<>("school_calss");
+        lcQuery.whereEqualTo("profess",profess1);
+        lcQuery.findInBackground().subscribe(new Observer<List<LCObject>>() {
+            @Override
+            public void onSubscribe(Disposable d) {
+
+            }
+
+            @Override
+            public void onNext(List<LCObject> lcObjects) {
+                pclass1.setText(lcObjects.get(0).getString("class"));
+                pclass2.setText(lcObjects.get(1).getString("class"));
+                System.out.println("gdewuyg");
+            }
+
+            @Override
+            public void onError(Throwable e) {
+                System.out.println("dwhuud");
+            }
+
+            @Override
+            public void onComplete() {
+
+            }
+        });
+
+
+        LCQuery<LCObject> lcQuery1 = new LCQuery<>("school_calss");
+
+        lcQuery1.whereEqualTo("profess",profess2);
+        lcQuery1.findInBackground().subscribe(new Observer<List<LCObject>>() {
+            @Override
+            public void onSubscribe(Disposable d) {
+
+            }
+
+            @Override
+            public void onNext(List<LCObject> lcObjects) {
+                pclass3.setText(lcObjects.get(0).getString("class"));
+                pclass4.setText(lcObjects.get(1).getString("class"));
+            }
+
+            @Override
+            public void onError(Throwable e) {
+
+            }
+
+            @Override
+            public void onComplete() {
+
+            }
+        });
+
+        LCQuery<LCObject> lcQuery2 = new LCQuery<>("school_calss");
+
+        lcQuery2.whereEqualTo("profess",profess3);
+        lcQuery2.findInBackground().subscribe(new Observer<List<LCObject>>() {
+            @Override
+            public void onSubscribe(Disposable d) {
+
+            }
+
+            @Override
+            public void onNext(List<LCObject> lcObjects) {
+                pclass5.setText(lcObjects.get(0).getString("class"));
+                pclass6.setText(lcObjects.get(1).getString("class"));
+            }
+
+            @Override
+            public void onError(Throwable e) {
+
+            }
+
+            @Override
+            public void onComplete() {
+
+            }
+        });
 
             //通过数据库的查询获得pclass1~pclass6的名字字符串：eg.信息2002
+
+        //取出查询到的专业信息
+
+
+        //通过查询到的专业信息来进一步查询班级信息
+
+
+
+
         //通过数据库的查询获得pclass1~pclass6的名字字符串：eg.信息2002
 
 
@@ -98,7 +229,8 @@ public class Buffer_contact extends AppCompatActivity {
                 Intent toSDTX_buff = new Intent(Buffer_contact.this,SDTX_person_buff.class);
                 toSDTX_buff.putExtra("School_infomation",School_information);//学院名
                 toSDTX_buff.putExtra("grade_information",grade_infomation);//年级
-                toSDTX_buff.putExtra("class_information",class_information);//班级信息
+
+                //toSDTX_buff.putExtra("class_information",class_information);//班级信息
                 startActivity(toSDTX_buff);
 
             }
