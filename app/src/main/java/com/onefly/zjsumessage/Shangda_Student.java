@@ -53,7 +53,7 @@ public class Shangda_Student extends AppCompatActivity {
         button_2017.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String grade_information = (String) button_2016.getText().toString();
+                String grade_information = (String) button_2017.getText().toString();
                 Intent intent_grade2016 =new Intent(Shangda_Student.this,Buffer_contact.class);
                 intent_grade2016.putExtra("grade_information",grade_information);
                 intent_grade2016.putExtra("School_information",School_name);
@@ -67,7 +67,7 @@ public class Shangda_Student extends AppCompatActivity {
         button_2018.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String grade_information = (String) button_2016.getText().toString();
+                String grade_information = (String) button_2018.getText().toString();
                 Intent intent_grade2016 =new Intent(Shangda_Student.this,Buffer_contact.class);
                 intent_grade2016.putExtra("grade_information",grade_information);
                 intent_grade2016.putExtra("School_information",School_name);
@@ -81,7 +81,7 @@ public class Shangda_Student extends AppCompatActivity {
         button_2019.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String grade_information = (String) button_2016.getText().toString();
+                String grade_information = (String) button_2019.getText().toString();
                 Intent intent_grade2016 =new Intent(Shangda_Student.this,Buffer_contact.class);
                 intent_grade2016.putExtra("grade_information",grade_information);
                 intent_grade2016.putExtra("School_information",School_name);
@@ -95,7 +95,7 @@ public class Shangda_Student extends AppCompatActivity {
         button_2020.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String grade_information = (String) button_2016.getText().toString();
+                String grade_information = (String) button_2020.getText().toString();
                 Intent intent_grade2016 =new Intent(Shangda_Student.this,Buffer_contact.class);
                 intent_grade2016.putExtra("grade_information",grade_information);
                 intent_grade2016.putExtra("School_information",School_name);
@@ -109,7 +109,7 @@ public class Shangda_Student extends AppCompatActivity {
         button_2021.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String grade_information = (String) button_2016.getText().toString();
+                String grade_information = (String) button_2021.getText().toString();
                 Intent intent_grade2016 =new Intent(Shangda_Student.this,Buffer_contact.class);
                 intent_grade2016.putExtra("grade_information",grade_information);
                 intent_grade2016.putExtra("School_information",School_name);
