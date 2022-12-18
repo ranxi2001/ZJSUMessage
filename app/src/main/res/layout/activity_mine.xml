@@ -101,7 +101,7 @@
 
     <LinearLayout
         android:id="@+id/linearLayout3"
-        android:layout_width="411dp"
+        android:layout_width="match_parent"
         android:layout_height="291dp"
         android:orientation="vertical"
         app:layout_constraintEnd_toEndOf="parent"
@@ -195,10 +195,8 @@
 
     <LinearLayout
         android:id="@+id/linearLayout"
-        android:layout_width="410dp"
+        android:layout_width="match_parent"
         android:layout_height="371dp"
-        android:layout_marginStart="2dp"
-        android:layout_marginEnd="2dp"
         android:orientation="vertical"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

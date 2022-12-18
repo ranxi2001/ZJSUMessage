@@ -41,7 +41,7 @@
 
     <LinearLayout
         android:id="@+id/linearLayout4"
-        android:layout_width="413dp"
+        android:layout_width="409dp"
         android:layout_height="690dp"
         android:layout_marginTop="1dp"
         android:orientation="vertical"
