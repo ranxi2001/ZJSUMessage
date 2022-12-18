@@ -98,6 +98,7 @@
         android:id="@+id/college_con_back"
         android:layout_width="51dp"
         android:layout_height="48dp"
+        android:layout_marginStart="3dp"
         android:backgroundTint="@color/teal_200"
         app:layout_constraintBottom_toBottomOf="@+id/school_name_textview"
         app:layout_constraintEnd_toStartOf="@+id/school_name_textview"

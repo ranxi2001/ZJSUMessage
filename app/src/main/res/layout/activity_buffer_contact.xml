@@ -20,7 +20,7 @@
         <ImageButton
             android:id="@+id/button_buffer_back"
             android:layout_width="51dp"
-            android:layout_height="42dp"
+            android:layout_height="48dp"
             android:backgroundTint="@color/teal_200"
             android:contentDescription="@string/edu_ggxy_back"
             app:srcCompat="@drawable/return_white" />

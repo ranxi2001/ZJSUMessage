@@ -47,9 +47,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="30dp"
+        android:layout_marginEnd="70dp"
         android:layout_marginBottom="16dp"
         android:background="#00FF0000"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/imageButton_addressBook"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/imageButton_workstation"
         app:srcCompat="@drawable/message" />
@@ -129,8 +131,8 @@
         android:layout_height="40dp"
         android:background="#18B8E3"
         app:layout_constraintEnd_toStartOf="@+id/imageButton_setting3"
-        app:srcCompat="@drawable/search"
-        tools:layout_editor_absoluteY="0dp" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/search" />
 
     <ImageButton
         android:id="@+id/imageButton_setting3"
@@ -217,7 +219,7 @@
                 android:layout_marginBottom="-1dp">
 
                 <TextView
-                    android:id="@+id/textView16"
+                    android:id="@+id/textView1116"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="40dp"
@@ -226,11 +228,11 @@
                     android:textAlignment="center"
                     android:textAppearance="@style/TextAppearance.AppCompat.Small"
                     android:textSize="11sp"
-                    app:layout_constraintStart_toEndOf="@+id/textView15"
+                    app:layout_constraintStart_toEndOf="@+id/textView1115"
                     app:layout_constraintTop_toTopOf="parent" />
 
                 <TextView
-                    android:id="@+id/textView15"
+                    android:id="@+id/textView1115"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="28dp"
@@ -239,11 +241,11 @@
                     android:textAlignment="center"
                     android:textAppearance="@style/TextAppearance.AppCompat.Small"
                     android:textSize="11sp"
-                    app:layout_constraintStart_toEndOf="@+id/textView13"
+                    app:layout_constraintStart_toEndOf="@+id/textView1113"
                     app:layout_constraintTop_toTopOf="parent" />
 
                 <TextView
-                    android:id="@+id/textView13"
+                    android:id="@+id/textView1113"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="24dp"
@@ -252,11 +254,11 @@
                     android:textAlignment="center"
                     android:textAppearance="@style/TextAppearance.AppCompat.Small"
                     android:textSize="11sp"
-                    app:layout_constraintStart_toEndOf="@+id/textView7"
+                    app:layout_constraintStart_toEndOf="@+id/textView1117"
                     app:layout_constraintTop_toTopOf="parent" />
 
                 <TextView
-                    android:id="@+id/textView7"
+                    android:id="@+id/textView1117"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="30dp"
@@ -330,7 +332,7 @@
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
                 android:layout_height="24dp"
-                android:layout_below="@+id/imageButton13"
+                android:layout_below="@id/imageButton_scholarship"
                 android:layout_alignParentBottom="true"
                 android:layout_marginTop="-1dp"
                 android:layout_marginBottom="-1dp">
@@ -401,7 +403,7 @@
             android:layout_height="105dp">
 
             <ImageButton
-                android:id="@+id/imageButton15"
+                android:id="@+id/imageButton111"
                 android:layout_width="60dp"
                 android:layout_height="60dp"
                 android:layout_alignParentTop="true"
@@ -409,11 +411,11 @@
                 android:layout_marginStart="35dp"
                 android:layout_marginTop="18dp"
                 android:layout_marginEnd="33dp"
-                android:layout_toEndOf="@+id/imageButton14"
+                android:layout_toEndOf="@+id/imageButton114"
                 android:background="#00FF0000" />
 
             <ImageButton
-                android:id="@+id/imageButton14"
+                android:id="@+id/imageButton114"
                 android:layout_width="60dp"
                 android:layout_height="60dp"
                 android:layout_alignParentTop="true"
@@ -430,12 +432,12 @@
                 android:layout_alignParentTop="true"
                 android:layout_marginStart="35dp"
                 android:layout_marginTop="18dp"
-                android:layout_toEndOf="@+id/imageButton_hesuan"
+                android:layout_toEndOf="@+id/imageButton_lost"
                 android:background="#00FF0000"
                 android:src="@drawable/vote" />
 
             <ImageButton
-                android:id="@+id/imageButton_hesuan"
+                android:id="@+id/imageButton_lost"
                 android:layout_width="60dp"
                 android:layout_height="60dp"
                 android:layout_alignParentStart="true"
@@ -448,13 +450,13 @@
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
                 android:layout_height="26dp"
-                android:layout_below="@+id/imageButton13"
+                android:layout_below="@+id/imageButton_lost"
                 android:layout_alignParentBottom="true"
                 android:layout_marginTop="1dp"
                 android:layout_marginBottom="0dp">
 
                 <TextView
-                    android:id="@+id/textView15"
+                    android:id="@+id/textView115"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="25dp"
@@ -463,11 +465,11 @@
                     android:textAlignment="center"
                     android:textAppearance="@style/TextAppearance.AppCompat.Small"
                     android:textSize="11sp"
-                    app:layout_constraintStart_toEndOf="@+id/textView13"
+                    app:layout_constraintStart_toEndOf="@+id/textView113"
                     app:layout_constraintTop_toTopOf="parent" />
 
                 <TextView
-                    android:id="@+id/textView13"
+                    android:id="@+id/textView113"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="10dp"
@@ -476,11 +478,11 @@
                     android:textAlignment="center"
                     android:textAppearance="@style/TextAppearance.AppCompat.Small"
                     android:textSize="11sp"
-                    app:layout_constraintStart_toEndOf="@+id/textView7"
+                    app:layout_constraintStart_toEndOf="@+id/textView117"
                     app:layout_constraintTop_toTopOf="parent" />
 
                 <TextView
-                    android:id="@+id/textView7"
+                    android:id="@+id/textView117"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="17dp"
@@ -560,7 +562,7 @@
                 android:layout_marginBottom="10dp">
 
                 <TextView
-                    android:id="@+id/textView16"
+                    android:id="@+id/textView11116"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="29dp"
@@ -569,11 +571,11 @@
                     android:textAlignment="center"
                     android:textAppearance="@style/TextAppearance.AppCompat.Small"
                     android:textSize="11sp"
-                    app:layout_constraintStart_toEndOf="@+id/textView15"
+                    app:layout_constraintStart_toEndOf="@+id/textView11115"
                     app:layout_constraintTop_toTopOf="parent" />
 
                 <TextView
-                    android:id="@+id/textView15"
+                    android:id="@+id/textView11115"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="31dp"
@@ -582,11 +584,11 @@
                     android:textAlignment="center"
                     android:textAppearance="@style/TextAppearance.AppCompat.Small"
                     android:textSize="11sp"
-                    app:layout_constraintStart_toEndOf="@+id/textView13"
+                    app:layout_constraintStart_toEndOf="@+id/textView11113"
                     app:layout_constraintTop_toTopOf="parent" />
 
                 <TextView
-                    android:id="@+id/textView13"
+                    android:id="@+id/textView11113"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="29dp"
@@ -595,11 +597,11 @@
                     android:textAlignment="center"
                     android:textAppearance="@style/TextAppearance.AppCompat.Small"
                     android:textSize="11sp"
-                    app:layout_constraintStart_toEndOf="@+id/textView7"
+                    app:layout_constraintStart_toEndOf="@+id/textView11117"
                     app:layout_constraintTop_toTopOf="parent" />
 
                 <TextView
-                    android:id="@+id/textView7"
+                    android:id="@+id/textView11117"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="31dp"

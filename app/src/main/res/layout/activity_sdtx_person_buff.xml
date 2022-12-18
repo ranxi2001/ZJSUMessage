@@ -9,10 +9,10 @@
     <ScrollView
         android:id="@+id/SDTX_buff"
         android:layout_width="407dp"
-        android:layout_height="637dp"
-        android:layout_marginBottom="1dp"
-        android:layout_marginEnd="1dp"
+        android:layout_height="645dp"
         android:layout_marginStart="1dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="1dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent">
@@ -20,166 +20,154 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical" >
+            android:orientation="vertical">
 
             <Button
                 android:id="@+id/mate1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="未加入同学"
-                android:drawableLeft="@drawable/students"
+                android:drawableLeft="@drawable/contacts"
                 android:paddingLeft="30dp"
-                android:textAlignment="viewStart"
-                />
+                android:text="未加入同学"
+                android:textAlignment="viewStart" />
 
             <Button
                 android:id="@+id/mate2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="未加入同学"
-                android:drawableLeft="@drawable/students"
+                android:drawableLeft="@drawable/contacts"
                 android:paddingLeft="30dp"
-                android:textAlignment="viewStart"
-                />
+                android:text="未加入同学"
+                android:textAlignment="viewStart" />
 
             <Button
                 android:id="@+id/mate3"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="未加入同学"
-                android:drawableLeft="@drawable/students"
+                android:drawableLeft="@drawable/contacts"
                 android:paddingLeft="30dp"
-                android:textAlignment="viewStart"
-                />
+                android:text="未加入同学"
+                android:textAlignment="viewStart" />
 
             <Button
                 android:id="@+id/mate4"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="未加入同学"
-                android:drawableLeft="@drawable/students"
+                android:drawableLeft="@drawable/contacts"
                 android:paddingLeft="30dp"
-                android:textAlignment="viewStart"
-                />
+                android:text="未加入同学"
+                android:textAlignment="viewStart" />
 
             <Button
                 android:id="@+id/mate5"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="未加入同学"
-                android:drawableLeft="@drawable/students"
+                android:drawableLeft="@drawable/contacts"
                 android:paddingLeft="30dp"
-                android:textAlignment="viewStart"
-                />
+                android:text="未加入同学"
+                android:textAlignment="viewStart" />
 
             <Button
                 android:id="@+id/mate6"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="未加入同学"
-                android:drawableLeft="@drawable/students"
+                android:drawableLeft="@drawable/contacts"
                 android:paddingLeft="30dp"
-                android:textAlignment="viewStart"
-                />
+                android:text="未加入同学"
+                android:textAlignment="viewStart" />
+
             <Button
                 android:id="@+id/mate7"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="未加入同学"
-                android:drawableLeft="@drawable/students"
+                android:drawableLeft="@drawable/contacts"
                 android:paddingLeft="30dp"
-                android:textAlignment="viewStart"
-                />
+                android:text="未加入同学"
+                android:textAlignment="viewStart" />
 
             <Button
                 android:id="@+id/mate8"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="未加入同学"
-                android:drawableLeft="@drawable/students"
+                android:drawableLeft="@drawable/contacts"
                 android:paddingLeft="30dp"
-                android:textAlignment="viewStart"
-                />
+                android:text="未加入同学"
+                android:textAlignment="viewStart" />
 
             <Button
                 android:id="@+id/mate9"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="未加入同学"
-                android:drawableLeft="@drawable/students"
+                android:drawableLeft="@drawable/contacts"
                 android:paddingLeft="30dp"
-                android:textAlignment="viewStart"
-                />
+                android:text="未加入同学"
+                android:textAlignment="viewStart" />
 
             <Button
                 android:id="@+id/mate10"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="未加入同学"
-                android:drawableLeft="@drawable/students"
+                android:drawableLeft="@drawable/contacts"
                 android:paddingLeft="30dp"
-                android:textAlignment="viewStart"
-                />
+                android:text="未加入同学"
+                android:textAlignment="viewStart" />
 
             <Button
                 android:id="@+id/mate11"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="未加入同学"
-                android:drawableLeft="@drawable/students"
+                android:drawableLeft="@drawable/contacts"
                 android:paddingLeft="30dp"
-                android:textAlignment="viewStart"
-                />
+                android:text="未加入同学"
+                android:textAlignment="viewStart" />
+
             <Button
                 android:id="@+id/mate12"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="未加入同学"
-                android:drawableLeft="@drawable/students"
+                android:drawableLeft="@drawable/contacts"
                 android:paddingLeft="30dp"
-                android:textAlignment="viewStart"
-                />
+                android:text="未加入同学"
+                android:textAlignment="viewStart" />
 
             <Button
                 android:id="@+id/mate13"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="未加入同学"
-                android:drawableLeft="@drawable/students"
+                android:drawableLeft="@drawable/contacts"
                 android:paddingLeft="30dp"
-                android:textAlignment="viewStart"
-                />
+                android:text="未加入同学"
+                android:textAlignment="viewStart" />
 
             <Button
                 android:id="@+id/mate14"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="未加入同学"
-                android:drawableLeft="@drawable/students"
+                android:drawableLeft="@drawable/contacts"
                 android:paddingLeft="30dp"
-                android:textAlignment="viewStart"
-                />
+                android:text="未加入同学"
+                android:textAlignment="viewStart" />
         </LinearLayout>
     </ScrollView>
 
     <ImageButton
         android:id="@+id/SDTX_buff_back"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="51dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="3dp"
+        android:backgroundTint="@color/teal_200"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.002"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.005"
-        app:srcCompat="@drawable/back" />
+        app:layout_constraintVertical_bias="0.01"
+        app:srcCompat="@drawable/return_white" />
 
     <TextView
         android:id="@+id/School_name"
-        android:layout_width="341dp"
-        android:layout_height="57dp"
-        android:text="TextView"
+        android:layout_width="360dp"
+        android:layout_height="56dp"
         android:gravity="center"
+        android:text="TextView"
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="@+id/SDTX_buff"
         app:layout_constraintEnd_toEndOf="parent"
@@ -191,8 +179,9 @@
     <TextView
         android:id="@+id/grade_class"
         android:layout_width="401dp"
-        android:layout_height="32dp"
+        android:layout_height="20dp"
         android:text="TextView"
+        android:textAlignment="center"
         app:layout_constraintBottom_toTopOf="@+id/SDTX_buff"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.008"

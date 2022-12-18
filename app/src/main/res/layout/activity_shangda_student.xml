@@ -17,46 +17,15 @@
         app:layout_constraintTop_toBottomOf="@+id/school_name_textview">
 
         <Button
-            android:id="@+id/grade2016"
+            android:id="@+id/grade2021"
             android:layout_width="match_parent"
             android:layout_height="83dp"
             android:background="@color/teal_200"
             android:backgroundTint="@color/white"
             android:drawableLeft="@drawable/academy"
             android:paddingLeft="30dp"
-            android:text="2016级" />
-
-        <Button
-            android:id="@+id/grade2017"
-            android:layout_width="match_parent"
-            android:layout_height="83dp"
-            android:background="@color/teal_200"
-            android:backgroundTint="@color/white"
-            android:drawableLeft="@drawable/academy"
-            android:paddingLeft="30dp"
-            android:text="2017级"
-            android:textAlignment="center" />
-
-
-        <Button
-            android:id="@+id/grade2018"
-            android:layout_width="match_parent"
-            android:layout_height="83dp"
-            android:background="@color/teal_200"
-            android:backgroundTint="@color/white"
-            android:drawableLeft="@drawable/academy"
-            android:paddingLeft="30dp"
-            android:text="2018级" />
-
-        <Button
-            android:id="@+id/grade2019"
-            android:layout_width="match_parent"
-            android:layout_height="83dp"
-            android:background="@color/teal_200"
-            android:backgroundTint="@color/white"
-            android:drawableLeft="@drawable/academy"
-            android:paddingLeft="30dp"
-            android:text="2019级" />
+            android:paddingRight="30dp"
+            android:text="2021级" />
 
         <Button
             android:id="@+id/grade2020"
@@ -66,17 +35,64 @@
             android:backgroundTint="@color/white"
             android:drawableLeft="@drawable/academy"
             android:paddingLeft="30dp"
+            android:paddingRight="30dp"
             android:text="2020级" />
 
         <Button
-            android:id="@+id/grade2021"
+            android:id="@+id/grade2019"
             android:layout_width="match_parent"
             android:layout_height="83dp"
             android:background="@color/teal_200"
             android:backgroundTint="@color/white"
             android:drawableLeft="@drawable/academy"
             android:paddingLeft="30dp"
-            android:text="2021级" />
+            android:paddingRight="30dp"
+            android:text="2019级" />
+
+        <Button
+            android:id="@+id/grade2018"
+            android:layout_width="match_parent"
+            android:layout_height="83dp"
+            android:background="@color/teal_200"
+            android:backgroundTint="@color/white"
+            android:drawableLeft="@drawable/academy"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp"
+            android:text="2018级" />
+
+        <Button
+            android:id="@+id/grade2017"
+            android:layout_width="match_parent"
+            android:layout_height="83dp"
+            android:background="@color/teal_200"
+            android:backgroundTint="@color/white"
+            android:drawableLeft="@drawable/academy"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp"
+            android:text="2017级"
+            android:textAlignment="center" />
+
+        <Button
+            android:id="@+id/grade2016"
+            android:layout_width="match_parent"
+            android:layout_height="83dp"
+            android:background="@color/teal_200"
+            android:backgroundTint="@color/white"
+            android:drawableLeft="@drawable/academy"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp"
+            android:text="2016级" />
+
+
+
+
+
+
+
+
+
+
+
 
     </LinearLayout>
 
