@@ -24,8 +24,8 @@
             android:layout_height="83dp"
             android:background="@color/teal_200"
             android:backgroundTint="@color/white"
-            android:drawableLeft="@drawable/academy"
-            android:paddingLeft="30dp"
+            android:paddingLeft="25dp"
+            android:paddingRight="25dp"
             android:text="管理工程与电子商务学院" />
 
         <Button
@@ -34,8 +34,8 @@
             android:layout_height="83dp"
             android:background="@color/teal_200"
             android:backgroundTint="@color/white"
-            android:drawableLeft="@drawable/academy"
-            android:paddingLeft="30dp"
+            android:paddingLeft="25dp"
+            android:paddingRight="25dp"
             android:text="英贤慈善学院"
             android:textAlignment="center" />
 
@@ -46,8 +46,8 @@
             android:layout_height="83dp"
             android:background="@color/teal_200"
             android:backgroundTint="@color/white"
-            android:drawableLeft="@drawable/academy"
-            android:paddingLeft="30dp"
+            android:paddingLeft="25dp"
+            android:paddingRight="25dp"
             android:text="统计与数学学院" />
 
         <Button
@@ -56,8 +56,8 @@
             android:layout_height="83dp"
             android:background="@color/teal_200"
             android:backgroundTint="@color/white"
-            android:drawableLeft="@drawable/academy"
-            android:paddingLeft="30dp"
+            android:paddingLeft="25dp"
+            android:paddingRight="25dp"
             android:text="计算机科学与技术学院" />
 
         <Button
@@ -66,8 +66,8 @@
             android:layout_height="83dp"
             android:background="@color/teal_200"
             android:backgroundTint="@color/white"
-            android:drawableLeft="@drawable/academy"
-            android:paddingLeft="30dp"
+            android:paddingLeft="25dp"
+            android:paddingRight="25dp"
             android:text="经济学院" />
 
         <Button
@@ -76,8 +76,8 @@
             android:layout_height="83dp"
             android:background="@color/teal_200"
             android:backgroundTint="@color/white"
-            android:drawableLeft="@drawable/academy"
-            android:paddingLeft="30dp"
+            android:paddingLeft="25dp"
+            android:paddingRight="25dp"
             android:text="信息与电子工程学院" />
 
     </LinearLayout>

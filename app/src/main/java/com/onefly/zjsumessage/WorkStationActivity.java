@@ -113,7 +113,7 @@ public class WorkStationActivity extends AppCompatActivity {
         });
         //助学金
         ImageButton button_subsidies = (ImageButton) findViewById(R.id.imageButton_subsidies);
-        final Uri uri_subsidies=Uri.parse("https://f.kdocs.cn/w/TWizHNMk/");
+        final Uri uri_subsidies=Uri.parse("https://f.kdocs.cn/g/wgHOQjoE/");
         button_subsidies.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

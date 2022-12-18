@@ -15,6 +15,8 @@ public class CollegeTeacherActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_college_teacher);
 
+
+
         Button fy_tutor=findViewById(R.id.button_tutor1); //fengyi
         fy_tutor.setOnClickListener(new View.OnClickListener() {
             @Override
