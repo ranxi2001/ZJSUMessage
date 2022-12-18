@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PrivacyActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout5"
+        android:layout_width="414dp"
+        android:layout_height="40dp"
+
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageButton
+            android:id="@+id/imageButton_return_setting"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="#18b9e4"
+            app:srcCompat="@drawable/return_white" />
+
+        <TextView
+            android:id="@+id/textView14"
+            android:layout_width="376dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:background="#18b9e4"
+            android:gravity="center"
+            android:text="设置"
+            android:textAlignment="viewStart"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout4"
+        android:layout_width="413dp"
+        android:layout_height="690dp"
+        android:layout_marginTop="1dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout5">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="28dp"
+            android:fontFamily="sans-serif-black"
+            android:text="可被查询范围"
+            android:textSize="18sp" />
+
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="match_parent"
+            android:layout_height="162dp"
+            android:layout_marginTop="0dp"
+            android:weightSum="1">
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="对于学生" />
+
+            <RadioButton
+                android:id="@+id/radioButton3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/ic_launcher_background"
+                android:fontFamily="sans-serif-thin"
+                android:layoutDirection="rtl"
+                android:text="同学院同年级可查找"
+                android:textDirection="ltr" />
+
+            <RadioButton
+                android:id="@+id/radioButton4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/ic_launcher_background"
+                android:fontFamily="sans-serif-thin"
+                android:layoutDirection="rtl"
+                android:text="同学院可查找"
+                android:textDirection="ltr" />
+
+            <RadioButton
+                android:id="@+id/radioButton5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/ic_launcher_background"
+                android:fontFamily="sans-serif-thin"
+                android:layoutDirection="rtl"
+                android:text="同年级可查找"
+                android:textDirection="ltr" />
+
+            <RadioButton
+                android:id="@+id/radioButton6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/ic_launcher_background"
+                android:fontFamily="sans-serif-thin"
+                android:layoutDirection="rtl"
+                android:text="不限制（推荐）"
+                android:textDirection="ltr" />
+
+        </RadioGroup>
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="95dp">
+
+            <TextView
+                android:id="@+id/textView18"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="对于老师" />
+
+            <RadioButton
+                android:id="@+id/radioButton7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/ic_launcher_background"
+                android:fontFamily="sans-serif-thin"
+                android:layoutDirection="rtl"
+                android:text="对所有老师可见（推荐）"
+                android:textDirection="ltr" />
+
+            <RadioButton
+                android:id="@+id/radioButton8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/ic_launcher_background"
+                android:duplicateParentState="true"
+                android:fontFamily="sans-serif-thin"
+                android:layoutDirection="rtl"
+                android:text="只对任课老师可见"
+                android:textDirection="ltr" />
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/textView20"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-black"
+            android:text="接收消息权限"
+            android:textSize="18sp" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="107dp">
+
+            <RadioButton
+                android:id="@+id/radioButton9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/ic_launcher_background"
+                android:fontFamily="sans-serif-thin"
+                android:layoutDirection="rtl"
+                android:text="陌生人回复前仅收取3条消息"
+                android:textDirection="ltr" />
+
+            <RadioButton
+                android:id="@+id/radioButton10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/ic_launcher_background"
+                android:duplicateParentState="true"
+                android:fontFamily="sans-serif-thin"
+                android:layoutDirection="rtl"
+                android:text="正确输入学号解锁聊天"
+                android:textDirection="ltr" />
+
+            <RadioButton
+                android:id="@+id/radioButton12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/ic_launcher_background"
+                android:duplicateParentState="true"
+                android:fontFamily="sans-serif-thin"
+                android:layoutDirection="rtl"
+                android:text="不限制"
+                android:textDirection="ltr" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/textView22"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-black"
+            android:text="可被查询方式"
+            android:textSize="18sp" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/radioButton9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/ic_launcher_background"
+                android:fontFamily="sans-serif-thin"
+                android:layoutDirection="rtl"
+                android:text="允许通过全校组织架构查询"
+                android:textDirection="ltr" />
+
+            <RadioButton
+                android:id="@+id/radioButton12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/ic_launcher_background"
+                android:duplicateParentState="true"
+                android:fontFamily="sans-serif-thin"
+                android:layoutDirection="rtl"
+                android:text="允许通过学号或姓名查询"
+                android:textDirection="ltr" />
+
+            <RadioButton
+                android:id="@+id/radioButton10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/ic_launcher_background"
+                android:duplicateParentState="true"
+                android:fontFamily="sans-serif-thin"
+                android:layoutDirection="rtl"
+                android:text="仅允许通过学号查询"
+                android:textDirection="ltr" />
+
+        </RadioGroup>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

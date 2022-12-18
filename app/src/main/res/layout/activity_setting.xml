@@ -19,7 +19,7 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <ImageButton
-            android:id="@+id/imageButton_returnmine"
+            android:id="@+id/imageButton_return_setting"
             android:layout_width="40dp"
             android:layout_height="40dp"
             android:background="#18b9e4"
@@ -74,7 +74,7 @@
             android:textAlignment="textStart" />
 
         <Button
-            android:id="@+id/button4"
+            android:id="@+id/button_contact"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:backgroundTint="@color/white"
@@ -82,11 +82,11 @@
             android:textAlignment="textStart" />
 
         <Button
-            android:id="@+id/button2"
+            android:id="@+id/button_privacy"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:backgroundTint="@color/white"
-            android:text="个人信息与权限"
+            android:text="个人信息与隐私"
             android:textAlignment="textStart" />
 
         <Button
