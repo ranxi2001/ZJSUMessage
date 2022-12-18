@@ -51,6 +51,9 @@ public class Buffer_contact extends AppCompatActivity {
                 String class_information ="信息2002";
 
             //通过数据库的查询获得pclass1~pclass6的名字字符串：eg.信息2002
+        //通过数据库的查询获得pclass1~pclass6的名字字符串：eg.信息2002
+
+
 
         //--------------------------上一块主要是存放需要用到的字符串信息------------------------------
 
