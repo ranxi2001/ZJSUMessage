@@ -22,6 +22,8 @@ public class AddressbookActivity extends AppCompatActivity {
         Button bt_contact_yzy = findViewById(R.id.button_chatperson1_address);  //  联系人余朝阳
         Button bt_contact_zcx = findViewById(R.id.button_chatperson2_address);  //  联系人祝橙希
         Button bt_contact_wjh = findViewById(R.id.button_chatperson3_address); //  联系人王靖宏
+        Intent intent=getIntent();
+        String userId=intent.getStringExtra("userId");
         button_faculty.setOnClickListener(new View.OnClickListener() {//点击商大老师进行跳转
             @Override
             public void onClick(View v) {
@@ -34,6 +36,7 @@ public class AddressbookActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent=new Intent(AddressbookActivity.this, CollegeStudentActivity.class);
+                intent.putExtra("userId",userId);
                 startActivity(intent);
             }
         });

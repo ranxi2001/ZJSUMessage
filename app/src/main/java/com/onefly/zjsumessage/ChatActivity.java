@@ -64,11 +64,11 @@ public class ChatActivity extends AppCompatActivity {
 
         //final String[] password_true = new String[1000];
 
-        LCQuery<LCObject> query =new LCQuery<>("message");
-        query.whereContainedIn("username_del", Arrays.asList(username,username_del));
-        query.whereContainedIn("username",Arrays.asList(username,username_del));
-        query.orderByDescending("createdAt");
-        query.findInBackground().subscribe(new Observer<List<LCObject>>() {
+        LCQuery<LCObject> query2 =new LCQuery<>("message");
+        query2.whereContainedIn("username_del", Arrays.asList(username,username_del));
+        query2.whereContainedIn("username",Arrays.asList(username,username_del));
+        query2.orderByDescending("createdAt");
+        query2.findInBackground().subscribe(new Observer<List<LCObject>>() {
             @Override
             public void onSubscribe(Disposable d) {
 
@@ -84,7 +84,7 @@ public class ChatActivity extends AppCompatActivity {
                     k=15;
                 }
                 while(k>0&&number_text>0&&ipoint<number_message){
-                    textViews[k].setText(lcObjects.get(ipoint).getString("message_send"));
+                    textViews[k].setText(lcObjects.get(ipoint).getString("username_del")+":"+lcObjects.get(ipoint).getString("message_send"));
                     ipoint++;
                     k--;
                     number_text--;

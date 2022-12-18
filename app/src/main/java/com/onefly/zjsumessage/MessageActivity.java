@@ -48,6 +48,7 @@ public class MessageActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Toast.makeText(MessageActivity.this,"正在进入通讯录",Toast.LENGTH_SHORT).show();
                 Intent intent=new Intent(MessageActivity.this, AddressbookActivity.class);
+                intent.putExtra("userId",name_user);
                 startActivity(intent);
             }
         });
