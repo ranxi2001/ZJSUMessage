@@ -80,6 +80,9 @@ public class ChatActivity extends AppCompatActivity {
                 int k=lcObjects.size();
                 int number_message=k;
                 int ipoint=0;
+                if(k>15){
+                    k=15;
+                }
                 while(k>0&&number_text>0&&ipoint<number_message){
                     textViews[k].setText(lcObjects.get(ipoint).getString("message_send"));
                     ipoint++;
@@ -144,8 +147,14 @@ public class ChatActivity extends AppCompatActivity {
                 public void onNext(List<LCObject> lcObjects) {
                     int number_text=15;//布局中的text最大数量
                     int k=lcObjects.size();
-                    while(k>0&&number_text>0){
-                        textViews[k].setText(lcObjects.get(0).getString("message_send"));
+                    int number_message=k;
+                    int ipoint=0;
+                    if(k>15){
+                        k=15;
+                    }
+                    while(k>0&&number_text>0&&ipoint<number_message){
+                        textViews[k].setText(lcObjects.get(ipoint).getString("username_del")+":"+lcObjects.get(ipoint).getString("message_send"));
+                        ipoint++;
                         k--;
                         number_text--;
                     }
