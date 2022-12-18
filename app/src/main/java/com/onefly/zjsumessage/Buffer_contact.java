@@ -231,7 +231,7 @@ public class Buffer_contact extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent toSDTX_buff = new Intent(Buffer_contact.this,SDTX_person_buff.class);
-                toSDTX_buff.putExtra("School_infomation",School_information);//学院名
+                toSDTX_buff.putExtra("School_information",School_information);//学院名
                 toSDTX_buff.putExtra("grade_information",grade_infomation);//年级
                 String class_information=pclass1.getText().toString();
                 System.out.println(class_information);
