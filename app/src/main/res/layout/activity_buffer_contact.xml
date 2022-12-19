@@ -35,7 +35,7 @@
     </LinearLayout>
 
     <LinearLayout
-        android:layout_width="411dp"
+        android:layout_width="match_parent"
         android:layout_height="690dp"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -138,7 +138,6 @@
             android:text=""
             android:textAlignment="viewStart"
             tools:ignore="SpeakableTextPresentCheck" />
-
 
 
     </LinearLayout>

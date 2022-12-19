@@ -76,7 +76,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@color/white"
-                android:fontFamily="sans-serif-thin"
+                android:fontFamily="sans-serif-medium"
                 android:layoutDirection="rtl"
                 android:text="同学院同年级可查找"
                 android:textDirection="ltr" />
@@ -86,7 +86,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@color/white"
-                android:fontFamily="sans-serif-thin"
+                android:fontFamily="sans-serif-medium"
                 android:layoutDirection="rtl"
                 android:text="同学院可查找"
                 android:textDirection="ltr" />
@@ -96,7 +96,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@color/white"
-                android:fontFamily="sans-serif-thin"
+                android:fontFamily="sans-serif-medium"
                 android:layoutDirection="rtl"
                 android:text="同年级可查找"
                 android:textDirection="ltr" />
@@ -106,7 +106,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@color/white"
-                android:fontFamily="sans-serif-thin"
+                android:fontFamily="sans-serif-medium"
                 android:layoutDirection="rtl"
                 android:text="不限制（推荐）"
                 android:textDirection="ltr" />
@@ -128,7 +128,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@color/white"
-                android:fontFamily="sans-serif-thin"
+                android:fontFamily="sans-serif-medium"
                 android:layoutDirection="rtl"
                 android:text="对所有老师可见（推荐）"
                 android:textDirection="ltr" />
@@ -139,7 +139,7 @@
                 android:layout_height="wrap_content"
                 android:background="@color/white"
                 android:duplicateParentState="true"
-                android:fontFamily="sans-serif-thin"
+                android:fontFamily="sans-serif-medium"
                 android:layoutDirection="rtl"
                 android:text="只对任课老师可见"
                 android:textDirection="ltr" />
@@ -163,7 +163,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@color/white"
-                android:fontFamily="sans-serif-thin"
+                android:fontFamily="sans-serif-medium"
                 android:layoutDirection="rtl"
                 android:text="陌生人回复前仅收取3条消息"
                 android:textDirection="ltr" />
@@ -174,7 +174,7 @@
                 android:layout_height="wrap_content"
                 android:background="@color/white"
                 android:duplicateParentState="true"
-                android:fontFamily="sans-serif-thin"
+                android:fontFamily="sans-serif-medium"
                 android:layoutDirection="rtl"
                 android:text="正确输入学号解锁聊天"
                 android:textDirection="ltr" />
@@ -185,7 +185,7 @@
                 android:layout_height="wrap_content"
                 android:background="@color/white"
                 android:duplicateParentState="true"
-                android:fontFamily="sans-serif-thin"
+                android:fontFamily="sans-serif-medium"
                 android:layoutDirection="rtl"
                 android:text="不限制"
                 android:textDirection="ltr" />
@@ -208,7 +208,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@color/white"
-                android:fontFamily="sans-serif-thin"
+                android:fontFamily="sans-serif-medium"
                 android:layoutDirection="rtl"
                 android:text="允许通过全校组织架构查询"
                 android:textDirection="ltr" />
@@ -219,7 +219,7 @@
                 android:layout_height="wrap_content"
                 android:background="@color/white"
                 android:duplicateParentState="true"
-                android:fontFamily="sans-serif-thin"
+                android:fontFamily="sans-serif-medium"
                 android:layoutDirection="rtl"
                 android:text="允许通过学号或姓名查询"
                 android:textDirection="ltr" />
@@ -230,7 +230,7 @@
                 android:layout_height="wrap_content"
                 android:background="@color/white"
                 android:duplicateParentState="true"
-                android:fontFamily="sans-serif-thin"
+                android:fontFamily="sans-serif-medium"
                 android:layoutDirection="rtl"
                 android:text="仅允许通过学号查询"
                 android:textDirection="ltr" />
